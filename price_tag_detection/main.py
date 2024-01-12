@@ -2,13 +2,13 @@ from modules import *
 
 '''data load'''
 # 데이터가 존재하는 폴더 경로 지정
-IMG_FOLDER = '/Users/jykim/Downloads/Pingu_Dev_JPG_Data 3/'
+IMG_FOLDER = '/Users/jykim/myWS/Dev_AI_6/proJects/Pingu_Dev_JPG_Data 3'
 files = os.listdir(IMG_FOLDER)
 
 ##### input data 입력 #####
 INPUT_IMG = 'common-6.jpeg'
 
-# re
+# r
 """model load"""
 rf = Roboflow(api_key="eyKD4VJQ4nRqtosRytMg")
 project = rf.workspace().project("price-tag-dxlmv")
