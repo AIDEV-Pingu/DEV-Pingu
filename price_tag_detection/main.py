@@ -8,7 +8,7 @@ files = os.listdir(IMG_FOLDER)
 ##### input data 입력 #####
 INPUT_IMG = 'IMG_5586.jpeg'
 
-
+# re
 """model load"""
 rf = Roboflow(api_key="eyKD4VJQ4nRqtosRytMg")
 project = rf.workspace().project("price-tag-dxlmv")
