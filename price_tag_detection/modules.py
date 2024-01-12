@@ -22,8 +22,8 @@ import os
 from roboflow import Roboflow
 
 # if in colab
-from google.colab.patches import cv2_imshow 
-
+# from google.colab.patches import cv2.imshow('Image', img)
+# ('Image', img)
 
 """
 Modules
@@ -45,10 +45,14 @@ def CLOVA_api(secret_key, api_url, image : np.array):
     response : api 호출 결과 (ex. 200,400,404, ...)
 
     """
+    # Error check
+    if image is None : 
+        # print('FileNotFoundError: image is None for request CLOVA_api')
+        return
+
     # Convert np.ndarray to bytes
-    if image is not None:
-        _, buffer = cv2.imencode('.jpg', image)
-        file_data = buffer.tobytes()
+    _, buffer = cv2.imencode('.jpg', image)
+    file_data = buffer.tobytes()
 
     request_json = {
         'images': [
@@ -74,7 +78,6 @@ def CLOVA_api(secret_key, api_url, image : np.array):
 
 
 
-
 def imageOCR(response, img : np.array):
     """
     Usage : api 적용 결과 (OCR 결과) 시각화
@@ -92,7 +95,8 @@ def imageOCR(response, img : np.array):
     """
     try : result = response.json()
     except :
-        print(response, 'AttributeError: Responsed \'int\' object' )
+        print('AttributeError: Responsed \'int\' object' ,response)
+        return
 
     with open('result.json', 'w', encoding='utf-8') as make_file:
         json.dump(result, make_file, indent="\t", ensure_ascii=False)
@@ -114,7 +118,7 @@ def imageOCR(response, img : np.array):
         img = cv2.polylines(img, [vertices], isClosed=True, color=(255, 0, 0), thickness=2)
 
     # 이미지 보여주기
-    cv2_imshow(img) # only colab
+    cv2.imshow('IMAGE',img) # only colab
     # print(text)
 
     return texts, img
@@ -264,9 +268,9 @@ def imgCrop(img, bbCoor):
     # # 결과 시각화
     # cv2.rectangle(img, (x - half_w, y - half_h), (x + half_w, y + half_h), (0, 255, 0), 2)
     # print('\n Original')
-    # cv2_imshow(img) # only colab
+    # cv2.imshow(img) # only colab
     # print('\n Cropped')
-    # cv2_imshow(cropped_img) # only colab
+    # cv2.imshow(cropped_img) # only colab
 
     return cropped_img
 

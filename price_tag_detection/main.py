@@ -1,18 +1,18 @@
-from .modules import *
+from modules import *
 
 '''data load'''
 # 데이터가 존재하는 폴더 경로 지정
-IMG_FOLDER = '/content/drive/MyDrive/train_Data/'
+IMG_FOLDER = '/Users/jykim/Downloads/Pingu_Dev_JPG_Data 3/'
 files = os.listdir(IMG_FOLDER)
 
 ##### input data 입력 #####
-INPUT_IMG = 'IMG_5586.jpeg'
+INPUT_IMG = 'common-6.jpeg'
 
 # re
 """model load"""
 rf = Roboflow(api_key="eyKD4VJQ4nRqtosRytMg")
 project = rf.workspace().project("price-tag-dxlmv")
-model = project.version(8).model
+model = project.version(15).model
 
 # OCR api
 secret_key = "Y0l6ZHF1Um9CSWp3aHpJU3JDeFdpUGp1cG16T3hFQkg="
