@@ -1,0 +1,4459 @@
+{
+  "data": [
+    {
+      "sentence": "크린랩 고무장갑 미니 1,000 https://www.ssg.com/item/itemView.ssg?itemId=1000065490144&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 11,
+          "entity": "상품명"
+        },
+        {
+          "start": 12,
+          "end": 17,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "에이스침대 비밀특가 [에이스침대] BMA 1139-E CA등급/DD 1,018,440 https://www.ssg.com/item/itemView.ssg?itemId=1000544069329&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 37,
+          "entity": "상품명"
+        },
+        {
+          "start": 38,
+          "end": 47,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "오런 대광 식품전용 고무장갑 1,280 https://www.ssg.com/item/itemView.ssg?itemId=1000065490334&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 15,
+          "entity": "상품명"
+        },
+        {
+          "start": 16,
+          "end": 21,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "크린랩 고무장갑 (M)중 1,500 https://www.ssg.com/item/itemView.ssg?itemId=1000065490323&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 13,
+          "entity": "상품명"
+        },
+        {
+          "start": 14,
+          "end": 19,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "크린랩 식품전용 고무장갑 (L)대 1,600 https://www.ssg.com/item/itemView.ssg?itemId=1000065490326&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 18,
+          "entity": "상품명"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "크린랩 식품전용 고무장갑 (XL)특대 1,800 https://www.ssg.com/item/itemView.ssg?itemId=1000065490151&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 20,
+          "entity": "상품명"
+        },
+        {
+          "start": 21,
+          "end": 26,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "자코모 [행사특가]필로 모듈 와이드 3인 오픈형 젠위브 패브릭 소파 1,850,700 https://www.ssg.com/item/itemView.ssg?itemId=1000289644329&siteNo=6009&salestrNo=1009&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 37,
+          "entity": "상품명"
+        },
+        {
+          "start": 38,
+          "end": 47,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "삼성 전자 [1등급 가전] 삼성 3도어 313L 새틴화이트+새틴베이지 김치냉장고 RQ33C7411AP12 1,915,900 https://www.ssg.com/item/itemView.ssg?itemId=1000565585300&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 58,
+          "entity": "상품명"
+        },
+        {
+          "start": 59,
+          "end": 68,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "탑텐키즈 (정상가 39,900원) 특가 여아)배기 데님 팬츠(MKC3DP2011) 10,637 https://www.ssg.com/item/itemView.ssg?itemId=1000484343451&siteNo=6009&salestrNo=1017&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 45,
+          "entity": "상품명"
+        },
+        {
+          "start": 46,
+          "end": 52,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "탠디 [SSG 비밀특가] 탠디본사 로퍼 HA18001 2color  [정상가168,000] 100,280 https://www.ssg.com/item/itemView.ssg?itemId=1000492573364&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 50,
+          "entity": "상품명"
+        },
+        {
+          "start": 51,
+          "end": 58,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "망고비데 [비밀특가_99대한정] MB-1704NF 24년형 필터없는 직수비데 IPX5방수등급 109,900 https://www.ssg.com/item/itemView.ssg?itemId=1000446587539&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 51,
+          "entity": "상품명"
+        },
+        {
+          "start": 52,
+          "end": 59,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "메이블린뉴욕 [SSG특가딜]메이블린뉴욕x로레알파리 로레알염색약&새치염색&메이블린컨실러&핏미틴트 11,520 https://www.ssg.com/item/dealItemView.ssg?itemId=1000031156582&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PClip",
+      "labels": [
+        {
+          "start": 0,
+          "end": 52,
+          "entity": "상품명"
+        },
+        {
+          "start": 53,
+          "end": 59,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "려 [시크릿특가] 려 흑운 모근강화 볼륨케어 샴푸&컨디셔너 550ml 11,701 https://www.ssg.com/item/itemView.ssg?itemId=1000563286108&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 38,
+          "entity": "상품명"
+        },
+        {
+          "start": 39,
+          "end": 45,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "[마늘과 크림치즈의 조화]마늘크림치즈 볼/세트구성/특가행사/sns유명제품 11,805 https://www.ssg.com/item/itemView.ssg?itemId=1000042294296&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 40,
+          "entity": "상품명"
+        },
+        {
+          "start": 41,
+          "end": 47,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "탠디 [SSG 비밀특가] 탠디본사 옥스퍼드 9920007 2color  [정상가265,000] 112,240 https://www.ssg.com/item/itemView.ssg?itemId=1000492574973&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 52,
+          "entity": "상품명"
+        },
+        {
+          "start": 53,
+          "end": 60,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "탠디 [SSG 비밀특가] 탠디본사 스니커즈 9920004 2color  [정상가265,000] 115,000 https://www.ssg.com/item/itemView.ssg?itemId=1000492574041&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 52,
+          "entity": "상품명"
+        },
+        {
+          "start": 53,
+          "end": 60,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "탠디 [SSG 비밀특가] 탠디본사 키높이 9920023 2color [정상가245,000] 115,000 https://www.ssg.com/item/itemView.ssg?itemId=1000505606181&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 50,
+          "entity": "상품명"
+        },
+        {
+          "start": 51,
+          "end": 58,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "탠디 [SSG 비밀특가] 탠디본사 키높이 9920032 2color [정상가245,000] 115,000 https://www.ssg.com/item/itemView.ssg?itemId=1000505606267&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 50,
+          "entity": "상품명"
+        },
+        {
+          "start": 51,
+          "end": 58,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "무스텔라 [공식수입원] 무스텔라 이드라베베 페이셜 크림 40ml new (수분크림) 12,150 https://www.ssg.com/item/itemView.ssg?itemId=1000034000747&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 46,
+          "entity": "상품명"
+        },
+        {
+          "start": 47,
+          "end": 53,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "크린랩 레이스고무장갑 소 10켤레 12,700 https://www.ssg.com/item/itemView.ssg?itemId=1000557312730&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 18,
+          "entity": "상품명"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "다채롭게 즐기는 믹스너트 500g 12,900 https://www.ssg.com/item/itemView.ssg?itemId=2097000766706&siteNo=7009&salestrNo=2449&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 18,
+          "entity": "상품명"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "다채롭게 즐기는 믹스너트 500g 12,900 https://www.ssg.com/item/itemView.ssg?itemId=2097000766706&siteNo=7009&salestrNo=2449&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 18,
+          "entity": "상품명"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "넛츠팜 크랜베리 믹스넛 1kg(원통) 13,500 https://www.ssg.com/item/itemView.ssg?itemId=1000006064476&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 20,
+          "entity": "상품명"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "프로젝트엠 F/W 특가 인기 소프트  남)스웨터 ,여성 맨투맨 3종 택1 (EPC4ER1400)(EPC4ER1577)(EPD5TR2910) 13,600 https://www.ssg.com/item/itemView.ssg?itemId=1000562139910&siteNo=6009&salestrNo=1011&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 77,
+          "entity": "상품명"
+        },
+        {
+          "start": 78,
+          "end": 84,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "프로젝트엠 F/W 특가 인기 소프트  남)스웨터 ,여성 맨투맨 3종 택1 (EPC4ER1400)(EPC4ER1577)(EPD5TR2910) 13,600 https://www.ssg.com/item/itemView.ssg?itemId=1000562139910&siteNo=6009&salestrNo=1011&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 77,
+          "entity": "상품명"
+        },
+        {
+          "start": 78,
+          "end": 84,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "넛츠피아 아몬드 슬라이스 1kg 13,900 https://www.ssg.com/item/itemView.ssg?itemId=1000205462064&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 17,
+          "entity": "상품명"
+        },
+        {
+          "start": 18,
+          "end": 24,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "SSG푸드마켓 [SSG]수푸림믹스넛 500g 13,900 https://www.ssg.com/item/itemView.ssg?itemId=2097001161852&siteNo=7009&salestrNo=2506&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 24,
+          "entity": "상품명"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "UGG [원사이즈 특가/220size] 어그 미니 베일리 버튼 II 체스트넛 UGG 여성부츠 (1016422-CHE) 132,050 https://www.ssg.com/item/itemView.ssg?itemId=1000562382963&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 65,
+          "entity": "상품명"
+        },
+        {
+          "start": 66,
+          "end": 73,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "탠디 [SSG 비밀특가]탠디본사 앵클부츠 9118501 3color [정상가315,000] 136,160 https://www.ssg.com/item/itemView.ssg?itemId=1000505608480&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 50,
+          "entity": "상품명"
+        },
+        {
+          "start": 51,
+          "end": 58,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "넛츠팜 아몬드 초코 믹스넛 1kg(원통) 14,500 https://www.ssg.com/item/itemView.ssg?itemId=1000017615484&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 22,
+          "entity": "상품명"
+        },
+        {
+          "start": 23,
+          "end": 29,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "숀리 [SSG특가]엑스바이크 E3 실내 자전거 유산소 운동 기구 바이크 가정용 접이식 헬스 사이클 149,000 https://www.ssg.com/item/itemView.ssg?itemId=1000557395166&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 54,
+          "entity": "상품명"
+        },
+        {
+          "start": 55,
+          "end": 62,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "웅진식품 [특가]하늘보리 에코(무라벨) 1.5ℓ 12펫 15,000 https://www.ssg.com/item/itemView.ssg?itemId=1000391127772&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 30,
+          "entity": "상품명"
+        },
+        {
+          "start": 31,
+          "end": 37,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "리치팜너트 넛엔베리믹스넛 440g  믹스넛 15,000 https://www.ssg.com/item/itemView.ssg?itemId=1000058737289&siteNo=6009&salestrNo=1004&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 23,
+          "entity": "상품명"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "크린랩 다용도용 고무장갑 (M)중 10켤레 15,100 https://www.ssg.com/item/itemView.ssg?itemId=1000557357327&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 23,
+          "entity": "상품명"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "감동 [유명산지][특가상품]감자 5kg 특크기(찜용/요리용크기) 15,240 https://www.ssg.com/item/itemView.ssg?itemId=1000011317541&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 35,
+          "entity": "상품명"
+        },
+        {
+          "start": 36,
+          "end": 42,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "해피바스 [금주특가]해피바스 PH4.5 쑥 버블 여성청결제 250ml 2개 15,800 https://www.ssg.com/item/itemView.ssg?itemId=1000264134868&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 41,
+          "entity": "상품명"
+        },
+        {
+          "start": 42,
+          "end": 48,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "넛츠팜 요거트 믹스넛 1kg (원통) 15,900 https://www.ssg.com/item/itemView.ssg?itemId=1000011469952&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 20,
+          "entity": "상품명"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "넛츠팜 믹스너트 1kg 15,900 https://www.ssg.com/item/itemView.ssg?itemId=0000010567331&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 12,
+          "entity": "상품명"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "숀리 [SSG특가]엑스바이크 메타 가정용 실내자전거 즈위프트 센서 사이클 게임 151,000 https://www.ssg.com/item/itemView.ssg?itemId=1000555350149&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 43,
+          "entity": "상품명"
+        },
+        {
+          "start": 44,
+          "end": 51,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "스포틀러 [SSG특가]엑스바이크 E3 메타 즈위프트 실내 자전거 게임 가정용 접이식 헬스 사이클 156,900 https://www.ssg.com/item/itemView.ssg?itemId=1000555947223&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 53,
+          "entity": "상품명"
+        },
+        {
+          "start": 54,
+          "end": 61,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "리하스 [비밀특가] 리하스 리슐랭 올스텐 대용량 오븐 에어프라이어 16리터 KHD-18L 159,000 https://www.ssg.com/item/itemView.ssg?itemId=1000418030523&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 49,
+          "entity": "상품명"
+        },
+        {
+          "start": 50,
+          "end": 57,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "비더마틱 [비밀특가_득템찬스] 비더마틱 울트라 보습! 로션/크림/워시 대용량 모음전+ [크림30ml증정] 16,000 https://www.ssg.com/item/itemView.ssg?itemId=1000544799370&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 58,
+          "entity": "상품명"
+        },
+        {
+          "start": 59,
+          "end": 65,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "비더마틱 [비밀특가_득템찬스] 비더마틱 울트라 보습! 로션/크림/워시 대용량 모음전+ [크림30ml증정] 16,000 https://www.ssg.com/item/itemView.ssg?itemId=1000544799370&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PCart",
+      "labels": [
+        {
+          "start": 0,
+          "end": 58,
+          "entity": "상품명"
+        },
+        {
+          "start": 59,
+          "end": 65,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "바디판타지 [1+1]바디 판타지 바디미스트 236ml_특가 16,500 https://www.ssg.com/item/itemView.ssg?itemId=1000530236135&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 32,
+          "entity": "상품명"
+        },
+        {
+          "start": 33,
+          "end": 39,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "해피바스 [금주특가]해피바스 오리지널컬렉션 코튼 바디워시 910g 2개 17,000 https://www.ssg.com/item/itemView.ssg?itemId=1000340783971&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 39,
+          "entity": "상품명"
+        },
+        {
+          "start": 40,
+          "end": 46,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "해피바스 [금주특가]해피바스 오리지널컬렉션 라벤더 바디워시 910g 2개 17,000 https://www.ssg.com/item/itemView.ssg?itemId=1000340771442&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 40,
+          "entity": "상품명"
+        },
+        {
+          "start": 41,
+          "end": 47,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "클라르하임 [행사특가][역시즌특가]에일린 양면(모달/인견) 여름차렵 풀세트 Q (이불+패드+베개커버) 180,000 https://www.ssg.com/item/itemView.ssg?itemId=1000546574627&siteNo=6009&salestrNo=1008&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 56,
+          "entity": "상품명"
+        },
+        {
+          "start": 57,
+          "end": 64,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "게스 남여공용 맨투맨 맛집! 게스한정특가전! 19,465 https://www.ssg.com/item/itemView.ssg?itemId=1000054823747&siteNo=6009&salestrNo=1004&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PReview",
+      "labels": [
+        {
+          "start": 0,
+          "end": 24,
+          "entity": "상품명"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "닌텐도 스위치 PS 콘솔게임 인기상품 특가 행사 19,800 https://www.ssg.com/item/itemView.ssg?itemId=1000550558098&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 26,
+          "entity": "상품명"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "DAELIM 디클린 멀티 필터 샤워기(실속형) 19,900 https://www.ssg.com/item/itemView.ssg?itemId=1000034979455&siteNo=6001&salestrNo=2037&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 25,
+          "entity": "상품명"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "샥즈 [비밀특가] 샥즈 오픈스윔 골전도 MP3 이어폰 S700 190,650 https://www.ssg.com/item/itemView.ssg?itemId=1000550732562&siteNo=6009&salestrNo=1004&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 34,
+          "entity": "상품명"
+        },
+        {
+          "start": 35,
+          "end": 42,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "헤지스레이디스 [22FW] [단독 특가] [PUPPY]카키 퍼피자수 양면캐주얼   HSJU2DL31K2 192,267 https://www.ssg.com/item/itemView.ssg?itemId=1000508322580&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 57,
+          "entity": "상품명"
+        },
+        {
+          "start": 58,
+          "end": 65,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "마리끌레르 [한정수량 특가]오픈카라 플레어 셔링원피스(MODBOP22M6) 199,430 https://www.ssg.com/item/itemView.ssg?itemId=1000548346341&siteNo=6009&salestrNo=1007&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PCart",
+      "labels": [
+        {
+          "start": 0,
+          "end": 41,
+          "entity": "상품명"
+        },
+        {
+          "start": 42,
+          "end": 49,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가] D2178A. 뷰티레스트 시트러스. 라지킹 침대 2,145,900 https://www.ssg.com/item/itemView.ssg?itemId=1000081757602&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 37,
+          "entity": "상품명"
+        },
+        {
+          "start": 38,
+          "end": 47,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가] 뷰티레스트 바이브. 퀸 매트리스 2,237,800 https://www.ssg.com/item/itemView.ssg?itemId=1000127542410&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 28,
+          "entity": "상품명"
+        },
+        {
+          "start": 29,
+          "end": 38,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가] D2178A. 뷰티레스트 스위트. 킹오브킹 침대 2,284,700 https://www.ssg.com/item/itemView.ssg?itemId=1000550676425&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 37,
+          "entity": "상품명"
+        },
+        {
+          "start": 38,
+          "end": 47,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "삼성 [특가 223만/울트라7업그레이드]삼성 갤럭시북2 프로 32GB/1TB/윈도우11 노트북 2,339,100 https://www.ssg.com/item/itemView.ssg?itemId=1000406477969&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 52,
+          "entity": "상품명"
+        },
+        {
+          "start": 53,
+          "end": 62,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가 D2178A. 뷰티레스트 시트러스. 킹오브킹 침대 2,418,700 https://www.ssg.com/item/itemView.ssg?itemId=1000550676428&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 37,
+          "entity": "상품명"
+        },
+        {
+          "start": 38,
+          "end": 47,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "크린손 안낀듯 식품용 고무장갑 10P 2,430 https://www.ssg.com/item/itemView.ssg?itemId=1000548330358&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 20,
+          "entity": "상품명"
+        },
+        {
+          "start": 21,
+          "end": 26,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가] D2178A. 뷰티레스트 허브. 라지킹 침대 2,438,800 https://www.ssg.com/item/itemView.ssg?itemId=1000127576191&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 35,
+          "entity": "상품명"
+        },
+        {
+          "start": 36,
+          "end": 45,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "3M 베이비핑크 고무장갑 (중) 기획특가상품입니다 2,530 https://www.ssg.com/item/itemView.ssg?itemId=2097000984438&siteNo=6001&salestrNo=2449&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 27,
+          "entity": "상품명"
+        },
+        {
+          "start": 28,
+          "end": 33,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "3M 베이비핑크 고무장갑 (소) 기획특가상품입니다 2,530 https://www.ssg.com/item/itemView.ssg?itemId=2097000984216&siteNo=6001&salestrNo=2449&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 27,
+          "entity": "상품명"
+        },
+        {
+          "start": 28,
+          "end": 33,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "3M 베이비핑크 고무장갑 (대) 기획특가상품입니다 2,530 https://www.ssg.com/item/itemView.ssg?itemId=2097000984186&siteNo=6001&salestrNo=2449&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 27,
+          "entity": "상품명"
+        },
+        {
+          "start": 28,
+          "end": 33,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "3M 베이비핑크 고무장갑 (중) 기획특가상품입니다 2,530 https://www.ssg.com/item/itemView.ssg?itemId=2097000984438&siteNo=6001&salestrNo=2449&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PGift",
+      "labels": [
+        {
+          "start": 0,
+          "end": 27,
+          "entity": "상품명"
+        },
+        {
+          "start": 28,
+          "end": 33,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "3M 베이비핑크 고무장갑 (대) 기획특가상품입니다 2,530 https://www.ssg.com/item/itemView.ssg?itemId=2097000984186&siteNo=6001&salestrNo=2449&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 27,
+          "entity": "상품명"
+        },
+        {
+          "start": 28,
+          "end": 33,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "[특가]매화 공기 핑크 도자기 밥그릇 2,550 https://www.ssg.com/item/itemView.ssg?itemId=1000526422387&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PCart",
+      "labels": [
+        {
+          "start": 0,
+          "end": 20,
+          "entity": "상품명"
+        },
+        {
+          "start": 21,
+          "end": 26,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가] D2178A. 뷰티레스트 자스민. 퀸 침대 2,666,600 https://www.ssg.com/item/itemView.ssg?itemId=1000127567057&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 34,
+          "entity": "상품명"
+        },
+        {
+          "start": 35,
+          "end": 44,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "LG 특가모델[LG전자] 업소용 냉장냉동고 C170LDZB (조립형, 4/6냉장, 2/6냉동) 1,610L 2,790,200 https://www.ssg.com/item/itemView.ssg?itemId=1000017125017&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 59,
+          "entity": "상품명"
+        },
+        {
+          "start": 60,
+          "end": 69,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가] D2178A. 뷰티레스트 허브. 킹오브킹 침대 2,847,500 https://www.ssg.com/item/itemView.ssg?itemId=1000256765491&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 36,
+          "entity": "상품명"
+        },
+        {
+          "start": 37,
+          "end": 46,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "마리끌레르 2024 새해 프로모션 인기 아이템 할인전 + 추가 쿠폰할인 20,000 https://www.ssg.com/item/dealItemView.ssg?itemId=1000051137446&siteNo=6009&salestrNo=1002&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PClick",
+      "labels": [
+        {
+          "start": 0,
+          "end": 39,
+          "entity": "상품명"
+        },
+        {
+          "start": 40,
+          "end": 46,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "자연은 [특가]자연은/가야 토마토 주스 340ml 24입 20,000 https://www.ssg.com/item/itemView.ssg?itemId=1000564364236&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 31,
+          "entity": "상품명"
+        },
+        {
+          "start": 32,
+          "end": 38,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "에어메이드 [SSG특가] 에어메이드 글라이드 무선 물걸레청소기 AMC-2150 219,000 https://www.ssg.com/item/itemView.ssg?itemId=1000240574280&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 43,
+          "entity": "상품명"
+        },
+        {
+          "start": 44,
+          "end": 51,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "에어메이드 [SSG특가] 480W 모터평생보증  프리미엄 무선 진공청소기  AMC-4500 219,000 https://www.ssg.com/item/itemView.ssg?itemId=1000244833882&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 50,
+          "entity": "상품명"
+        },
+        {
+          "start": 51,
+          "end": 58,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "웅진식품 [특가]자연은/가야 토마토 주스 500ml 20입 22,900 https://www.ssg.com/item/itemView.ssg?itemId=0000010626934&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 32,
+          "entity": "상품명"
+        },
+        {
+          "start": 33,
+          "end": 39,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "샥즈 [비밀특가] 샥즈 오픈런 프로 미니 골전도 블루투스 이어폰 S811MINI 222,270 https://www.ssg.com/item/itemView.ssg?itemId=1000543943869&siteNo=6009&salestrNo=1004&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 44,
+          "entity": "상품명"
+        },
+        {
+          "start": 45,
+          "end": 52,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "클라르하임 [행사특가]클라르하임 낮은 베개 저데니아 경추베개 50*70 23,000 https://www.ssg.com/item/itemView.ssg?itemId=1000029704118&siteNo=6009&salestrNo=1004&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PGift",
+      "labels": [
+        {
+          "start": 0,
+          "end": 39,
+          "entity": "상품명"
+        },
+        {
+          "start": 40,
+          "end": 46,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "클라르하임 [행사특가]클라르하임 낮은 베개 저데니아 경추베개 50*70 23,000 https://www.ssg.com/item/itemView.ssg?itemId=1000029704118&siteNo=6009&salestrNo=1004&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 39,
+          "entity": "상품명"
+        },
+        {
+          "start": 40,
+          "end": 46,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "무스텔라 [공식수입원] 무스텔라 이드라베베 페이셜 크림 40ml 2개 (수분크림) 24,300 https://www.ssg.com/item/itemView.ssg?itemId=1000048443468&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 45,
+          "entity": "상품명"
+        },
+        {
+          "start": 46,
+          "end": 52,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "조아제약 풍성한 비오틴 5000 / 고함량 비오틴 맥주효모 탈모관리 건강기능식품 24,500 https://www.ssg.com/item/itemView.ssg?itemId=1000409905025&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=1008616199&advertExtensTeryDivCd=10",
+      "labels": [
+        {
+          "start": 0,
+          "end": 44,
+          "entity": "상품명"
+        },
+        {
+          "start": 45,
+          "end": 51,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "일리윤 [1/1~7 신년특가]일리윤 세라마이드 아토 로션 350ML 2개 +증정 27,801 https://www.ssg.com/item/itemView.ssg?itemId=1000297404067&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 44,
+          "entity": "상품명"
+        },
+        {
+          "start": 45,
+          "end": 51,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "웅진식품 [특가]자연은 음료선물세트 180ml 12병 4세트 (12종 택1) 27,900 https://www.ssg.com/item/itemView.ssg?itemId=1000527251301&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 42,
+          "entity": "상품명"
+        },
+        {
+          "start": 43,
+          "end": 49,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "닥터아토 더블 리놀렌 카밍로션 267ml 2입 + 리얼소프트 비누 1입 28,800 https://www.ssg.com/item/itemView.ssg?itemId=1000037006227&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 39,
+          "entity": "상품명"
+        },
+        {
+          "start": 40,
+          "end": 46,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "*라이브 특가[던롭코리아정품]젝시오12 레이디스 드라이버,우드,하이브리드,아이언 280,000 https://www.ssg.com/item/itemView.ssg?itemId=1000555567771&siteNo=6009&salestrNo=1024&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 44,
+          "entity": "상품명"
+        },
+        {
+          "start": 45,
+          "end": 52,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "제주 삼다수 2L X 24병 29,008 https://www.ssg.com/item/itemView.ssg?itemId=1000056805815&siteNo=6002&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 15,
+          "entity": "상품명"
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "웅진식품 [특가]하늘보리 외 차류 1.5L 24펫 (자색옥수수수염차 결명자차 누룽지차 헛개차) 29,667 https://www.ssg.com/item/itemView.ssg?itemId=1000552184045&siteNo=6002&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 52,
+          "entity": "상품명"
+        },
+        {
+          "start": 53,
+          "end": 59,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "에어메이드 [SSG특가] 에어메이드 프리미엄 무선 자동세척 물걸레청소기 글라이드S AMC-2500 299,000 https://www.ssg.com/item/itemView.ssg?itemId=1000570036624&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 54,
+          "entity": "상품명"
+        },
+        {
+          "start": 55,
+          "end": 62,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "삼성 QLED 4K Smart TV 214cm KQ85QC68AFXKR 벽걸이 3,025,000 https://www.ssg.com/item/itemView.ssg?itemId=1000561935225&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 43,
+          "entity": "상품명"
+        },
+        {
+          "start": 44,
+          "end": 53,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가] 카누스. 뷰티레스트 허브. 킹오브킹 침대 3,229,400 https://www.ssg.com/item/itemView.ssg?itemId=1000256775461&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 33,
+          "entity": "상품명"
+        },
+        {
+          "start": 34,
+          "end": 43,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가] 테아노. 뷰티레스트 허브. 킹오브킹 침대 3,256,200 https://www.ssg.com/item/itemView.ssg?itemId=1000256775325&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 33,
+          "entity": "상품명"
+        },
+        {
+          "start": 34,
+          "end": 43,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가] D2178A. 뷰티레스트 자스민. 라지킹 침대 3,323,200 https://www.ssg.com/item/itemView.ssg?itemId=1000127576243&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 36,
+          "entity": "상품명"
+        },
+        {
+          "start": 37,
+          "end": 46,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가] 아를라. 뷰티레스트 시트러스. 라지킹 침대 3,353,400 https://www.ssg.com/item/itemView.ssg?itemId=1000534158675&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 34,
+          "entity": "상품명"
+        },
+        {
+          "start": 35,
+          "end": 44,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가] 로울. 뷰티레스트 자스민. 퀸 침대 3,711,800 https://www.ssg.com/item/itemView.ssg?itemId=1000127567514&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 30,
+          "entity": "상품명"
+        },
+        {
+          "start": 31,
+          "end": 40,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가] 올로. 뷰티레스트 퓨전. 킹오브킹 침대 3,792,200 https://www.ssg.com/item/itemView.ssg?itemId=1000296395062&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 32,
+          "entity": "상품명"
+        },
+        {
+          "start": 33,
+          "end": 42,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가] D2178A. 뷰티레스트 자스민. 킹오브킹 침대 3,906,100 https://www.ssg.com/item/itemView.ssg?itemId=1000256765568&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 37,
+          "entity": "상품명"
+        },
+        {
+          "start": 38,
+          "end": 47,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "영실업 [SSG특가]영실업 LOL 서프라이즈 미니스 뽑기 머신(랜덤) 31,160 https://www.ssg.com/item/itemView.ssg?itemId=1000522153874&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 38,
+          "entity": "상품명"
+        },
+        {
+          "start": 39,
+          "end": 45,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "영실업 [신년특가]영실업 또봇V 킹포트란 31,350 https://www.ssg.com/item/itemView.ssg?itemId=1000284242473&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 22,
+          "entity": "상품명"
+        },
+        {
+          "start": 23,
+          "end": 29,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "위닉스 [공식인증점]시크릿 특가 위닉스 미니건조기 2세대 {HS2E400-MGK} 오가닉그린,최대 4kg 319,130 https://www.ssg.com/item/itemView.ssg?itemId=1000518414872&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 58,
+          "entity": "상품명"
+        },
+        {
+          "start": 59,
+          "end": 66,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "위닉스 [공식인증점]시크릿특가 위닉스 미니건조기 2세대{HS2E400-MEK} 화이트베이지,최대 4kg 319,130 https://www.ssg.com/item/itemView.ssg?itemId=1000518415158&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 57,
+          "entity": "상품명"
+        },
+        {
+          "start": 58,
+          "end": 65,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "러브앤쇼 겨울아우터 시즌오프 패딩/코트/가디건 3만원대부터~ 33,830 https://www.ssg.com/item/dealItemView.ssg?itemId=1000036395243&siteNo=6009&salestrNo=1002&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PClick",
+      "labels": [
+        {
+          "start": 0,
+          "end": 33,
+          "entity": "상품명"
+        },
+        {
+          "start": 34,
+          "end": 40,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "탑텐키즈 23년 S/S (여아) 플리츠 치마 레깅스 MKD1PT2102 35,900 https://www.ssg.com/item/itemView.ssg?itemId=1000541025925&siteNo=6009&salestrNo=1017&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 39,
+          "entity": "상품명"
+        },
+        {
+          "start": 40,
+          "end": 46,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "넛츠앤베리스 브라질넛 사차인치가 들어간 슈퍼믹스 20gx50봉 35,900 https://www.ssg.com/item/itemView.ssg?itemId=1000258462272&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 34,
+          "entity": "상품명"
+        },
+        {
+          "start": 35,
+          "end": 41,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "토니모리 (특가)마이 루미너스 젤 글로우 쿠션+사은품2/쿠션 리필(정가22,000원)과 마스크팩 7매 증정 35,910 https://www.ssg.com/item/itemView.ssg?itemId=1000523702455&siteNo=6009&salestrNo=1007&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 59,
+          "entity": "상품명"
+        },
+        {
+          "start": 60,
+          "end": 66,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "엘칸토 [시크릿특가] 엘칸토 마쯔 남성 오버랩 로퍼 2cm LCMC92I126 36,000 https://www.ssg.com/item/itemView.ssg?itemId=1000219224094&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PCart",
+      "labels": [
+        {
+          "start": 0,
+          "end": 43,
+          "entity": "상품명"
+        },
+        {
+          "start": 44,
+          "end": 50,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "웅진식품 [특가]자연은/가야 토마토주스 340ml 48펫 (총2박스 별도배송) 37,200 https://www.ssg.com/item/itemView.ssg?itemId=1000564485281&siteNo=6002&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 43,
+          "entity": "상품명"
+        },
+        {
+          "start": 44,
+          "end": 50,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "무스텔라 [공식수입원]무스텔라 베이비 오일 100ml 2개 (마사지오일) 37,260 https://www.ssg.com/item/itemView.ssg?itemId=1000048443587&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 40,
+          "entity": "상품명"
+        },
+        {
+          "start": 41,
+          "end": 47,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "브이티코스메틱 [시크릿특가] VT 리들샷 300 38,700 https://www.ssg.com/item/itemView.ssg?itemId=1000550408966&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 26,
+          "entity": "상품명"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "무스텔라 [공식수입원]무스텔라 수딩 클렌징 젤 300ml 2개 (민감피부 바디워시) 38,880 https://www.ssg.com/item/itemView.ssg?itemId=1000048443749&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 46,
+          "entity": "상품명"
+        },
+        {
+          "start": 47,
+          "end": 53,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "소노호텔앤리조트 소노펠리체빌리지비발디파크(강원도/홍천/리조트) 389,500 https://www.ssg.com/item/itemView.ssg?itemId=1000525666881&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 34,
+          "entity": "상품명"
+        },
+        {
+          "start": 35,
+          "end": 42,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "자연애벗 (타임특가) 자연애벗 소고기 발효 육포 15g  x 32봉 39,900 https://www.ssg.com/item/itemView.ssg?itemId=1000556693520&siteNo=6200&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 37,
+          "entity": "상품명"
+        },
+        {
+          "start": 38,
+          "end": 44,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "동원 랍스틱 김밥용 특가상품 140gX2개 4,280 https://www.ssg.com/item/itemView.ssg?itemId=0000008233374&siteNo=6001&salestrNo=2037&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PReview",
+      "labels": [
+        {
+          "start": 0,
+          "end": 23,
+          "entity": "상품명"
+        },
+        {
+          "start": 24,
+          "end": 29,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가] 카누스. 뷰티레스트 자스민. 킹오브킹 침대 4,288,000 https://www.ssg.com/item/itemView.ssg?itemId=1000256775534&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 34,
+          "entity": "상품명"
+        },
+        {
+          "start": 35,
+          "end": 44,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가] 로울. 뷰티레스트 자스민. 라지킹 침대 4,522,500 https://www.ssg.com/item/itemView.ssg?itemId=1000127576440&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 32,
+          "entity": "상품명"
+        },
+        {
+          "start": 33,
+          "end": 42,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가] 올로. 뷰티레스트 자스민. 킹오브킹 침대 4,649,800 https://www.ssg.com/item/itemView.ssg?itemId=1000296395057&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 33,
+          "entity": "상품명"
+        },
+        {
+          "start": 34,
+          "end": 43,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가] 라시드. 뷰티레스트 퓨전. 킹오브킹 침대 4,870,900 https://www.ssg.com/item/itemView.ssg?itemId=1000286070687&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 33,
+          "entity": "상품명"
+        },
+        {
+          "start": 34,
+          "end": 43,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "보아르 [비밀특가]이지전기포트 M1 접이식 분유포트 휴대용 전기 보온 포트 캠핑 40,755 https://www.ssg.com/item/itemView.ssg?itemId=1000556895690&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PGift",
+      "labels": [
+        {
+          "start": 0,
+          "end": 44,
+          "entity": "상품명"
+        },
+        {
+          "start": 45,
+          "end": 51,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "보아르 [비밀특가]이지전기포트 M1 접이식 분유포트 휴대용 전기 보온 포트 캠핑 40,755 https://www.ssg.com/item/itemView.ssg?itemId=1000556895690&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 44,
+          "entity": "상품명"
+        },
+        {
+          "start": 45,
+          "end": 51,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "삼성제약 아름채퀸 / 갱년기건강 혈행개선 프리미엄 복합기능성 여성영양제 41,500 https://www.ssg.com/item/itemView.ssg?itemId=1000068991397&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 39,
+          "entity": "상품명"
+        },
+        {
+          "start": 40,
+          "end": 46,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "삼성제약 아름채퀸 / 갱년기건강 혈행개선 프리미엄 복합기능성 여성영양제 41,500 https://www.ssg.com/item/itemView.ssg?itemId=1000068991397&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=1004620265&advertExtensTeryDivCd=10",
+      "labels": [
+        {
+          "start": 0,
+          "end": 39,
+          "entity": "상품명"
+        },
+        {
+          "start": 40,
+          "end": 46,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "일리윤 [1/1~7 신년특가]일리윤 울트라 리페어 로션 1056ml+ 추가증정 41,800 https://www.ssg.com/item/itemView.ssg?itemId=1000566284541&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 43,
+          "entity": "상품명"
+        },
+        {
+          "start": 44,
+          "end": 50,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "일리윤 [1/1~7 신년특가]일리윤 세라마이드 로션 1056ML+아토로션 160ML+증정 41,800 https://www.ssg.com/item/itemView.ssg?itemId=1000416734903&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 49,
+          "entity": "상품명"
+        },
+        {
+          "start": 50,
+          "end": 56,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "려 [시크릿특가] 려 루트젠 탈모전문케어 여성샴푸 515ml+400ml 리필팩*2 41,900 https://www.ssg.com/item/itemView.ssg?itemId=1000563285373&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 45,
+          "entity": "상품명"
+        },
+        {
+          "start": 46,
+          "end": 52,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "조아제약 풍성한 비오틴 5000 (30정 x 6박스) 42,500 https://www.ssg.com/item/itemView.ssg?itemId=1000517942974&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=1008616413&advertExtensTeryDivCd=10",
+      "labels": [
+        {
+          "start": 0,
+          "end": 29,
+          "entity": "상품명"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "한예지 신세계특가 천연펄프 핸드타올 페이퍼타올 5000매 42,583 https://www.ssg.com/item/itemView.ssg?itemId=1000029055563&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 31,
+          "entity": "상품명"
+        },
+        {
+          "start": 32,
+          "end": 38,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "웅진식품 [특가]하늘보리 외 차음료 500ml 60펫 (총3박스 선택) 42,687 https://www.ssg.com/item/itemView.ssg?itemId=1000380928169&siteNo=6002&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 39,
+          "entity": "상품명"
+        },
+        {
+          "start": 40,
+          "end": 46,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "삼성 특가 스마트모니터 M7 S32BM700 블랙 32인치 UHD 4K CTYPE 넷플릭스 Youtube 427,500 https://www.ssg.com/item/itemView.ssg?itemId=1000551819555&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 58,
+          "entity": "상품명"
+        },
+        {
+          "start": 59,
+          "end": 66,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "깨끗한나라 (특가) New 피오니 프리미엄 화장지 27미터 30롤 X 3팩 [총 90롤] 벚꽃 43,410 https://www.ssg.com/item/itemView.ssg?itemId=1000531329066&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 52,
+          "entity": "상품명"
+        },
+        {
+          "start": 53,
+          "end": 59,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "밀레 [여성] 특가(가을/겨울) 경량 구스 다운(2종 모음) MXRWD522/MXRWD501(최초가: 249,000원) 44,132 https://www.ssg.com/item/itemView.ssg?itemId=1000547738876&siteNo=6009&salestrNo=1018&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PReview",
+      "labels": [
+        {
+          "start": 0,
+          "end": 66,
+          "entity": "상품명"
+        },
+        {
+          "start": 67,
+          "end": 73,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "밀레 [여성] 특가(가을/겨울) 경량 구스 다운(2종 모음) MXRWD522/MXRWD501(최초가: 249,000원) 44,132 https://www.ssg.com/item/itemView.ssg?itemId=1000547738876&siteNo=6009&salestrNo=1018&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 66,
+          "entity": "상품명"
+        },
+        {
+          "start": 67,
+          "end": 73,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "드롱기 [비노출 특가] 드롱기 Magnifica S 전자동 에스프레소머신 ECAM22.110.B 452,990 https://www.ssg.com/item/itemView.ssg?itemId=1000555903863&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 53,
+          "entity": "상품명"
+        },
+        {
+          "start": 54,
+          "end": 61,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "드롱기 [비노출 특가] 드롱기 Magnifica S 전자동 에스프레소머신 ECAM22.110.B 452,990 https://www.ssg.com/item/itemView.ssg?itemId=1000555903863&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 53,
+          "entity": "상품명"
+        },
+        {
+          "start": 54,
+          "end": 61,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "아디다스 (이월)[아디다스] 남성 인기 드로즈 풀세트 특가세일전 48,370 https://www.ssg.com/item/itemView.ssg?itemId=1000551260370&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 35,
+          "entity": "상품명"
+        },
+        {
+          "start": 36,
+          "end": 42,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "편의점 3종(CU/GS25/세븐일레븐) 금액권 모음 5,000 https://www.ssg.com/item/dealItemView.ssg?itemId=1000543972850&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PClip",
+      "labels": [
+        {
+          "start": 0,
+          "end": 28,
+          "entity": "상품명"
+        },
+        {
+          "start": 29,
+          "end": 34,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "유제품 최대 ~50% 특가 모음전 5,480 https://www.ssg.com/item/dealItemView.ssg?itemId=1000034257335&siteNo=6001&salestrNo=2037&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 18,
+          "entity": "상품명"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "마모트 85사이즈 특가 후드 기모 짚업 MA20FLWMJK02_BK 5,600 https://www.ssg.com/item/itemView.ssg?itemId=1000563222798&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 37,
+          "entity": "상품명"
+        },
+        {
+          "start": 38,
+          "end": 43,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가] 라시드. 뷰티레스트 자스민. 킹오브킹 침대 5,728,500 https://www.ssg.com/item/itemView.ssg?itemId=1000286070696&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 34,
+          "entity": "상품명"
+        },
+        {
+          "start": 35,
+          "end": 44,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "크로커다일 [한정컬러특가] 렉스퍼카라덕다운패딩점퍼_CL0WDW103 50,000 https://www.ssg.com/item/itemView.ssg?itemId=1000543309706&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 37,
+          "entity": "상품명"
+        },
+        {
+          "start": 38,
+          "end": 44,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "포나리나 [최초가 199000][포나리나] [비밀특가]워너비 업 니트 스니커즈 F212SE01 53,100 https://www.ssg.com/item/itemView.ssg?itemId=1000548760640&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 52,
+          "entity": "상품명"
+        },
+        {
+          "start": 53,
+          "end": 59,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "포나리나 [최초가 219000][포나리나] [비밀특가]스텔라 플라이삭스 업 니트 6.5cm 부츠 F202SE01 53,100 https://www.ssg.com/item/itemView.ssg?itemId=1000548760691&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 62,
+          "entity": "상품명"
+        },
+        {
+          "start": 63,
+          "end": 69,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "래핑차일드 22년 FW 아동) 인기 핫 ! 덕 다운 숏/롱패딩 단독 특가전   [100-160] 53,100 https://www.ssg.com/item/itemView.ssg?itemId=1000563975740&siteNo=6009&salestrNo=1010&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 53,
+          "entity": "상품명"
+        },
+        {
+          "start": 54,
+          "end": 60,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "포나리나 [최초가 199000][포나리나] [비밀특가]워너비 업 니트 스니커즈 F212SE01 53,100 https://www.ssg.com/item/itemView.ssg?itemId=1000548760640&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PReview",
+      "labels": [
+        {
+          "start": 0,
+          "end": 52,
+          "entity": "상품명"
+        },
+        {
+          "start": 53,
+          "end": 59,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "호재 [SSG단독][리퍼브][정상가:128,000원]FOLDED LIMITED_7COLOR 59,000 https://www.ssg.com/item/itemView.ssg?itemId=1000051761995&siteNo=6009&salestrNo=1019&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PReview",
+      "labels": [
+        {
+          "start": 0,
+          "end": 50,
+          "entity": "상품명"
+        },
+        {
+          "start": 51,
+          "end": 57,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "탑텐키즈 정상가 25,900원 아동) 특가 오가닉테리 스몰그래픽 맨투맨(MKC3TR3001) 6,514 https://www.ssg.com/item/itemView.ssg?itemId=1000482166845&siteNo=6009&salestrNo=1017&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 51,
+          "entity": "상품명"
+        },
+        {
+          "start": 52,
+          "end": 57,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "탑텐키즈 정상가 25,900원 아동) 특가 오가닉테리 스몰그래픽 맨투맨(MKC3TR3001) 6,514 https://www.ssg.com/item/itemView.ssg?itemId=1000482166845&siteNo=6009&salestrNo=1017&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PGift",
+      "labels": [
+        {
+          "start": 0,
+          "end": 51,
+          "entity": "상품명"
+        },
+        {
+          "start": 52,
+          "end": 57,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "롯데리아 금액권/단품권 BEST구성 특가 6,900 https://www.ssg.com/item/dealItemView.ssg?itemId=1000540044384&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PClip",
+      "labels": [
+        {
+          "start": 0,
+          "end": 22,
+          "entity": "상품명"
+        },
+        {
+          "start": 23,
+          "end": 28,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "아디다스골프 [특가] 아디다스 폴로 긴팔티셔츠 HG3289 HG3293 HG3295 60,900 https://www.ssg.com/item/itemView.ssg?itemId=1000560216797&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 46,
+          "entity": "상품명"
+        },
+        {
+          "start": 47,
+          "end": 53,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "포나리나 [최초가 249000][포나리나] [비밀특가]하이텐션 스페셜 6.5cm 스판 롱부츠 F202SE03 62,100 https://www.ssg.com/item/itemView.ssg?itemId=1000548760662&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 60,
+          "entity": "상품명"
+        },
+        {
+          "start": 61,
+          "end": 67,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "보아르 [비밀특가][올스테인레스]이지전기포트S 휴대용 접이식 무선 분유포트 여행용 올스텐 커피포트 64,505 https://www.ssg.com/item/itemView.ssg?itemId=1000566799737&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 54,
+          "entity": "상품명"
+        },
+        {
+          "start": 55,
+          "end": 61,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "해피바스 [금주특가]해피바스 PH4.5 쑥 버블 여성청결제 250ml 7,900 https://www.ssg.com/item/itemView.ssg?itemId=1000063712521&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 38,
+          "entity": "상품명"
+        },
+        {
+          "start": 39,
+          "end": 44,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "해피바스 [금주특가]NEW 해피바스 PH4.5 약산성 쑥 버블 여성청결제 250g 7,900 https://www.ssg.com/item/itemView.ssg?itemId=1000520170948&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 45,
+          "entity": "상품명"
+        },
+        {
+          "start": 46,
+          "end": 51,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "모나코올리브 짱짱 니트릴 고무장갑 5세트 7,900 https://www.ssg.com/item/itemView.ssg?itemId=1000273043971&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 22,
+          "entity": "상품명"
+        },
+        {
+          "start": 23,
+          "end": 28,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "[맛있는이야기] 믹스너트 1kg 7,900 https://www.ssg.com/item/itemView.ssg?itemId=1000533955276&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 17,
+          "entity": "상품명"
+        },
+        {
+          "start": 18,
+          "end": 23,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "일리윤 [1/1~7 신년특가]일리윤 세라마이드 아토 로션 대용량 528ML*3+350ml 76,301 https://www.ssg.com/item/itemView.ssg?itemId=1000563290439&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 49,
+          "entity": "상품명"
+        },
+        {
+          "start": 50,
+          "end": 56,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "네파 [7HF2060] 특가 가벼운 남녀공용  푸퍼 미드 다운 자켓 (기존가:309,000) 79,259 https://www.ssg.com/item/itemView.ssg?itemId=1000523954954&siteNo=6009&salestrNo=1009&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 51,
+          "entity": "상품명"
+        },
+        {
+          "start": 52,
+          "end": 58,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "다우니, 오랄비, 질레트 최대 1+1 다우니 기획팩 특가/오랄비 최대 1+1 8,300 https://www.ssg.com/item/dealItemView.ssg?itemId=1000025288781&siteNo=6001&salestrNo=2037&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 42,
+          "entity": "상품명"
+        },
+        {
+          "start": 43,
+          "end": 48,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "크린손 라텍스장갑 100P 8,460 https://www.ssg.com/item/itemView.ssg?itemId=1000548329375&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 14,
+          "entity": "상품명"
+        },
+        {
+          "start": 15,
+          "end": 20,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "해피바스 [금주특가]해피바스 오리지널컬렉션 코튼 바디워시 910g 1개 8,500 https://www.ssg.com/item/itemView.ssg?itemId=1000340756543&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 39,
+          "entity": "상품명"
+        },
+        {
+          "start": 40,
+          "end": 45,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "해피바스 [금주특가]해피바스 오리지널컬렉션 라벤더 바디워시 910g 1개 8,500 https://www.ssg.com/item/itemView.ssg?itemId=1000340714530&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 40,
+          "entity": "상품명"
+        },
+        {
+          "start": 41,
+          "end": 46,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "삼성제약 명품 황기단 / 활력충전 기력회복 체력보강 원기회복 81,500 https://www.ssg.com/item/itemView.ssg?itemId=1000069944196&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PGift",
+      "labels": [
+        {
+          "start": 0,
+          "end": 33,
+          "entity": "상품명"
+        },
+        {
+          "start": 34,
+          "end": 40,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "삼성제약 명품 황기단 / 활력충전 기력회복 체력보강 원기회복 81,500 https://www.ssg.com/item/itemView.ssg?itemId=1000069944196&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=1003090566&advertExtensTeryDivCd=10",
+      "labels": [
+        {
+          "start": 0,
+          "end": 33,
+          "entity": "상품명"
+        },
+        {
+          "start": 34,
+          "end": 40,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "마리끌레르 [역시즌특가] 레이스 블록 플레어 블라우스(MODBBL16M4) 83,930 https://www.ssg.com/item/itemView.ssg?itemId=1000548345505&siteNo=6009&salestrNo=1002&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PCart",
+      "labels": [
+        {
+          "start": 0,
+          "end": 41,
+          "entity": "상품명"
+        },
+        {
+          "start": 42,
+          "end": 48,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "영실업 [신년특가][무료배송]영실업 고글램 네일 유니크 9,310 https://www.ssg.com/item/itemView.ssg?itemId=1000518341152&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 30,
+          "entity": "상품명"
+        },
+        {
+          "start": 31,
+          "end": 36,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "기본에 끼고 벗기 쉬운 고무장갑 그레이 M 3개 9,500 https://www.ssg.com/item/itemView.ssg?itemId=2097001619933&siteNo=6001&salestrNo=2569&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 26,
+          "entity": "상품명"
+        },
+        {
+          "start": 27,
+          "end": 32,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "올젠 [올젠 ] 간절기 긴팔셔츠 12종 1만원 균일특가 9,800 https://www.ssg.com/item/itemView.ssg?itemId=1000558102915&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 30,
+          "entity": "상품명"
+        },
+        {
+          "start": 31,
+          "end": 36,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "넛츠팜 믹스넛 900g 9,900 https://www.ssg.com/item/itemView.ssg?itemId=0000010551329&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 12,
+          "entity": "상품명"
+        },
+        {
+          "start": 13,
+          "end": 18,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "좌식 다리미판 (소형) 9,900 https://www.ssg.com/item/itemView.ssg?itemId=1000053746934&siteNo=6001&salestrNo=2037&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 12,
+          "entity": "상품명"
+        },
+        {
+          "start": 13,
+          "end": 18,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "시몬스 [비밀특가] 2개묶음. N32 토퍼 SS+SS 911,200 https://www.ssg.com/item/itemView.ssg?itemId=1000409877576&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 29,
+          "entity": "상품명"
+        },
+        {
+          "start": 30,
+          "end": 37,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "쌤소나이트 캐리어 기내용, 화물용 6종 특가모음 92,500 https://www.ssg.com/item/itemView.ssg?itemId=1000406444528&siteNo=6004&salestrNo=6005&tlidSrchWd=특가&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 26,
+          "entity": "상품명"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "농심 우와한 콩칩42g 1,980 https://www.ssg.com/item/itemView.ssg?itemId=2097001771648&siteNo=6001&salestrNo=2569&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 12,
+          "entity": "상품명"
+        },
+        {
+          "start": 13,
+          "end": 18,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "키즈웰 젤리스트로우 복숭아맛 193g 1,980 https://www.ssg.com/item/itemView.ssg?itemId=1000548358096&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 20,
+          "entity": "상품명"
+        },
+        {
+          "start": 21,
+          "end": 26,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "키즈웰 젤리스트로우 복숭아맛 193g 1,980 https://www.ssg.com/item/itemView.ssg?itemId=1000548358096&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PReview",
+      "labels": [
+        {
+          "start": 0,
+          "end": 20,
+          "entity": "상품명"
+        },
+        {
+          "start": 21,
+          "end": 26,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "3M  1입대비 40%할인 3M 항균망사 10입 큐브 10,580 https://www.ssg.com/item/itemView.ssg?itemId=2097001345573&siteNo=6001&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 29,
+          "entity": "상품명"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "3M  1입대비 40%할인 3M 항균망사 10입 큐브 10,580 https://www.ssg.com/item/itemView.ssg?itemId=2097001345573&siteNo=6001&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 29,
+          "entity": "상품명"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "3M  1입대비 40%할인 3M 항균망사 10입 큐브 10,580 https://www.ssg.com/item/itemView.ssg?itemId=2097001345573&siteNo=6001&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 29,
+          "entity": "상품명"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "오희숙전통부각 찹쌀 연근부각 200g 10,880 https://www.ssg.com/item/itemView.ssg?itemId=1000265306506&siteNo=6002&salestrNo=2154&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 20,
+          "entity": "상품명"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "동원에프앤비 동원 참기름전장김 20g X 10봉 11,180 https://www.ssg.com/item/itemView.ssg?itemId=1000022788526&siteNo=6002&salestrNo=2154&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 26,
+          "entity": "상품명"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "매일 [매일유업 데르뜨] 생크림 카스테라 4개 세트 11,200 https://www.ssg.com/item/itemView.ssg?itemId=2097001532416&siteNo=7009&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PReview",
+      "labels": [
+        {
+          "start": 0,
+          "end": 28,
+          "entity": "상품명"
+        },
+        {
+          "start": 29,
+          "end": 35,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "매일 [매일유업 데르뜨] 황치즈 카스테라 4개 세트 11,200 https://www.ssg.com/item/itemView.ssg?itemId=2097001532423&siteNo=7009&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 28,
+          "entity": "상품명"
+        },
+        {
+          "start": 29,
+          "end": 35,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "매일 [매일유업 데르뜨] 생크림 카스테라 4개 세트 11,200 https://www.ssg.com/item/itemView.ssg?itemId=2097001532416&siteNo=7009&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 28,
+          "entity": "상품명"
+        },
+        {
+          "start": 29,
+          "end": 35,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "참다올 알밤단팥빵 4개 11,440 https://www.ssg.com/item/itemView.ssg?itemId=1000549491527&siteNo=6002&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 12,
+          "entity": "상품명"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "농부곳간 국내산 적양배추 1통 1.3kg 내외 샐러드용, 피클 11,900 https://www.ssg.com/item/itemView.ssg?itemId=1000299234696&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 34,
+          "entity": "상품명"
+        },
+        {
+          "start": 35,
+          "end": 41,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "팸쿡 가락시장 직송 미니양배추 500g 11,900 https://www.ssg.com/item/itemView.ssg?itemId=1000018770002&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 21,
+          "entity": "상품명"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "친환경 무농약 양배추 2kg 11,900 https://www.ssg.com/item/itemView.ssg?itemId=1000449601900&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 15,
+          "entity": "상품명"
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "땅콩버터 오징어채 220g 11,980 https://www.ssg.com/item/itemView.ssg?itemId=1000518316511&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 14,
+          "entity": "상품명"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "휠라키즈 50% 할인 구스 이글 다운 점퍼 3칼라 110,000 https://www.ssg.com/item/itemView.ssg?itemId=1000524979212&siteNo=6009&salestrNo=1004&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 27,
+          "entity": "상품명"
+        },
+        {
+          "start": 28,
+          "end": 35,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "미쟝센 [가격할인]미쟝센 스킨케어 퍼퓸 샴푸 페어엔프리지아향 900ml 12,900 https://www.ssg.com/item/itemView.ssg?itemId=1000251847600&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 39,
+          "entity": "상품명"
+        },
+        {
+          "start": 40,
+          "end": 46,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "햇살조은 국내산 양배추 2통 (4kg내외) 소포장 12,900 https://www.ssg.com/item/itemView.ssg?itemId=1000022140421&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 27,
+          "entity": "상품명"
+        },
+        {
+          "start": 28,
+          "end": 34,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "주식회사 부일 [냉동][태국] 칵테일 새우 (51-60) (450g) 12,980 https://www.ssg.com/item/itemView.ssg?itemId=1000050449990&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PReview",
+      "labels": [
+        {
+          "start": 0,
+          "end": 38,
+          "entity": "상품명"
+        },
+        {
+          "start": 39,
+          "end": 45,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "청해명가 [국산의힘] 짜지않아 맛있는 삼천포멸치 300g 12,980 https://www.ssg.com/item/itemView.ssg?itemId=1000049028203&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 31,
+          "entity": "상품명"
+        },
+        {
+          "start": 32,
+          "end": 38,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "미미의밥상 국내산 양배추 8kg(4통) 13,900 https://www.ssg.com/item/itemView.ssg?itemId=1000567265229&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 21,
+          "entity": "상품명"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "신화fs 버터구이 대왕 오징어 180g (90g*2) 13,980 https://www.ssg.com/item/itemView.ssg?itemId=1000056020843&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PReview",
+      "labels": [
+        {
+          "start": 0,
+          "end": 29,
+          "entity": "상품명"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "티스탠다드 생아몬드 1KG 13,980 https://www.ssg.com/item/itemView.ssg?itemId=1000276954409&siteNo=6002&salestrNo=2154&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 14,
+          "entity": "상품명"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "티스탠다드 미국산볶음아몬드 1kg 13,980 https://www.ssg.com/item/itemView.ssg?itemId=1000054805105&siteNo=6002&salestrNo=2154&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 18,
+          "entity": "상품명"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "웨스틴 조선 서울 [5%할인] 뷔페 레스토랑 아리아 1인 식사권 (성인) 137,750 https://www.ssg.com/item/itemView.ssg?itemId=1000363514249&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 40,
+          "entity": "상품명"
+        },
+        {
+          "start": 41,
+          "end": 48,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "볶음땅콩 1.5kg 14,980 https://www.ssg.com/item/itemView.ssg?itemId=1000030964274&siteNo=6002&salestrNo=2154&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 10,
+          "entity": "상품명"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "감동 [1/22 순차출고][SSG상품권증정이벤트][냉장][장흥명품한우할인직판장] 구이1호 1.3kg(등심600g+채끝500g+안심200g) 149,000 https://www.ssg.com/item/itemView.ssg?itemId=1000009982861&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 77,
+          "entity": "상품명"
+        },
+        {
+          "start": 78,
+          "end": 85,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "참다올 [2박스] 쌀 알밤식빵 340g내외 15,000 https://www.ssg.com/item/itemView.ssg?itemId=1000549485055&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 23,
+          "entity": "상품명"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "웅진식품 [10%할인쿠폰]하늘보리 외 차류 1.5L 12펫 (옥수수수염차 결명자차 누룽지차 헛개차) 15,000 https://www.ssg.com/item/itemView.ssg?itemId=1000025002831&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 55,
+          "entity": "상품명"
+        },
+        {
+          "start": 56,
+          "end": 62,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "하겐다즈 [하겐다즈x피에르 에르메] 파인트 마카롱 유자 & 레몬 403ml 15,500 https://www.ssg.com/item/itemView.ssg?itemId=1000543467671&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 41,
+          "entity": "상품명"
+        },
+        {
+          "start": 42,
+          "end": 48,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "하겐다즈 [하겐다즈x피에르 에르메] 파인트 마카롱 딸기 & 라즈베리 403ml 15,500 https://www.ssg.com/item/itemView.ssg?itemId=1000541621015&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 43,
+          "entity": "상품명"
+        },
+        {
+          "start": 44,
+          "end": 50,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "하겐다즈 [하겐다즈x피에르 에르메] 파인트 마카롱 딸기 & 라즈베리 403ml 15,500 https://www.ssg.com/item/itemView.ssg?itemId=1000541621015&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PReview",
+      "labels": [
+        {
+          "start": 0,
+          "end": 43,
+          "entity": "상품명"
+        },
+        {
+          "start": 44,
+          "end": 50,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "3M  1입대비 35%할인 3M 그물망사 10입 큐브 16,480 https://www.ssg.com/item/itemView.ssg?itemId=2097001341070&siteNo=6001&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 29,
+          "entity": "상품명"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "3M  1입대비 35%할인 3M 그물망사 10입 큐브 16,480 https://www.ssg.com/item/itemView.ssg?itemId=2097001341070&siteNo=6001&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 29,
+          "entity": "상품명"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "미미의밥상 [푸디벨] 아이스 생크림 왕단팥빵 크앙빵 딸기맛 4봉 16,900 https://www.ssg.com/item/itemView.ssg?itemId=1000548745751&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 35,
+          "entity": "상품명"
+        },
+        {
+          "start": 36,
+          "end": 42,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "[냉동][태국] 쉬림프링 (453g) 16,980 https://www.ssg.com/item/itemView.ssg?itemId=1000023174066&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 20,
+          "entity": "상품명"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "참다올 오븐에 구운 버터도넛 40gx12 17,000 https://www.ssg.com/item/itemView.ssg?itemId=1000550529848&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 22,
+          "entity": "상품명"
+        },
+        {
+          "start": 23,
+          "end": 29,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "후라이드 깡 오징어 240g 17,180 https://www.ssg.com/item/itemView.ssg?itemId=1000493549117&siteNo=6002&salestrNo=2154&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 15,
+          "entity": "상품명"
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "3M  1입 대비 40% 할인  베이킹소다 물걸레청소포 2입 특별기획 표준형 17,900 https://www.ssg.com/item/itemView.ssg?itemId=1000328785461&siteNo=7009&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 42,
+          "entity": "상품명"
+        },
+        {
+          "start": 43,
+          "end": 49,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "미미의밥상 [당일생산] 촉촉한 플레인 대왕카스테라 1판 17,900 https://www.ssg.com/item/itemView.ssg?itemId=1000553027485&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 30,
+          "entity": "상품명"
+        },
+        {
+          "start": 31,
+          "end": 37,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "3M  1입 대비 40% 할인  베이킹소다 물걸레청소포 2입 특별기획 표준형 17,900 https://www.ssg.com/item/itemView.ssg?itemId=1000328785461&siteNo=7009&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 42,
+          "entity": "상품명"
+        },
+        {
+          "start": 43,
+          "end": 49,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "주식회사 부일 [냉동][태국] 자숙 새우살 (91-110) (450g) 17,980 https://www.ssg.com/item/itemView.ssg?itemId=1000050450026&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 39,
+          "entity": "상품명"
+        },
+        {
+          "start": 40,
+          "end": 46,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "하겐다즈 페이버릿 미니컵 셀렉션 18,200 https://www.ssg.com/item/itemView.ssg?itemId=1000053985912&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 17,
+          "entity": "상품명"
+        },
+        {
+          "start": 18,
+          "end": 24,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "하겐다즈 페이버릿 미니컵 셀렉션 18,200 https://www.ssg.com/item/itemView.ssg?itemId=1000053985912&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 17,
+          "entity": "상품명"
+        },
+        {
+          "start": 18,
+          "end": 24,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "하겐다즈 페이버릿 미니컵 셀렉션 18,200 https://www.ssg.com/item/itemView.ssg?itemId=1000053985912&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 17,
+          "entity": "상품명"
+        },
+        {
+          "start": 18,
+          "end": 24,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "주식회사 부일 [냉동][태국] 킹 새우살 (41-50) (450g) 18,980 https://www.ssg.com/item/itemView.ssg?itemId=1000050449989&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PReview",
+      "labels": [
+        {
+          "start": 0,
+          "end": 37,
+          "entity": "상품명"
+        },
+        {
+          "start": 38,
+          "end": 44,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "쇼핑의고수 [무료배송]제주 아삭한 고깔 양배추 6kg(5~10통 내외) 19,855 https://www.ssg.com/item/itemView.ssg?itemId=1000282458800&siteNo=6002&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 39,
+          "entity": "상품명"
+        },
+        {
+          "start": 40,
+          "end": 46,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "웅진식품 [15%할인쿠폰]빅토리아 500ml 40펫 (총2박스/별도배송) 19,900 https://www.ssg.com/item/itemView.ssg?itemId=1000028296008&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 40,
+          "entity": "상품명"
+        },
+        {
+          "start": 41,
+          "end": 47,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "(~50%) 금주 제철과일 행사 모음전 [감귤/딸기/사과] 19,900 https://www.ssg.com/item/dealItemView.ssg?itemId=1000217346475&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PClick",
+      "labels": [
+        {
+          "start": 0,
+          "end": 32,
+          "entity": "상품명"
+        },
+        {
+          "start": 33,
+          "end": 39,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "3M  1입 대비 41% 할인  베이킹소다 물걸레청소포 2입 특별기획 대형 19,900 https://www.ssg.com/item/itemView.ssg?itemId=1000328785458&siteNo=7009&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 41,
+          "entity": "상품명"
+        },
+        {
+          "start": 42,
+          "end": 48,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "3M  1입 대비 41% 할인  베이킹소다 물걸레청소포 2입 특별기획 대형 19,900 https://www.ssg.com/item/itemView.ssg?itemId=1000328785458&siteNo=7009&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 41,
+          "entity": "상품명"
+        },
+        {
+          "start": 42,
+          "end": 48,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "DAELIM 디클린 멀티 필터 샤워기(실속형) 19,900 https://www.ssg.com/item/itemView.ssg?itemId=1000034979455&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 25,
+          "entity": "상품명"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "DAELIM 디클린 멀티 필터 샤워기(실속형) 19,900 https://www.ssg.com/item/itemView.ssg?itemId=1000034979455&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 25,
+          "entity": "상품명"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "[해동][아르헨티나] 손질 오징어 (대, 마리) 2,480 https://www.ssg.com/item/itemView.ssg?itemId=1000051450426&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PReview",
+      "labels": [
+        {
+          "start": 0,
+          "end": 26,
+          "entity": "상품명"
+        },
+        {
+          "start": 27,
+          "end": 32,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "풀무원 노을해심 꼬마김밥 키트 (39.7g) 2,980 https://www.ssg.com/item/itemView.ssg?itemId=1000545710132&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 24,
+          "entity": "상품명"
+        },
+        {
+          "start": 25,
+          "end": 30,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "팸쿡 가락시장 직송 미니양배추 1kg 20,900 https://www.ssg.com/item/itemView.ssg?itemId=1000018770453&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 20,
+          "entity": "상품명"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "광복농산 국내산 찰수수쌀 2kg 21,380 https://www.ssg.com/item/itemView.ssg?itemId=1000011659137&siteNo=6002&salestrNo=2154&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 17,
+          "entity": "상품명"
+        },
+        {
+          "start": 18,
+          "end": 24,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "플루 [15% 할인][바디스크럽 50g 증정][1+1] 플루 소프트 페이셜 스크럽 허니앤 슈가 100g 22,410 https://www.ssg.com/item/itemView.ssg?itemId=2097001387733&siteNo=6001&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 57,
+          "entity": "상품명"
+        },
+        {
+          "start": 58,
+          "end": 64,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "파인뷰 [추가할인]X550 Wi-Fi 빌트인 32GB 출장장착 Q/Q 2채널 블랙박스 NON LCD 순정 스타일 229,000 https://www.ssg.com/item/itemView.ssg?itemId=1000564866008&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 62,
+          "entity": "상품명"
+        },
+        {
+          "start": 63,
+          "end": 70,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "폴바셋 [폴 바셋] 우유크림롤 360g 23,000 https://www.ssg.com/item/itemView.ssg?itemId=2097001464793&siteNo=7009&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 21,
+          "entity": "상품명"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "아이나비 [64G메모리업+추가할인][GPS+장착쿠폰]아이나비 블랙박스 QXD8000mini(32GB) 239,940 https://www.ssg.com/item/itemView.ssg?itemId=1000405448583&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 56,
+          "entity": "상품명"
+        },
+        {
+          "start": 57,
+          "end": 64,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "플루 [15% 할인][바디스크럽 50g 증정][1+1] 플루 브라이트닝 필링젤 피치 100g 24,900 https://www.ssg.com/item/itemView.ssg?itemId=2097001388280&siteNo=6001&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 51,
+          "entity": "상품명"
+        },
+        {
+          "start": 52,
+          "end": 58,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "플루 [20% 할인][바디스크럽 50g 증정][1+1] 플루 모이스처 필링젤 로즈힙오일 100g 24,900 https://www.ssg.com/item/itemView.ssg?itemId=2097001387757&siteNo=6001&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 53,
+          "entity": "상품명"
+        },
+        {
+          "start": 54,
+          "end": 60,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "하겐다즈 베스트 컬렉션 싱글바6입 26,400 https://www.ssg.com/item/itemView.ssg?itemId=1000554845006&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 18,
+          "entity": "상품명"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "둘이 함께 먹는 매일견과 20gX60봉 26,780 https://www.ssg.com/item/itemView.ssg?itemId=1000022219080&siteNo=6002&salestrNo=2154&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 21,
+          "entity": "상품명"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "웅진식품 [1천원할인쿠폰]하늘보리 외 차류 500ml 20+20펫 (옥수수수염차 결명자차 누룽지차 헛개차) 26,900 https://www.ssg.com/item/itemView.ssg?itemId=1000021928010&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 59,
+          "entity": "상품명"
+        },
+        {
+          "start": 60,
+          "end": 66,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "웅진식품 [6%할인쿠폰]빅토리아 탄산 500ml 20펫 2+1박스 26,900 https://www.ssg.com/item/itemView.ssg?itemId=1000303919685&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 36,
+          "entity": "상품명"
+        },
+        {
+          "start": 37,
+          "end": 43,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "푸마 [376289-03/09] 남여공용 데일리 러닝,워킹화 트위치 러너 / Twitch Runner ( 48% 할인 ) 27,000 https://www.ssg.com/item/itemView.ssg?itemId=1000353865987&siteNo=6009&salestrNo=1004&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 67,
+          "entity": "상품명"
+        },
+        {
+          "start": 68,
+          "end": 74,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "휠라키즈 ●[50%할인]휠라키즈 코트대쉬 운동화 2컬러 (3XM02302F) 28,111 https://www.ssg.com/item/itemView.ssg?itemId=1000555085083&siteNo=6009&salestrNo=1009&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 42,
+          "entity": "상품명"
+        },
+        {
+          "start": 43,
+          "end": 49,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "휠라키즈 [50%할인] 휠라키즈 운동화 세일가 택 1 28,980 https://www.ssg.com/item/itemView.ssg?itemId=1000562929956&siteNo=6009&salestrNo=1019&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 29,
+          "entity": "상품명"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "휠라키즈 [45%할인]휠라키즈 디스럽터 트레이너, 코트 대쉬 운동화 (3XM01855E,3XM02302F) 29,100 https://www.ssg.com/item/itemView.ssg?itemId=1000521981320&siteNo=6009&salestrNo=1009&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 59,
+          "entity": "상품명"
+        },
+        {
+          "start": 60,
+          "end": 66,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "원데이샐러드 210g 3,980 https://www.ssg.com/item/itemView.ssg?itemId=1000062563736&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PReview",
+      "labels": [
+        {
+          "start": 0,
+          "end": 11,
+          "entity": "상품명"
+        },
+        {
+          "start": 12,
+          "end": 17,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "귀뚜라미 [매트커버+최대할인] 2024 귀뚜라미 블루투스 카본매트 싱글 퀸 킹 KMA-1C / KDM-87N / KDM-98 308,000 https://www.ssg.com/item/itemView.ssg?itemId=1000567105149&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 69,
+          "entity": "상품명"
+        },
+        {
+          "start": 70,
+          "end": 77,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "귀뚜라미 [매트커버+최대할인] 2024 귀뚜라미 블루투스 카본매트 싱글 퀸 킹 KMA-1C / KDM-87N / KDM-98 308,000 https://www.ssg.com/item/itemView.ssg?itemId=1000567105149&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 69,
+          "entity": "상품명"
+        },
+        {
+          "start": 70,
+          "end": 77,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "엘지생활건강 [50% 할인]생활의 감동 스페셜2호 32,450 https://www.ssg.com/item/itemView.ssg?itemId=2097001787052&siteNo=6001&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 27,
+          "entity": "상품명"
+        },
+        {
+          "start": 28,
+          "end": 34,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "팥(적두) 2kg 34,280 https://www.ssg.com/item/itemView.ssg?itemId=1000016844334&siteNo=6002&salestrNo=2154&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 9,
+          "entity": "상품명"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "[국내산 민물장어1kg]순살장어 소스2종+생강 무료 34,900 https://www.ssg.com/item/itemView.ssg?itemId=1000558232821&siteNo=6002&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 28,
+          "entity": "상품명"
+        },
+        {
+          "start": 29,
+          "end": 35,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "[JH삼립] 정통단팥빵 30봉 36,900 https://www.ssg.com/item/itemView.ssg?itemId=1000562170907&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 16,
+          "entity": "상품명"
+        },
+        {
+          "start": 17,
+          "end": 23,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "롯데웰푸드 [롯데] 폭신폭신 말랑카우 딸기 158g 4,380 https://www.ssg.com/item/itemView.ssg?itemId=1000005817943&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 28,
+          "entity": "상품명"
+        },
+        {
+          "start": 29,
+          "end": 34,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "롯데웰푸드 [롯데] 폭신폭신 말랑카우 딸기 158g 4,380 https://www.ssg.com/item/itemView.ssg?itemId=1000005817943&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PReview",
+      "labels": [
+        {
+          "start": 0,
+          "end": 28,
+          "entity": "상품명"
+        },
+        {
+          "start": 29,
+          "end": 34,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "참다올 수제로 만든 호밀빵 4,400 https://www.ssg.com/item/itemView.ssg?itemId=1000070211527&siteNo=6002&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 14,
+          "entity": "상품명"
+        },
+        {
+          "start": 15,
+          "end": 20,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "엘지생활건강 [카드할인 30%]히말라야 핑크솔트 41호 41,900 https://www.ssg.com/item/itemView.ssg?itemId=1000572838904&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 30,
+          "entity": "상품명"
+        },
+        {
+          "start": 31,
+          "end": 37,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "조선호텔앤리조트 [조선호텔] 블랙 초코 케이크 800g (+선착순 OMG파티팩 증정) 42,000 https://www.ssg.com/item/itemView.ssg?itemId=2097001474327&siteNo=7009&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 47,
+          "entity": "상품명"
+        },
+        {
+          "start": 48,
+          "end": 54,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "조선호텔앤리조트 [조선호텔] 프리미엄 레드 벨벳 케이크 565g (+선착순 OMG파티팩 증정) 42,000 https://www.ssg.com/item/itemView.ssg?itemId=2097001324745&siteNo=7009&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 52,
+          "entity": "상품명"
+        },
+        {
+          "start": 53,
+          "end": 59,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "엘지생활건강 [카드할인 30%]정성담은 43호 43,900 https://www.ssg.com/item/itemView.ssg?itemId=1000554723677&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 25,
+          "entity": "상품명"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "휠라키즈 50%할인 다이얼 운동화 웨이블럿 44,500 https://www.ssg.com/item/itemView.ssg?itemId=1000530794595&siteNo=6009&salestrNo=1004&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 23,
+          "entity": "상품명"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "해신수산영어조합법인 [행사특별할인][바로배송][한정가격행사][최다판매][해신수산] 완도 활전복 특대 9-10미 1kg 국내산(양식) 44,900 https://www.ssg.com/item/itemView.ssg?itemId=1000036274279&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 73,
+          "entity": "상품명"
+        },
+        {
+          "start": 74,
+          "end": 80,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "해신수산영어조합법인 [행사특별할인][바로배송][한정가격행사][최다판매][해신수산] 완도 활전복 특대 9-10미 1kg 국내산(양식) 44,900 https://www.ssg.com/item/itemView.ssg?itemId=1000036274279&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 73,
+          "entity": "상품명"
+        },
+        {
+          "start": 74,
+          "end": 80,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "문화상품권 [4%할인]온라인문화상품권 5만원 48,000 https://www.ssg.com/item/itemView.ssg?itemId=1000310177066&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 24,
+          "entity": "상품명"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "엘지생활건강 [카드할인 30%]리엔&닥터그루트 세트 48,500 https://www.ssg.com/item/itemView.ssg?itemId=1000424775662&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 28,
+          "entity": "상품명"
+        },
+        {
+          "start": 29,
+          "end": 35,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "신세계 상품권 5만원 (지류교환형) 49,250 https://www.ssg.com/item/itemView.ssg?itemId=1000567149915&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 19,
+          "entity": "상품명"
+        },
+        {
+          "start": 20,
+          "end": 26,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "참다올 수제로 만든 호밀빵 5,000 https://www.ssg.com/item/itemView.ssg?itemId=1000036676523&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 14,
+          "entity": "상품명"
+        },
+        {
+          "start": 15,
+          "end": 20,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "엘지생활건강 [카드할인 25%]히말라야 핑크솔트 50호 50,900 https://www.ssg.com/item/itemView.ssg?itemId=1000424775809&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 30,
+          "entity": "상품명"
+        },
+        {
+          "start": 31,
+          "end": 37,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "엘지생활건강 [카드할인 30%]벨먼 홈스파 세트 51,000 https://www.ssg.com/item/itemView.ssg?itemId=1000424775733&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 26,
+          "entity": "상품명"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "엘지생활건강 [카드할인 50%]생활의감동 모던스페셜 55,900 https://www.ssg.com/item/itemView.ssg?itemId=1000556725619&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 28,
+          "entity": "상품명"
+        },
+        {
+          "start": 29,
+          "end": 35,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "엘지생활건강 [카드할인 30%]닥터그루트 에센셜 세트 57,000 https://www.ssg.com/item/itemView.ssg?itemId=1000556770031&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 29,
+          "entity": "상품명"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "엘지생활건강 [카드할인 30%]모던클래식 세트 57,900 https://www.ssg.com/item/itemView.ssg?itemId=1000572838902&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 25,
+          "entity": "상품명"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "엘지생활건강 [카드할인 50%]정성담은 프로폴리스 E호 57,900 https://www.ssg.com/item/itemView.ssg?itemId=1000554723670&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 30,
+          "entity": "상품명"
+        },
+        {
+          "start": 31,
+          "end": 37,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "건강기능식품 뉴트리원 루테인지아잔틴164 100캡슐 59,900 https://www.ssg.com/item/itemView.ssg?itemId=1000523360684&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 28,
+          "entity": "상품명"
+        },
+        {
+          "start": 29,
+          "end": 35,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "빙그레 부드러운 빵또아 180ml*5 6,000 https://www.ssg.com/item/itemView.ssg?itemId=0000008983948&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 20,
+          "entity": "상품명"
+        },
+        {
+          "start": 21,
+          "end": 26,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "끌레도르 더블쿠키 페스티벌 파인트 474ml 6,250 https://www.ssg.com/item/itemView.ssg?itemId=1000050817022&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 24,
+          "entity": "상품명"
+        },
+        {
+          "start": 25,
+          "end": 30,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "던킨도너츠 [던킨] 딸기 듬뿍 미니도넛 (25g x 10개입) 6,784 https://www.ssg.com/item/itemView.ssg?itemId=2097000992341&siteNo=7009&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 34,
+          "entity": "상품명"
+        },
+        {
+          "start": 35,
+          "end": 40,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "던킨도너츠 [던킨] 딸기 듬뿍 미니도넛 (25g x 10개입) 6,784 https://www.ssg.com/item/itemView.ssg?itemId=2097000992341&siteNo=7009&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 34,
+          "entity": "상품명"
+        },
+        {
+          "start": 35,
+          "end": 40,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "엘지생활건강 [카드할인 30%]정성담은 63호 63,900 https://www.ssg.com/item/itemView.ssg?itemId=1000572838882&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 25,
+          "entity": "상품명"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "엘지생활건강 [카드할인 30%]닥터그루트 키스에디션 세트 64,900 https://www.ssg.com/item/itemView.ssg?itemId=1000572838877&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 31,
+          "entity": "상품명"
+        },
+        {
+          "start": 32,
+          "end": 38,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "3M  1입 대비 35% 할인  옥수수그물망사수세미 5입 7,980 https://www.ssg.com/item/itemView.ssg?itemId=1000305566490&siteNo=7009&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 31,
+          "entity": "상품명"
+        },
+        {
+          "start": 32,
+          "end": 37,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "엘지생활건강 [카드할인 30%]닥터그루트 탈모증상완화 세트 71,300 https://www.ssg.com/item/itemView.ssg?itemId=1000556725667&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 32,
+          "entity": "상품명"
+        },
+        {
+          "start": 33,
+          "end": 39,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "그래비티 서울 판교 [5%할인] 앤디쉬 1인 식사권 (성인) 75,050 https://www.ssg.com/item/itemView.ssg?itemId=1000524600242&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 33,
+          "entity": "상품명"
+        },
+        {
+          "start": 34,
+          "end": 40,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "떡미당 크림 찹쌀떡 400g (10개입) 8,400 https://www.ssg.com/item/itemView.ssg?itemId=2097001527597&siteNo=7009&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 22,
+          "entity": "상품명"
+        },
+        {
+          "start": 23,
+          "end": 28,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "떡미당 인절미 크림 찹쌀떡 400g (10개입) 8,400 https://www.ssg.com/item/itemView.ssg?itemId=2097001530665&siteNo=7009&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 26,
+          "entity": "상품명"
+        },
+        {
+          "start": 27,
+          "end": 32,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "탑텐 공용) 플리스 베이직 스웨트셔츠 ( MSC4TR3901) 8,415 https://www.ssg.com/item/itemView.ssg?itemId=1000488966862&siteNo=6009&salestrNo=1010&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 34,
+          "entity": "상품명"
+        },
+        {
+          "start": 35,
+          "end": 40,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "동원 양반 ECO 히말라야소금김 20봉 8,480 https://www.ssg.com/item/itemView.ssg?itemId=1000551592688&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PReview",
+      "labels": [
+        {
+          "start": 0,
+          "end": 21,
+          "entity": "상품명"
+        },
+        {
+          "start": 22,
+          "end": 27,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "탱글란 10개입 (400g) 8,480 https://www.ssg.com/item/itemView.ssg?itemId=1000565983277&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 15,
+          "entity": "상품명"
+        },
+        {
+          "start": 16,
+          "end": 21,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "3M  1입대비 37%할인 3M 그리너클린 천연펄프 수세미 강력용 8P 특별기획 8,980 https://www.ssg.com/item/itemView.ssg?itemId=2097001572382&siteNo=6001&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 44,
+          "entity": "상품명"
+        },
+        {
+          "start": 45,
+          "end": 50,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "신화fs 꾸이꾸이 어포 튀각 220g (110g*2) 8,980 https://www.ssg.com/item/itemView.ssg?itemId=1000127235935&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PReview",
+      "labels": [
+        {
+          "start": 0,
+          "end": 29,
+          "entity": "상품명"
+        },
+        {
+          "start": 30,
+          "end": 35,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "3M  1입대비 37%할인 3M 그리너클린 천연펄프 수세미 강력용 8P 특별기획 8,980 https://www.ssg.com/item/itemView.ssg?itemId=2097001572382&siteNo=6001&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 44,
+          "entity": "상품명"
+        },
+        {
+          "start": 45,
+          "end": 50,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "쇼핑의고수 제주 속이꽉찬 아삭한 고깔 양배추 3kg(3~5통 내외) 9,025 https://www.ssg.com/item/itemView.ssg?itemId=1000282456151&siteNo=6002&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 37,
+          "entity": "상품명"
+        },
+        {
+          "start": 38,
+          "end": 43,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "동원 더 바삭한 양반김 (5g*20) 9,480 https://www.ssg.com/item/itemView.ssg?itemId=0000009604300&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PReview",
+      "labels": [
+        {
+          "start": 0,
+          "end": 20,
+          "entity": "상품명"
+        },
+        {
+          "start": 21,
+          "end": 26,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "건망고슬라이스 300g 9,680 https://www.ssg.com/item/itemView.ssg?itemId=1000033903278&siteNo=6002&salestrNo=2154&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 12,
+          "entity": "상품명"
+        },
+        {
+          "start": 13,
+          "end": 18,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "웅진식품 [15%할인쿠폰]빅토리아 에코(무라벨) 350ml 20펫 (플레인/레몬/청포도/파인애플) 9,900 https://www.ssg.com/item/itemView.ssg?itemId=1000384956502&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 54,
+          "entity": "상품명"
+        },
+        {
+          "start": 55,
+          "end": 60,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "미미의밥상 국내산 양배추 4kg(2통) 9,900 https://www.ssg.com/item/itemView.ssg?itemId=1000567265223&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 21,
+          "entity": "상품명"
+        },
+        {
+          "start": 22,
+          "end": 27,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "하겐다즈 바닐라 캐러멜 아몬드 멀티바 (80ml*3개) 9,920 https://www.ssg.com/item/itemView.ssg?itemId=1000017796878&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 30,
+          "entity": "상품명"
+        },
+        {
+          "start": 31,
+          "end": 36,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "티스탠다드 캘리포니아 호두 1KG 9,980 https://www.ssg.com/item/itemView.ssg?itemId=1000058002871&siteNo=6002&salestrNo=2154&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 18,
+          "entity": "상품명"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "머거본 통꾸이 220g 9,980 https://www.ssg.com/item/itemView.ssg?itemId=1000025258538&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 12,
+          "entity": "상품명"
+        },
+        {
+          "start": 13,
+          "end": 18,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "동해안 반건조 오징어 (2미/170g) 9,980 https://www.ssg.com/item/itemView.ssg?itemId=1000026550867&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=preference&taste=PPurchase",
+      "labels": [
+        {
+          "start": 0,
+          "end": 21,
+          "entity": "상품명"
+        },
+        {
+          "start": 22,
+          "end": 27,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "3M  1입대비 37%할인 3M 다목적 수세미 270 10입 큐브 9,990 https://www.ssg.com/item/itemView.ssg?itemId=2097001345566&siteNo=6001&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 36,
+          "entity": "상품명"
+        },
+        {
+          "start": 37,
+          "end": 42,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "3M  1입대비 37%할인 3M 다목적 수세미 270 10입 큐브 9,990 https://www.ssg.com/item/itemView.ssg?itemId=2097001345566&siteNo=6001&salestrNo=2449&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 36,
+          "entity": "상품명"
+        },
+        {
+          "start": 37,
+          "end": 42,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "엘지생활건강 [카드할인 30%]닥터그루트 프리미엄 세트 93,000 https://www.ssg.com/item/itemView.ssg?itemId=1000554723664&siteNo=6001&salestrNo=2037&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist&advertBidId=9999999998",
+      "labels": [
+        {
+          "start": 0,
+          "end": 30,
+          "entity": "상품명"
+        },
+        {
+          "start": 31,
+          "end": 37,
+          "entity": "가격"
+        }
+      ]
+    },
+    {
+      "sentence": "신세계 상품권 10만원 (지류교환형) 98,500 https://www.ssg.com/item/itemView.ssg?itemId=1000567150120&siteNo=6004&salestrNo=6005&tlidSrchWd=할인&srchPgNo=1&src_area=ssglist",
+      "labels": [
+        {
+          "start": 0,
+          "end": 20,
+          "entity": "상품명"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "entity": "가격"
+        }
+      ]
+    }
+  ]
+}

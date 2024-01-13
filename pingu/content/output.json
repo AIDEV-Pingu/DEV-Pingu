@@ -1,0 +1,631 @@
+{
+  "data": [
+      {
+          "sentence": "1+1 자연퐁 2X 솔잎 리필 100ml당682원 1.6L 02-04-04.1 10,900 동일품목 교차가능 01/04~01/17 88010511519",
+          "labels": [
+              {"start": 4, "end": 13, "entity": "상품명"},
+              {"start": 36, "end": 41, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "존슨즈베이비탑투토바스 500ML 100ml당2 780원 01 02.04.6 13,900 HUBE",
+          "labels": [
+              {"start": 0, "end": 16, "entity": "상품명"},
+              {"start": 31, "end": 37, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "아입니다 MUSINSA TRADING TEL1833--9118 WWW.EMFTY.SEOUI..KR SEOUL SEONGSUI-RO.SEONGDONG-GU. 97. NO. PRICE CHAU3FESG043PI 79,000 ITEM SIZE 캐릭터 키링 핑크 F 1-1611020001",
+          "labels": [
+              {"start": 0, "end": 12, "entity": "상품명"},
+              {"start": 134, "end": 140, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "나뚜루)바닐라파인트474ml 14,900",
+          "labels": [
+              {"start": 0, "end": 18, "entity": "상품명"},
+              {"start": 20, "end": 26, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "꼬 깔콘 1700",
+          "labels": [
+              {"start": 0, "end": 4, "entity": "상품명"},
+              {"start": 5, "end": 9, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "마늘 바게뜨 1200",
+          "labels": [
+              {"start": 0, "end": 5, "entity": "상품명"},
+              {"start": 6, "end": 10, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "[PINK (CTF4) 2023090315052 133837 세일러 RIOIC 129,000원 12571020001 E",
+          "labels": [
+              {"start": 1, "end": 16, "entity": "상품명"},
+              {"start": 40, "end": 49, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "아이오감버블클렌저딸기) 100ml당5.160원 250ML 03-03012 12,900",
+          "labels": [
+              {"start": 0, "end": 19, "entity": "상품명"},
+              {"start": 42, "end": 48, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "포테토트리플 1600",
+          "labels": [
+              {"start": 0, "end": 8, "entity": "상품명"},
+              {"start": 9, "end": 13, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "불스원 러인OK유리발수peed 100ml당128699 380ML 10,900",
+          "labels": [
+              {"start": 0, "end": 22, "entity": "상품명"},
+              {"start": 50, "end": 56, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "COLLER AirPods pro COLLER 에어팟 Pro 20,000",
+          "labels": [
+              {"start": 0, "end": 19, "entity": "상품명"},
+              {"start": 20, "end": 26, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "14 M1A1 에o브람스탱크 R/C 3이이상 63,900",
+          "labels": [
+              {"start": 0, "end": 20, "entity": "상품명"},
+              {"start": 41, "end": 47, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "많이 살수록 L.POINT 더 싸게 홈스타 맥스프레쉬 욕실용 100ml당78원 900ML 1개 2개 이상 개당 05-05-03.6 7,900 3,950 동일품목 교차가능 Ⅲ 01/04~01/17 29 8801051265804",
+          "labels": [
+              {"start": 14, "end": 38, "entity": "상품명"},
+              {"start": 121, "end": 127, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "네네덴트 무불소치약 50G 10g당1,980원 02-03413 9,900",
+          "labels": [
+              {"start": 0, "end": 16, "entity": "상품명"},
+              {"start": 26, "end": 34, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "MUSINS WWW.EMPTY.SEOULLKB TEL1833 97 SEONGSUJI-RO.SEONGDONGGU SEOUL NO. DVEM3FAHA004BK PRICE 435,000 ITEM 디벡 을 크로세햇 블랙 SIZE F 1-1805920001",
+          "labels": [
+              {"start": 0, "end": 7, "entity": "상품명"},
+              {"start": 127, "end": 134, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "BLUE SHOC 너프 포트L이트 AR 블루쇼크 BigDEA 64,900",
+          "labels": [
+              {"start": 0, "end": 9, "entity": "상품명"},
+              {"start": 70, "end": 76, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "스원샷 프리미엄(경유용) 500ML*2 38,000",
+          "labels": [
+              {"start": 0, "end": 17, "entity": "상품명"},
+              {"start": 28, "end": 34, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "마이비 멸균구강티슈 우리아이 M클럽 30매 1매당240원 1,440원 할인 02-02-01.3 비회원가 회원가 01/01~01/31 7,190 5,750 3 8809527672736",
+          "labels": [
+              {"start": 6, "end": 19, "entity": "상품명"},
+              {"start": 48, "end": 54, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "하이퍼 LED 스쿠터 39,000",
+          "labels": [
+              {"start": 0, "end": 10, "entity": "상품명"},
+              {"start": 11, "end": 17, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "벌집핏 자 1700",
+          "labels": [
+              {"start": 0, "end": 7, "entity": "상품명"},
+              {"start": 8, "end": 13, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "수이스킨 어린새싹토너 (기획) 200ML*2입 10ml당4318은 25,000 17,500",
+          "labels": [
+              {"start": 0, "end": 21, "entity": "상품명"},
+              {"start": 43, "end": 49, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "허 니비 든 700",
+          "labels": [
+              {"start": 0, "end": 7, "entity": "상품명"},
+              {"start": 8, "end": 14, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "아이오감 버블클렌저(포도) 100ml당5.160원 250ML 03-03-02.2 12,900",
+          "labels": [
+              {"start": 0, "end": 17, "entity": "상품명"},
+              {"start": 48, "end": 54, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "동서 리츠크래커 80g/10g당206원 1,650원",
+          "labels": [
+              {"start": 0, "end": 14, "entity": "상품명"},
+              {"start": 33, "end": 39, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "NO. HERU3FBTT007BK PRICE 650,000 ITEM 헤레우 에스피가미니 백 블랙 SIZE F 1-1537820001",
+          "labels": [
+              {"start": 20, "end": 45, "entity": "상품명"},
+              {"start": 51, "end": 57, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "볼스원레인OK 발수코 팅&세정 (2in1) 100ml1667g 5,000",
+          "labels": [
+              {"start": 0, "end": 18, "entity": "상품명"},
+              {"start": 28, "end": 34, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "동서)스타벅스라떼270ml 2,600",
+          "labels": [
+              {"start": 7, "end": 22, "entity": "상품명"},
+              {"start": 23, "end": 28, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "포 키 1500",
+          "labels": [
+              {"start": 0, "end": 5, "entity": "상품명"},
+              {"start": 6, "end": 10, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "롯데제과 빼빼로(각) 39g/10g당435원 1,700원",
+          "labels": [
+              {"start": 7, "end": 15, "entity": "상품명"},
+              {"start": 34, "end": 40, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "NO. OTTW3FECR020BK PRICE 265,000 ITEM 푸마 X 오토링커 백 블랙 SIZE F 1-1844020001",
+          "labels": [
+              {"start": 20, "end": 45, "entity": "상품명"},
+              {"start": 51, "end": 57, "entity": "가격"}
+          ]
+      },
+      {
+          "sentence": "등서 리츠이니언 73g/10g당226원 1,650 원",
+          "labels": [
+              {"start": 0, "end": 12, "entity": "상품명"},
+              {"start": 33, "end": 39, "entity": "가격"}
+          ]
+      },
+      {
+        "sentence": "소금빠 낵 1800",
+        "labels": [
+            {"start": 0, "end": 4, "entity": "상품명"},
+            {"start": 5, "end": 9, "entity": "가격"}
+        ]
+    },
+    {
+        "sentence": "NO. RUSW3FAHA017GR PRICE 250,000 ITEM 루스 쿠키 햇엔트러사이트 SIZF F 1-1822520001",
+        "labels": [
+            {"start": 26, "end": 39, "entity": "상품명"},
+            {"start": 45, "end": 52, "entity": "가격"}
+        ]
+    },
+    {
+        "sentence": "그린핑거 판테딘 더마팬티(점보) 1개당1,190원 30매 05-02-02.1 35,700 3.5 8801166396721",
+        "labels": [
+            {"start": 0, "end": 11, "entity": "상품명"},
+            {"start": 19, "end": 25, "entity": "가격"}
+        ]
+    },
+    {
+        "sentence": "썬푸드)슬라이스오징어18g ₩3,900 8 801149101557",
+        "labels": [
+            {"start": 0, "end": 18, "entity": "상품명"},
+            {"start": 22, "end": 28, "entity": "가격"}
+        ]
+    },
+    {
+        "sentence": "SUTU HAN 밸 AC ANN 7,500",
+        "labels": [
+            {"start": 0, "end": 7, "entity": "상품명"},
+            {"start": 8, "end": 13, "entity": "가격"}
+        ]
+    },
+    {
+        "sentence": "그린시스청배 국내산 떡볶 ₩13,000",
+        "labels": [
+            {"start": 0, "end": 11, "entity": "상품명"},
+            {"start": 12, "end": 19, "entity": "가격"}
+        ]
+    },
+    {
+        "sentence": "붓&펜페인트 (현대 Y",
+        "labels": [
+            {"start": 0, "end": 9, "entity": "상품명"}
+        ]
+    },
+    {
+        "sentence": "BLUE COLOR ; ONF BFANIF SIZE ROILED YY234AC004BLOO BOUCIE 83,000 PRICE",
+        "labels": [
+            {"start": 48, "end": 53, "entity": "상품명"},
+            {"start": 54, "end": 59, "entity": "가격"}
+        ]
+    },
+    {
+        "sentence": "스프링빈 1개당500원 090307",
+        "labels": [
+            {"start": 0, "end": 6, "entity": "상품명"},
+            {"start": 11, "end": 16, "entity": "가격"}
+        ]
+    },
+    {
+        "sentence": "콘 1. 1400",
+        "labels": [
+            {"start": 0, "end": 2, "entity": "상품명"},
+            {"start": 4, "end": 8, "entity": "가격"}
+        ]
+    },
+    {
+        "sentence": "소낙스익스트림 휠크리너 100ml당5.060g 50000 69:00-00:00 25,300",
+        "labels": [
+            {"start": 0, "end": 12, "entity": "상품명"},
+            {"start": 29, "end": 35, "entity": "가격"}
+        ]
+    },
+    {
+        "sentence": "화이트로션100ml 170x 6,000 6 1108 00024",
+        "labels": [
+            {"start": 0, "end": 11, "entity": "상품명"},
+            {"start": 17, "end": 21, "entity": "가격"}
+        ]
+    },
+    {
+        "sentence": "2023 하기스매직컴포트 팬티형(대형) 1개당760원 42매 04.03.021 31,900 42",
+        "labels": [
+            {"start": 0, "end": 16, "entity": "상품명"},
+            {"start": 26, "end": 32, "entity": "가격"}
+        ]
+    },
+    {
+        "sentence": "정화)왕오징어구이53g ₩5,900 8801308470371",
+        "labels": [
+            {"start": 0, "end": 17, "entity": "상품명"},
+            {"start": 21, "end": 27, "entity": "가격"}
+        ]
+    },
+    {
+        "sentence": "scaf Grey OS 5740074718761",
+        "labels": [
+            {"start": 0, "end": 10, "entity": "상품명"}
+        ]
+    },
+    {
+        "sentence": "₩10,000",
+        "labels": [
+            {"start": 0, "end": 6, "entity": "가격"}
+        ]
+    },
+    {
+        "sentence": "석류 미국산 계 ₩15,000",
+        "labels": [
+            {"start": 0, "end": 7, "entity": "상품명"},
+            {"start": 13, "end": 19, "entity": "가격"}
+        ]
+    },
+    {
+        "sentence": "롯데 제로 카카오케이크 10g당225원 171G 02-03-001.9 3,840",
+        "labels": [
+            {"start": 0, "end": 14, "entity": "상품명"},
+            {"start": 30, "end": 35, "entity": "가격"}
+        ]
+    },
+    {
+        "sentence": "리브니트 햇 Rib-knit Hat ₩14,900",
+        "labels": [
+            {"start": 18, "end": 28, "entity": "상품명"},
+            {"start": 29, "end": 35, "entity": "가격"}
+        ]
+    },
+    {
+      "sentence": "페리오 핑크솔트 그린티 칫솔 1+1 020 4입 1개당3,725원 02-02-013 02/04/07/17 14, ,900",
+      "labels": [
+          {"start": 0, "end": 21, "entity": "상품명"},
+          {"start": 40, "end": 47, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "기획상품 빙그레 기획 닥터캡슐 사과 520ml / 10ml당6원 4,500원",
+      "labels": [
+          {"start": 5, "end": 27, "entity": "상품명"},
+          {"start": 45, "end": 51, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "하겐)파인트녹차 15,900 131 U",
+      "labels": [
+          {"start": 0, "end": 14, "entity": "상품명"},
+          {"start": 15, "end": 21, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "오랄비 전용D100 바이탈리티크로스블랙 51 900",
+      "labels": [
+          {"start": 0, "end": 30, "entity": "상품명"},
+          {"start": 31, "end": 36, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "궁중비책 프로문 샴푸&바스 추 천 30M 상품 /ml94800 16,800",
+      "labels": [
+          {"start": 0, "end": 19, "entity": "상품명"},
+          {"start": 27, "end": 33, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "단면이쑤시개 470g ＼1,500 8 56",
+      "labels": [
+          {"start": 0, "end": 8, "entity": "상품명"},
+          {"start": 9, "end": 15, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "1:12 지게차 R/C PLAO 59,800",
+      "labels": [
+          {"start": 9, "end": 19, "entity": "상품명"},
+          {"start": 20, "end": 26, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "스벅골드브루커피 700ml 3,100 .",
+      "labels": [
+          {"start": 0, "end": 16, "entity": "상품명"},
+          {"start": 17, "end": 22, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "칼스버그 써머스비 500ml/1005ml51,000 4,000원",
+      "labels": [
+          {"start": 0, "end": 14, "entity": "상품명"},
+          {"start": 34, "end": 40, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "린제이 쿨링밤 모델링팩 330G 01-01-061 10,900",
+      "labels": [
+          {"start": 0, "end": 18, "entity": "상품명"},
+          {"start": 40, "end": 46, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "10000",
+      "labels": [
+          {"start": 0, "end": 4, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "8,590",
+      "labels": [
+          {"start": 0, "end": 4, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "두부과자 120",
+      "labels": [
+          {"start": 0, "end": 6, "entity": "상품명"},
+          {"start": 7, "end": 10, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "테크 실내조액처세제 (드럼) 0 2.71 100ml담6650원 01-01-02.3 1개 2개 이상 개당 17,800 8,900",
+      "labels": [
+          {"start": 0, "end": 18, "entity": "상품명"},
+          {"start": 31, "end": 40, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "교환 환불 규정 | 상품을 구입한지7일 이내에 영수증을 가지고 오시면 구입 시 결제 방법에 따라 교환 또는 환불이 가능합니다. 상품에 하자가 없고 재판매가 가능한 상태여야 하며 유효한 영수증 및 구매 시 사용하신 신용카드를 지참하셔야 합니다. MUSINSA TRADING WWW.EMIPTY.SEOULLKB I TEL 1833-9118 97. SEONGSUU-RO. SEONGDGNG-GU SEOUL NO. MISW3FAHA007GN PRICE 143,000 미수아바흐브 II레네 헤드 커버 그 ITEM SIZE F 1-1767820001",
+      "labels": [
+          {"start": 236, "end": 246, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "낙스고광택 코팅왁스 24 200 16,940",
+      "labels": [
+          {"start": 0, "end": 14, "entity": "상품명"},
+          {"start": 15, "end": 20, "entity": "가격"}
+      ]
+  },
+  {
+    "sentence": "해태 후렌치파이 딸기 기획 384G 10g당168원 01-02-01.2 6,440",
+    "labels": [
+        {"start": 0, "end": 16, "entity": "상품명"},
+        {"start": 40, "end": 45, "entity": "가격"}
+    ]
+  },
+  {
+      "sentence": "가격할 인 리스테린 (쿨민트) 10ml담93원 750ML 02 9,900 6,950 010100",
+      "labels": [
+          {"start": 11, "end": 28, "entity": "상품명"},
+          {"start": 29, "end": 35, "entity": "가격"},
+          {"start": 36, "end": 42, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "전 불스원 RainOK 유막제거 이지그립 100ML 100ml당10,900원 01-02-06.2 10,900",
+      "labels": [
+          {"start": 12, "end": 30, "entity": "상품명"},
+          {"start": 31, "end": 47, "entity": "가격"},
+          {"start": 48, "end": 54, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "오랄비전동D103 바이탈프로 블랙 155/55,900원 35. 500",
+      "labels": [
+          {"start": 0, "end": 20, "entity": "상품명"},
+          {"start": 21, "end": 36, "entity": "가격"},
+          {"start": 37, "end": 42, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "오징어의참맛30g 30g ₩ 4,900",
+      "labels": [
+          {"start": 0, "end": 12, "entity": "상품명"},
+          {"start": 13, "end": 19, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "크라운 쿠크다스커피 10051529 4 380",
+      "labels": [
+          {"start": 0, "end": 17, "entity": "상품명"},
+          {"start": 18, "end": 22, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "LIACE 부소자의 (사과장) 9,900",
+      "labels": [
+          {"start": 0, "end": 14, "entity": "상품명"},
+          {"start": 15, "end": 21, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "NO. CPAM3FFPN010GR PRICE 289,000 큐레이티드 젬트라우저레이 스 ITEM SIZE 46 1-1796120001",
+      "labels": [
+          {"start": 15, "end": 25, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "크로빈버그 1664 블랑 600ml 100mls! S608 4,800원",
+      "labels": [
+          {"start": 0, "end": 15, "entity": "상품명"},
+          {"start": 46, "end": 52, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "빙그레 기획 요플레 Only3 540ml / 10ml당 73원 3,980 원",
+      "labels": [
+          {"start": 9, "end": 19, "entity": "상품명"},
+          {"start": 43, "end": 49, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "네네덴트 불소치약 (사과향) 10g당1,980원 50G 02-03-02.3 9,900 10 41029680004 5",
+      "labels": [
+          {"start": 0, "end": 14, "entity": "상품명"},
+          {"start": 15, "end": 24, "entity": "가격"},
+          {"start": 41, "end": 47, "entity": "가격"}
+      ]
+  },
+  {
+      "sentence": "0 과 1200",
+      "labels": [
+          {"start": 2, "end": 6, "entity": "가격"}
+      ]
+  },
+  {
+    "sentence": "불로초감귤 국내산 3KG/BOX ₩45 ,000",
+    "labels": [
+        {"start": 0, "end": 12, "entity": "상품명"},
+        {"start": 24, "end": 31, "entity": "가격"}
+    ]
+  },
+  {
+    "sentence": "마미포코골드통기팬티 대형(공용) LAST 380k 1개 CHANCE 17,400",
+    "labels": [
+        {"start": 0, "end": 21, "entity": "상품명"},
+        {"start": 45, "end": 51, "entity": "가격"}
+    ]
+  },
+  {
+    "sentence": "Mini o 29,000",
+    "labels": [
+        {"start": 0, "end": 6, "entity": "상품명"},
+        {"start": 7, "end": 13, "entity": "가격"}
+    ]
+  },
+  {
+    "sentence": "새 콤 짱 500",
+    "labels": [
+        {"start": 0, "end": 6, "entity": "상품명"},
+        {"start": 7, "end": 11, "entity": "가격"}
+    ]
+  },
+  {
+    "sentence": "기획상품 상하목장 기획 유기농코코아우유 500ml / 100ml당946원 4,730 원",
+    "labels": [
+        {"start": 19, "end": 34, "entity": "상품명"},
+        {"start": 55, "end": 62, "entity": "가격"}
+    ]
+  },
+  {
+    "sentence": "1+1 프릴 과실초 주방세제 라임 100ml당1,358원 700ML 01-03-02.2 9,500 동일품목 교차가능 01/04-01/17 12 88098780 62118",
+    "labels": [
+        {"start": 4, "end": 16, "entity": "상품명"},
+        {"start": 30, "end": 36, "entity": "가격"},
+        {"start": 50, "end": 56, "entity": "가격"}
+    ]
+  },
+  {
+    "sentence": "다이노포스DX티리노킹 3세이상 03.03.031 89,900",
+    "labels": [
+        {"start": 0, "end": 17, "entity": "상품명"},
+        {"start": 29, "end": 36, "entity": "가격"}
+    ]
+  },
+  {
+    "sentence": "불스원유리광택크 리너 (3in1) 100ml511,000원 5,000 ###",
+    "labels": [
+        {"start": 0, "end": 17, "entity": "상품명"},
+        {"start": 30, "end": 41, "entity": "가격"}
+    ]
+  },
+  {
+    "sentence": "추천상품 퍼실 파워젤 리필 (겸용) 100ml당645g 2L 12,900 01/440-11/11",
+    "labels": [
+        {"start": 9, "end": 22, "entity": "상품명"},
+        {"start": 45, "end": 51, "entity": "가격"}
+    ]
+  },
+  {
+    "sentence": "1+1 프릴식초주방세제 리필 (라임) 100ml당9560원 1,000ML 01-05-022 9,500 동원품목 교지가능 01/14-01/17",
+    "labels": [
+        {"start": 4, "end": 14, "entity": "상품명"},
+        {"start": 34, "end": 41, "entity": "가격"},
+        {"start": 70, "end": 76, "entity": "가격"}
+    ]
+  },
+  {
+    "sentence": "NO. CPAM3FECR026BK PRICE 119.000 ITEM 큐레이티드 언서클 도센트 백 · Z SIZE F 1-1795120001",
+    "labels": [
+        {"start": 15, "end": 24, "entity": "가격"}
+    ]
+  },
+  {
+    "sentence": "멜로골드자몽 미국산 개 ₩8, ,000",
+    "labels": [
+        {"start": 0, "end": 13, "entity": "상품명"},
+        {"start": 21, "end": 29, "entity": "가격"}
+    ]
+  }
+]
+}
