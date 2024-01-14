@@ -1,0 +1,44 @@
+# 모듈 적용 방법
+
+-- 네이버 --
+from naver_shopping_crawler import NaverShoppingCrawler
+
+crawler = NaverShoppingCrawler(client_id="your_client_id", client_secret="your_client_secret", keyWord="your_keyword")
+crawler.run()
+
+
+
+-- SSG -- 
+from product_scraper import ProductScraper
+
+scraper = ProductScraper()
+df = scraper.get_data('your_query')
+print(df)
+
+
+
+-- 무신사 --
+from musinsa_scraper import MusinsaScraper
+
+scraper = MusinsaScraper('your_query')
+df = scraper.scrape()
+print(df)
+
+
+
+-- 무신사 (이미지 추출) --
+from musinsa_scraper_with_images import MusinsaScraper
+
+scraper = MusinsaScraper('your_query')
+df = scraper.scrape()
+print(df)
+
+
+
+-- 쿠팡 --
+from coupang_scraper import CoupangScraper
+
+scraper = CoupangScraper('your_query')
+scraper.scrape()
+df = scraper.to_dataframe()
+print(df)
