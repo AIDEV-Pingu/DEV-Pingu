@@ -74,12 +74,11 @@ def imageOCR(response, img : np.array):
 
     # respone.json()에서 띄어쓰기 처리
     texts = connectWord(result)
-    output = textPreprocessing(texts)
+
 
     # 이미지 시각화
     bBs = [b['boundingPoly'] for b in result['images'][0]['fields']]
 
-    ''' for visualization 
     # bounding box 표시
     for box in bBs:
         vertices = np.array([(int(point['x']), int(point['y'])) for point in box['vertices']], np.int32)
@@ -88,19 +87,39 @@ def imageOCR(response, img : np.array):
 
     # 이미지 보여주기
     cv2_imshow(img) # only colab
-    '''
+    # print(text)
 
-    return output, img
+    return texts, img
 
 
 def textPreprocessing(input_str : str):
-    import re
+    """
+    Usage : OCR 박스 별로 텍스트 전처리 적용
 
-    print('before:',input_str)
-    # 특수 기호 처리
-    pattern = re.compile(r'[@#$%^&*_+{}\[\]:;<>.?\/|`~-]')
-    result_str = pattern.sub('', input_str)
-    print('after:',result_str)
+    Parameters
+    ----------
+    response : api 호출 결과
+    img : 크롭된 이미지
+
+    Returns
+    -------
+    temp : 추출된 text
+    image : 크롭된 이미지 내 OCR 적용 결과
+
+    """
+    import re
+    # print(input_str)
+
+    pt1 = re.compile(r'[\s@#$%^&*()_+{}\[\]:;<>.?\/|`~-]') # 특수 기호 처리
+    pt2 = re.compile(r'(\d+)\s*([gGmMlL당]+)') # 10g당과 같은 무게 단위 처리
+    # pt3 = re.compile(r'(\d+)\s*([원]+)') # 780원과 같은 무게별 가격 처리
+    pt3 = re.compile(r'(\d+)\s*([개입]+)') # 10개와 같은 개수 단위 처리
+    result_str = pt1.sub('', input_str)
+    result_str = pt2.sub(' ', result_str)
+    result_str = pt3.sub(' ', result_str)
+    # result_str = pt4.sub(' ', result_str)
+    # print(result_str)
+
     return result_str
 
 
@@ -131,7 +150,7 @@ def connectWord(ocr_json):
 
         if bounding_poly and infer_text:
             vertices = bounding_poly['vertices']
-            print(vertices)
+
             left_y_coord = vertices[0]['y']  # 첫 번째 꼭짓점의 y좌표를 사용
             right_y_coord = vertices[1]['y']
             word = infer_text
@@ -143,7 +162,7 @@ def connectWord(ocr_json):
         current_group = [word_list[0]]
 
         for i in range(1, len(word_list)):
-            if abs(word_list[i]['left_y'] - word_list[i-1]['right_y']) < 10:
+            if abs(word_list[i]['left_y'] - word_list[i-1]['right_y']) < 5:
                 current_group.append(word_list[i])
             else:
                 grouped_words.append(current_group)
@@ -153,13 +172,17 @@ def connectWord(ocr_json):
             grouped_words.append(current_group)
 
     for group in grouped_words:
-        # 그룹 내의 단어들을 하나의 문자열로 합침
-        group_text = ' '.join([word_info['word'] for word_info in group])
 
-        # 문자열이 정수로만 이루어져 있지 않은 경우에만 출력
-        if not group_text.isdigit():
-            detected_texts += group_text
-            detected_texts += '\t'
+        # 그룹 내의 단어들을 하나의 문자열로 합침
+        group = list(map(lambda word_info : textPreprocessing(word_info['word']), group))
+
+        # 문자열이 정수로만 이루어져 있지 않은 경우에만 추가
+        group_text = ' '.join([word for word in group if not word.isdigit()])
+        print(group_text)
+        # if not group_text.isdigit():
+
+        detected_texts += group_text
+        detected_texts += '\t'
 
     return detected_texts
 
