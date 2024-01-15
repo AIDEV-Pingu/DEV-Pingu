@@ -1,9 +1,5 @@
 from libs import *
 
-"""
-Modules
-"""
-
 def CLOVA_api(secret_key, api_url, image : np.array):
     """
     Usage : CLOVA api 호출
@@ -20,14 +16,10 @@ def CLOVA_api(secret_key, api_url, image : np.array):
     response : api 호출 결과 (ex. 200,400,404, ...)
 
     """
-    # Error check
-    if image is None : 
-        # print('FileNotFoundError: image is None for request CLOVA_api')
-        return
-
     # Convert np.ndarray to bytes
-    _, buffer = cv2.imencode('.jpg', image)
-    file_data = buffer.tobytes()
+    if image is not None:
+        _, buffer = cv2.imencode('.jpg', image)
+        file_data = buffer.tobytes()
 
     request_json = {
         'images': [
@@ -53,6 +45,7 @@ def CLOVA_api(secret_key, api_url, image : np.array):
 
 
 
+
 def imageOCR(response, img : np.array):
     """
     Usage : api 적용 결과 (OCR 결과) 시각화
@@ -70,8 +63,7 @@ def imageOCR(response, img : np.array):
     """
     try : result = response.json()
     except :
-        print('AttributeError: Responsed \'int\' object' ,response)
-        return
+        print(response, 'AttributeError: Responsed \'int\' object' )
 
     with open('result.json', 'w', encoding='utf-8') as make_file:
         json.dump(result, make_file, indent="\t", ensure_ascii=False)
@@ -82,10 +74,12 @@ def imageOCR(response, img : np.array):
 
     # respone.json()에서 띄어쓰기 처리
     texts = connectWord(result)
+    output = textPreprocessing(texts)
 
     # 이미지 시각화
     bBs = [b['boundingPoly'] for b in result['images'][0]['fields']]
 
+    ''' for visualization 
     # bounding box 표시
     for box in bBs:
         vertices = np.array([(int(point['x']), int(point['y'])) for point in box['vertices']], np.int32)
@@ -93,10 +87,21 @@ def imageOCR(response, img : np.array):
         img = cv2.polylines(img, [vertices], isClosed=True, color=(255, 0, 0), thickness=2)
 
     # 이미지 보여주기
-    cv2.imshow('IMAGE',img) # only colab
-    # print(text)
+    cv2_imshow(img) # only colab
+    '''
 
-    return texts, img
+    return output, img
+
+
+def textPreprocessing(input_str : str):
+    import re
+
+    print('before:',input_str)
+    # 특수 기호 처리
+    pattern = re.compile(r'[@#$%^&*_+{}\[\]:;<>.?\/|`~-]')
+    result_str = pattern.sub('', input_str)
+    print('after:',result_str)
+    return result_str
 
 
 
@@ -113,7 +118,6 @@ def connectWord(ocr_json):
     detected_texts : 최종 결과
 
     """
-
     detected_texts = ''
 
     # 필드 정보 추출
@@ -127,9 +131,11 @@ def connectWord(ocr_json):
 
         if bounding_poly and infer_text:
             vertices = bounding_poly['vertices']
-            y_coord = vertices[0]['y']  # 첫 번째 꼭짓점의 y좌표를 사용
+            print(vertices)
+            left_y_coord = vertices[0]['y']  # 첫 번째 꼭짓점의 y좌표를 사용
+            right_y_coord = vertices[1]['y']
             word = infer_text
-            word_list.append({'word': word, 'y_coord': y_coord})
+            word_list.append({'word': word, 'left_y': left_y_coord, 'right_y':right_y_coord})
 
     # y좌표가 유사한 단어를 그룹화
     grouped_words = []
@@ -137,7 +143,7 @@ def connectWord(ocr_json):
         current_group = [word_list[0]]
 
         for i in range(1, len(word_list)):
-            if abs(word_list[i]['y_coord'] - word_list[i-1]['y_coord']) < 10:
+            if abs(word_list[i]['left_y'] - word_list[i-1]['right_y']) < 10:
                 current_group.append(word_list[i])
             else:
                 grouped_words.append(current_group)
@@ -153,7 +159,7 @@ def connectWord(ocr_json):
         # 문자열이 정수로만 이루어져 있지 않은 경우에만 출력
         if not group_text.isdigit():
             detected_texts += group_text
-            detected_texts += '\n'
+            detected_texts += '\t'
 
     return detected_texts
 
@@ -172,7 +178,7 @@ def modelPredict(model, input_Data):
 
 def predict2crop(model, folder_path, image_file, resize = 256):
     """
-    Usage : 객체 탐지 후 Bounding Box 기준으로 이미지 Cropping
+    Usage : 객체 탐지 및 원본 및 크롭 이미지 return
 
     Parameters
     ----------
@@ -243,9 +249,9 @@ def imgCrop(img, bbCoor):
     # # 결과 시각화
     # cv2.rectangle(img, (x - half_w, y - half_h), (x + half_w, y + half_h), (0, 255, 0), 2)
     # print('\n Original')
-    # cv2.imshow(img) # only colab
+    # cv2_imshow(img) # only colab
     # print('\n Cropped')
-    # cv2.imshow(cropped_img) # only colab
+    # cv2_imshow(cropped_img) # only colab
 
     return cropped_img
 
