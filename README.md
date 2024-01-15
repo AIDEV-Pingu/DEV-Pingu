@@ -38,7 +38,7 @@ Programmers Dev코스 4조 핑구입니당~~
 
 ### 🛠Tech Stack
 
-![image]()
+이미지
 
 
 
@@ -46,13 +46,13 @@ Programmers Dev코스 4조 핑구입니당~~
 
 ### 🏔컴포넌트 구조
 
-![image]()
+이미지
 
 
 
 ### 🎮 서비스 플로우 차트
 
-![image]()
+이미지
 
 
 
