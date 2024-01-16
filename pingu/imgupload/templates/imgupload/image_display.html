@@ -1,0 +1,21 @@
+<!-- image_display.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>제출하신 이미지</title>
+    <!-- Tailwind CSS CDN 추가 -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-t from-pink-500 via-purple-500 to-indigo-500">
+        <main class="w-full max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden p-6 space-y-2 md:max-w-2xl">
+            <header class="flex flex-col items-center">
+                <h1 class="text-3xl font-bold text-blue-900 mb-4">제출하신 이미지입니다!</h1>
+            </header>
+            <div>
+                <img src="{{ image.image.url }}" alt="Uploaded Image" style="max-width: 500px;" class="rounded-md shadow-lg"/>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
