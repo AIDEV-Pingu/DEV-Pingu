@@ -12,6 +12,7 @@ def index(request):
 
 def result_view(request):
     analysis_result = ""
+    price_result = ""
     if request.method == 'POST':
         input_text = request.POST.get('text')
         doc = nlp(input_text)
@@ -20,5 +21,10 @@ def result_view(request):
                 analysis_result = t.text
             else:
                 analysis_result = None
+            
+            if t.label_ == "가격":
+                price_result = t.text
+            else:
+                price_result = None
         
-    return render(request, 'spacyapp/spacy_result.html', {'analysis_result': analysis_result})
+    return render(request, 'spacyapp/spacy_result.html', {'analysis_result': analysis_result, 'price_result' : price_result})
