@@ -1,0 +1,159 @@
+{
+	"version": "V2",
+	"requestId": "3d5c5ee7-8c32-474a-89a3-ad49984d2957",
+	"timestamp": 1705393347914,
+	"images": [
+		{
+			"uid": "fb83a58683d24b5182c6a4ac6742db18",
+			"name": "demo",
+			"inferResult": "SUCCESS",
+			"message": "SUCCESS",
+			"validationResult": {
+				"result": "NO_REQUESTED"
+			},
+			"convertedImageInfo": {
+				"width": 440,
+				"height": 200,
+				"pageIndex": 0,
+				"longImage": false
+			},
+			"fields": [
+				{
+					"valueType": "ALL",
+					"boundingPoly": {
+						"vertices": [
+							{
+								"x": 13.0,
+								"y": 32.0
+							},
+							{
+								"x": 191.0,
+								"y": 32.0
+							},
+							{
+								"x": 191.0,
+								"y": 63.0
+							},
+							{
+								"x": 13.0,
+								"y": 63.0
+							}
+						]
+					},
+					"inferText": "보짱(친환경,1입)",
+					"inferConfidence": 0.9997,
+					"type": "NORMAL",
+					"lineBreak": true
+				},
+				{
+					"valueType": "ALL",
+					"boundingPoly": {
+						"vertices": [
+							{
+								"x": 306.0,
+								"y": 108.0
+							},
+							{
+								"x": 416.0,
+								"y": 107.0
+							},
+							{
+								"x": 417.0,
+								"y": 157.0
+							},
+							{
+								"x": 307.0,
+								"y": 157.0
+							}
+						]
+					},
+					"inferText": "7,500",
+					"inferConfidence": 0.9997,
+					"type": "NORMAL",
+					"lineBreak": true
+				},
+				{
+					"valueType": "ALL",
+					"boundingPoly": {
+						"vertices": [
+							{
+								"x": 37.0,
+								"y": 169.0
+							},
+							{
+								"x": 126.0,
+								"y": 168.0
+							},
+							{
+								"x": 127.0,
+								"y": 179.0
+							},
+							{
+								"x": 37.0,
+								"y": 180.0
+							}
+						]
+					},
+					"inferText": "8809020304738",
+					"inferConfidence": 0.9877,
+					"type": "NORMAL",
+					"lineBreak": false
+				},
+				{
+					"valueType": "ALL",
+					"boundingPoly": {
+						"vertices": [
+							{
+								"x": 308.0,
+								"y": 159.0
+							},
+							{
+								"x": 367.0,
+								"y": 159.0
+							},
+							{
+								"x": 367.0,
+								"y": 178.0
+							},
+							{
+								"x": 308.0,
+								"y": 179.0
+							}
+						]
+					},
+					"inferText": "1개개당",
+					"inferConfidence": 1.0,
+					"type": "NORMAL",
+					"lineBreak": false
+				},
+				{
+					"valueType": "ALL",
+					"boundingPoly": {
+						"vertices": [
+							{
+								"x": 369.0,
+								"y": 160.0
+							},
+							{
+								"x": 418.0,
+								"y": 160.0
+							},
+							{
+								"x": 418.0,
+								"y": 176.0
+							},
+							{
+								"x": 369.0,
+								"y": 176.0
+							}
+						]
+					},
+					"inferText": "7,500원",
+					"inferConfidence": 0.9988,
+					"type": "NORMAL",
+					"lineBreak": true
+				}
+			]
+		}
+	]
+}

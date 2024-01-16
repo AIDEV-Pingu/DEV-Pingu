@@ -122,3 +122,13 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+# Roboflow 설정
+ROBOFLOW_API_KEY = "eyKD4VJQ4nRqtosRytMg"
+ROBOFLOW_PROJECT = "price-tag-dxlmv"
+ROBOFLOW_VERSION = 15
+
+# CLOVA OCR API 설정
+CLOVA_API_KEY = "Y0l6ZHF1Um9CSWp3aHpJU3JDeFdpUGp1cG16T3hFQkg="
+CLOVA_API_URL = 'https://p0fsnflvaw.apigw.ntruss.com/custom/v1/27259/8a921c4c7d4e552c974b102e64c6227f3a2995ca938c066ddeb1442d6bf4b67c/general'
