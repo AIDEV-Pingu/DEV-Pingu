@@ -13,30 +13,14 @@ Original file is located at
 - packages
 """
 
-
-import torch
-import torch.nn as nn
-import torch.optim as optim
-import torchvision.transforms as transforms
-from torchvision.datasets import CIFAR10
-from torch.utils.data import DataLoader
 import numpy as np
-import platform
-from PIL import ImageFont, ImageDraw, Image
-from matplotlib import pyplot as plt
-import requests
+from roboflow import Roboflow
+import cv2
 import base64
 import uuid
-import json
 import time
-import cv2
+import json
 import requests
-import platform
-from google.colab.patches import cv2_imshow
-import numpy as np
-import os
-# !pip install roboflow
-from roboflow import Roboflow
 
 """## Modules"""
 
@@ -56,6 +40,7 @@ def CLOVA_api(secret_key, api_url, image : np.array):
     response : api 호출 결과 (ex. 200,400,404, ...)
 
     """
+    
     # Convert np.ndarray to bytes
     if image is not None:
         _, buffer = cv2.imencode('.jpg', image)
@@ -114,6 +99,7 @@ def imageOCR(response, img : np.array):
 
     # respone.json()에서 띄어쓰기 처리
     texts = connectWord(result)
+    output = textPreprocessing(texts)
 
     # 이미지 시각화
     bBs = [b['boundingPoly'] for b in result['images'][0]['fields']]
@@ -125,10 +111,21 @@ def imageOCR(response, img : np.array):
         img = cv2.polylines(img, [vertices], isClosed=True, color=(255, 0, 0), thickness=2)
 
     # 이미지 보여주기
-    cv2_imshow(img) # only colab
+    # cv2_imshow(img) # only colab
     # print(text)
 
-    return texts, img
+    return output, img
+
+
+def textPreprocessing(input_str : str):
+    import re
+
+    print(input_str)
+    # 특수 기호 처리
+    pattern = re.compile(r'[@#$%^&*()_+{}\[\]:;<>.?\/|`~-]')
+    result_str = pattern.sub('', input_str)
+    print(result_str)
+    return result_str
 
 
 
@@ -145,7 +142,6 @@ def connectWord(ocr_json):
     detected_texts : 최종 결과
 
     """
-
     detected_texts = ''
 
     # 필드 정보 추출
@@ -159,9 +155,11 @@ def connectWord(ocr_json):
 
         if bounding_poly and infer_text:
             vertices = bounding_poly['vertices']
-            y_coord = vertices[0]['y']  # 첫 번째 꼭짓점의 y좌표를 사용
+            print(vertices)
+            left_y_coord = vertices[0]['y']  # 첫 번째 꼭짓점의 y좌표를 사용
+            right_y_coord = vertices[1]['y']
             word = infer_text
-            word_list.append({'word': word, 'y_coord': y_coord})
+            word_list.append({'word': word, 'left_y': left_y_coord, 'right_y':right_y_coord})
 
     # y좌표가 유사한 단어를 그룹화
     grouped_words = []
@@ -169,7 +167,7 @@ def connectWord(ocr_json):
         current_group = [word_list[0]]
 
         for i in range(1, len(word_list)):
-            if abs(word_list[i]['y_coord'] - word_list[i-1]['y_coord']) < 10:
+            if abs(word_list[i]['left_y'] - word_list[i-1]['right_y']) < 10:
                 current_group.append(word_list[i])
             else:
                 grouped_words.append(current_group)
@@ -181,11 +179,11 @@ def connectWord(ocr_json):
     for group in grouped_words:
         # 그룹 내의 단어들을 하나의 문자열로 합침
         group_text = ' '.join([word_info['word'] for word_info in group])
-
+        print(group, group_text)
         # 문자열이 정수로만 이루어져 있지 않은 경우에만 출력
         if not group_text.isdigit():
             detected_texts += group_text
-            detected_texts += '\n'
+            detected_texts += '\t'
 
     return detected_texts
 
@@ -202,7 +200,7 @@ def modelPredict(model, input_Data):
 
 
 
-def predict2crop(model, folder_path, image_file, resize = 256):
+def predict2crop(model, image_path, resize = 256):
     """
     Usage : 객체 탐지 및 원본 및 크롭 이미지 return
 
@@ -219,28 +217,26 @@ def predict2crop(model, folder_path, image_file, resize = 256):
     cropped_image : 크롭된 이미지
 
     """
-    image_path = folder_path + image_file
-    img_size = resize # img_size * img_size
 
     org_img = cv2.imread(image_path)
     if org_img is None:
         print(f"Error: Unable to read the image file {image_path}")
         return None, None
 
-    rsz_img = cv2.resize(org_img, (img_size, img_size), interpolation= cv2.INTER_AREA)
+    rsz_img = cv2.resize(org_img, (resize, resize), interpolation= cv2.INTER_AREA)
     adc_img = auto_adjust_contrast(rsz_img)
 
 
-    predictions_data = modelPredict(model, input_Data = adc_img) # resize된 img속에서 찾은 bbox 좌표
+    predictions_data = modelPredict(model, adc_img) # resize된 img속에서 찾은 bbox 좌표
 
-    print('Detected Obj : ', len(predictions_data['predictions']))
+    # print('Detected Obj : ', len(predictions_data['predictions']))
 
-    if predictions_data is None :
-        print('Detect Nothing. It\'s Too Close')
+    if predictions_data is None or len(predictions_data['predictions']) == 0 :
+        print('오류 : 제품감지에 실패했습니다')
         return org_img, org_img
 
     if len(predictions_data['predictions']) > 1:
-        print('! Error : Multiple detection Error. Take more closer')
+        print('너무 많은 물체가 감지되었습니다!')
         return None, None
 
     orgBBcoor = predBBcoor(org_img, predictions_data)
@@ -332,40 +328,3 @@ def auto_adjust_contrast(image : np.array):
     equalized_image = np.interp(flat_image, bins[:-1], cdf_normalized * 255).reshape(image.shape)
 
     return equalized_image.astype(np.uint8) # np.array
-
-"""- model load"""
-'''
-rf = Roboflow(api_key="eyKD4VJQ4nRqtosRytMg")
-project = rf.workspace().project("price-tag-dxlmv")
-model = project.version(8).model
-
-model
-
-# 데이터가 존재하는 폴더 경로
-image_folder = '/content/drive/MyDrive/train_Data/'
-files = os.listdir(image_folder)
-
-# 데이터 폴더 내 이미지 파일들만 저장
-image_files = [file for file in files] # 데이터 접근 : 다중 파일로 테스트 시, 파일 순회
-
-##### input data 입력 #####
-input_img = 'IMG_5586.jpeg'
-
-# 단일 이미지 넣을 시
-if input_img:
-# for image in image_files: # 다량의 이미지 테스트 용
-    original_img, cropped_img = predict2crop(model, folder_path = image_folder ,image_file = input_img)
-    # show_result(original_img, cropped_img, folder_path = image_folder ,image_file = image)
-
-# OCR api
-secret_key = "Y0l6ZHF1Um9CSWp3aHpJU3JDeFdpUGp1cG16T3hFQkg="
-api_url = 'https://p0fsnflvaw.apigw.ntruss.com/custom/v1/27259/8a921c4c7d4e552c974b102e64c6227f3a2995ca938c066ddeb1442d6bf4b67c/general'
-
-
-response = CLOVA_api(secret_key ,api_url ,image = cropped_img)
-texts, img = imageOCR(response, img = cropped_img)
-
-"""## Text preprocessing"""
-
-' '.join(texts)
-'''
