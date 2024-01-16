@@ -2,7 +2,7 @@ from modules import *
 
 '''data load'''
 # 데이터가 존재하는 폴더 경로 지정
-IMG_FOLDER = '/Users/jykim/myWS/Dev_AI_6/proJects/Pingu_Dev_JPG_Data 3'
+IMG_FOLDER = '/Users/jykim/myWS/Dev_AI_6/proJects/Pingu_Dev_JPG_Data/'
 files = os.listdir(IMG_FOLDER)
 
 ##### input data 입력 #####
@@ -22,7 +22,7 @@ api_url = 'https://p0fsnflvaw.apigw.ntruss.com/custom/v1/27259/8a921c4c7d4e552c9
 original_img, cropped_img = predict2crop(model, folder_path = IMG_FOLDER ,image_file = INPUT_IMG)
 
 response = CLOVA_api(secret_key ,api_url ,image = cropped_img)
-texts, img = imageOCR(response, img = cropped_img)
+texts, img = imageOCR(response, cropped_img)
 
 result = ' '.join(texts)
 

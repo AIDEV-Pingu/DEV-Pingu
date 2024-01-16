@@ -86,7 +86,7 @@ def imageOCR(response, img : np.array):
         img = cv2.polylines(img, [vertices], isClosed=True, color=(255, 0, 0), thickness=2)
 
     # 이미지 보여주기
-    cv2_imshow(img) # only colab
+    cv2.imshow('IMAGE',img) # only colab
     # print(text)
 
     return texts, img

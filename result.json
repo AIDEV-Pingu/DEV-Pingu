@@ -1,0 +1,105 @@
+{
+	"version": "V2",
+	"requestId": "763feaa0-90dd-4363-97e2-a3a55ad30b36",
+	"timestamp": 1705383488435,
+	"images": [
+		{
+			"uid": "19dc19fcacea4381bf03e99db763c1d2",
+			"name": "demo",
+			"inferResult": "SUCCESS",
+			"message": "SUCCESS",
+			"validationResult": {
+				"result": "NO_REQUESTED"
+			},
+			"convertedImageInfo": {
+				"width": 102,
+				"height": 46,
+				"pageIndex": 0,
+				"longImage": false
+			},
+			"fields": [
+				{
+					"valueType": "ALL",
+					"boundingPoly": {
+						"vertices": [
+							{
+								"x": 11.0,
+								"y": 2.0
+							},
+							{
+								"x": 34.0,
+								"y": 4.0
+							},
+							{
+								"x": 33.0,
+								"y": 9.0
+							},
+							{
+								"x": 11.0,
+								"y": 8.0
+							}
+						]
+					},
+					"inferText": "2020",
+					"inferConfidence": 0.7297,
+					"type": "NORMAL",
+					"lineBreak": true
+				},
+				{
+					"valueType": "ALL",
+					"boundingPoly": {
+						"vertices": [
+							{
+								"x": 5.0,
+								"y": 21.0
+							},
+							{
+								"x": 26.0,
+								"y": 22.0
+							},
+							{
+								"x": 26.0,
+								"y": 32.0
+							},
+							{
+								"x": 5.0,
+								"y": 32.0
+							}
+						]
+					},
+					"inferText": "1+1",
+					"inferConfidence": 0.9965,
+					"type": "NORMAL",
+					"lineBreak": true
+				},
+				{
+					"valueType": "ALL",
+					"boundingPoly": {
+						"vertices": [
+							{
+								"x": 59.0,
+								"y": 30.0
+							},
+							{
+								"x": 101.0,
+								"y": 30.0
+							},
+							{
+								"x": 101.0,
+								"y": 47.0
+							},
+							{
+								"x": 59.0,
+								"y": 47.0
+							}
+						]
+					},
+					"inferText": "7,500",
+					"inferConfidence": 0.9825,
+					"type": "NORMAL",
+					"lineBreak": true
+				}
+			]
+		}
+	]
+}
