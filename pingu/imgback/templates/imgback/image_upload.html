@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Upload</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-t from-pink-500 via-purple-500 to-indigo-500">
+    <div class="flex flex-col items-center justify-center min-h-screen">
+        <div class="w-full max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden p-6 space-y-2">
+            <h1 class="text-3xl font-bold">Image Upload</h1>
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">Upload Image</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OCR Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-t from-pink-500 via-purple-500 to-indigo-500">
+    <div class="flex flex-col items-center justify-center min-h-screen">
+        <div class="w-full max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden p-6 space-y-2">
+            <h1 class="text-3xl font-bold">OCR Results</h1>
+            <div class="text-center">
+                <img src="{{ image_path }}" alt="Processed Image" class="max-w-md mx-auto mb-4">
+                <div class="flex justify-around">
+                    <div>
+                        <h2 class="text-xl font-semibold">Product Name</h2>
+                        <p>{{ product_name }}</p>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-semibold">Price</h2>
+                        <p>{{ price }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
