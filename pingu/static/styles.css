@@ -1,0 +1,16 @@
+#drop-area {
+    border: 5px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    }
+
+#drop-area img {
+    margin: 100px auto; /* Center the image within the drop area */
+}
+
+#drop-area p {
+    margin-top: 20px;
+}
