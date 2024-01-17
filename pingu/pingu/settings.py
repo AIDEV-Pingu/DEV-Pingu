@@ -35,9 +35,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'main',
-    'spacyapp',
-    'imgupload',
-    'ocrtool',
+    'imgback',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
