@@ -45,7 +45,6 @@ def CLOVA_api(secret_key, api_url, image : np.array):
 
 
 
-
 def imageOCR(response, img : np.array):
     """
     Usage : api 적용 결과 (OCR 결과) 시각화
@@ -307,25 +306,3 @@ def predBBcoor(org_img : np.array, pred_data : list, resize=256):
     x, y, width, height = round((w*rx)/resize), round((h*ry)/resize), round((rwidth*w)/256), round((rheight*h)/256)
 
     return x, y, width, height
-
-
-
-# preprocessing : auto_adjust_contrast
-def auto_adjust_contrast(image : np.array):
-    # Flatten the image to 1D array
-    try : flat_image = image.flatten()
-    except : return None
-
-    # Compute the histogram
-    histogram, bins = np.histogram(flat_image, bins=256, range=(0, 256))
-
-    # Compute the cumulative distribution function (CDF)
-    cdf = histogram.cumsum()
-
-    # Normalize the CDF
-    cdf_normalized = cdf / cdf.max()
-
-    # Perform histogram equalization
-    equalized_image = np.interp(flat_image, bins[:-1], cdf_normalized * 255).reshape(image.shape)
-
-    return equalized_image.astype(np.uint8) # np.array
