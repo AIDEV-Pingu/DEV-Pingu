@@ -10,6 +10,7 @@ import os
 from pingu import settings
 
 
+
 """## Modules"""
 
 def CLOVA_api(secret_key, api_url, image : np.array):
