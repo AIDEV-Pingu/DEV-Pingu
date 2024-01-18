@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Upload</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-t from-pink-200 via-purple-200 to-indigo-300">
+    <div class="flex flex-col items-center justify-center min-h-screen">
+        <div class="w-full max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden p-6 space-y-2">
+            <!--메인 화면으로 이동하는 버튼-->
+            <a href="{% url 'loading_screen' %}" class="mb-2">
+                <img src="{% static 'home_pingu.png' %}" alt="Home" style="max-width: 30px; max-height: 30px;">
+                <span class="sr-only">Home</span>
+            </a>
+            <div class="flex justify-between items-center mb-4">
+                <h1 class="text-3xl font-bold">Image Upload</h1>
+            </div>
+            <form method="post" enctype="multipart/form-data" class="flex flex-col items-center">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div class="flex items-center justify-center bg-static-image">
+                    <div class="aspect-w-4 aspect-h-3 max-w-full h-auto">
+                        <img src="{% static 'pingu_imgupload.jpeg'%}" alt="Loading GIF" class="max-w-full h-auto rounded-md">
+                        <!-- max-w-full을 사용하여 이미지의 최대 너비를 100%로 설정하고, h-auto를 사용하여 이미지의 높이를 자동으로 조절합니다. -->
+                    </div>
+                </div>
+                <button type="submit" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-500">Upload Image</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
