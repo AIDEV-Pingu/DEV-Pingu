@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>핑구핑구</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Pingu 웹사이트</h1>
+<body class="bg-gradient-to-t from-pink-500 via-purple-500 to-indigo-500">
+    <div class="flex flex-col items-center justify-center min-h-screen">
+        <div class="w-full max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden p-6 space-y-2">
+            <h1 class="text-3xl font-bold">핑구에 오신 것을 환영합니다!</h1>
+            <button onclick="location.href='/img/upload/'" class="w-full px-4 py-2 bg-blue-500 text-white text-lg rounded hover:bg-blue-700">
+                가격표 업로드
+            </button>
+        </div>
+    </div>
 </body>
 </html>
