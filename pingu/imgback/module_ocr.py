@@ -10,7 +10,6 @@ import os
 from pingu import settings
 
 
-
 """## Modules"""
 
 def CLOVA_api(secret_key, api_url, image : np.array):
@@ -86,7 +85,6 @@ def imageOCR(response, img : np.array):
 
     # respone.json()에서 띄어쓰기 처리
     texts = connectWord(result)
-    output = textPreprocessing(texts)
 
     # 이미지 시각화
     bBs = [b['boundingPoly'] for b in result['images'][0]['fields']]
@@ -105,17 +103,37 @@ def imageOCR(response, img : np.array):
     # 웹에서 접근 가능한 이미지 URL 생성
     processed_image_url = os.path.join(settings.MEDIA_URL, processed_image_filename)
 
-    return output, processed_image_url
+    return texts, processed_image_url
 
 
 def textPreprocessing(input_str : str):
-    import re
+    """
+    Usage : OCR 박스 별로 텍스트 전처리 적용
 
-    print(input_str)
-    # 특수 기호 처리
-    pattern = re.compile(r'[@#$%^&*()_+{}\[\]:;<>.?\/|`~-]')
-    result_str = pattern.sub('', input_str)
-    print(result_str)
+    Parameters
+    ----------
+    response : api 호출 결과
+    img : 크롭된 이미지
+
+    Returns
+    -------
+    temp : 추출된 text
+    image : 크롭된 이미지 내 OCR 적용 결과
+
+    """
+    import re
+    # print(input_str)
+
+    pt1 = re.compile(r'[\s@#$%^&*()_+{}\[\]:;<>.?\/|`~-]') # 특수 기호 처리
+    pt2 = re.compile(r'(\d+)\s*([gGmMlL당]+)') # 10g당과 같은 무게 단위 처리
+    # pt3 = re.compile(r'(\d+)\s*([원]+)') # 780원과 같은 무게별 가격 처리
+    pt3 = re.compile(r'(\d+)\s*([개입]+)') # 10개와 같은 개수 단위 처리
+    result_str = pt1.sub('', input_str)
+    result_str = pt2.sub(' ', result_str)
+    result_str = pt3.sub(' ', result_str)
+    # result_str = pt4.sub(' ', result_str)
+    # print(result_str)
+
     return result_str
 
 
@@ -145,7 +163,7 @@ def connectWord(ocr_json):
 
         if bounding_poly and infer_text:
             vertices = bounding_poly['vertices']
-            print(vertices)
+            
             left_y_coord = vertices[0]['y']  # 첫 번째 꼭짓점의 y좌표를 사용
             right_y_coord = vertices[1]['y']
             word = infer_text
@@ -157,7 +175,7 @@ def connectWord(ocr_json):
         current_group = [word_list[0]]
 
         for i in range(1, len(word_list)):
-            if abs(word_list[i]['left_y'] - word_list[i-1]['right_y']) < 10:
+            if abs(word_list[i]['left_y'] - word_list[i-1]['right_y']) < 5:
                 current_group.append(word_list[i])
             else:
                 grouped_words.append(current_group)
@@ -167,13 +185,17 @@ def connectWord(ocr_json):
             grouped_words.append(current_group)
 
     for group in grouped_words:
+
         # 그룹 내의 단어들을 하나의 문자열로 합침
-        group_text = ' '.join([word_info['word'] for word_info in group])
-        print(group, group_text)
-        # 문자열이 정수로만 이루어져 있지 않은 경우에만 출력
-        if not group_text.isdigit():
-            detected_texts += group_text
-            detected_texts += '\t'
+        group = list(map(lambda word_info : textPreprocessing(word_info['word']), group))
+
+        # 문자열이 정수로만 이루어져 있지 않은 경우에만 추가
+        group_text = ' '.join([word for word in group if not word.isdigit()])
+        print(group_text)
+        # if not group_text.isdigit():
+
+        detected_texts += group_text
+        detected_texts += '\t'
 
     return detected_texts
 
@@ -214,10 +236,9 @@ def predict2crop(model, image_path, resize = 256):
         return None, None
 
     rsz_img = cv2.resize(org_img, (resize, resize), interpolation= cv2.INTER_AREA)
-    adc_img = auto_adjust_contrast(rsz_img)
 
 
-    predictions_data = modelPredict(model, adc_img) # resize된 img속에서 찾은 bbox 좌표
+    predictions_data = modelPredict(model, rsz_img) # resize된 img속에서 찾은 bbox 좌표
 
     # print('Detected Obj : ', len(predictions_data['predictions']))
 
@@ -232,7 +253,7 @@ def predict2crop(model, image_path, resize = 256):
     orgBBcoor = predBBcoor(org_img, predictions_data)
     cropped_img = imgCrop(org_img, orgBBcoor) #원본이미지에서 crop
 
-    return org_img, cropped_img
+    return cropped_img
 
 
 
@@ -257,13 +278,6 @@ def imgCrop(img, bbCoor):
     half_w, half_h = round(width/2), round(height/2)
 
     cropped_img = img[abs(y-half_h) : y+half_h, abs(x-half_w ): x+half_w] # img crop
-
-    # # 결과 시각화
-    # cv2.rectangle(img, (x - half_w, y - half_h), (x + half_w, y + half_h), (0, 255, 0), 2)
-    # print('\n Original')
-    # cv2_imshow(img) # only colab
-    # print('\n Cropped')
-    # cv2_imshow(cropped_img) # only colab
 
     return cropped_img
 
@@ -298,7 +312,7 @@ def predBBcoor(org_img : np.array, pred_data : list, resize=256):
     return x, y, width, height
 
 
-
+'''
 # preprocessing : auto_adjust_contrast
 def auto_adjust_contrast(image : np.array):
     # Flatten the image to 1D array
@@ -318,3 +332,4 @@ def auto_adjust_contrast(image : np.array):
     equalized_image = np.interp(flat_image, bins[:-1], cdf_normalized * 255).reshape(image.shape)
 
     return equalized_image.astype(np.uint8) # np.array
+'''
