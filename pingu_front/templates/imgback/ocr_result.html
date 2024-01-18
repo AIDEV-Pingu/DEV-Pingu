@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading Screen</title>
+    <title>OCR_result</title>
     <!-- Bootstrap CSS (optional) -->
     <style>
         *{
@@ -86,12 +86,6 @@
     </style>
 </head>
 <body>
-    <section class="loading">
-        <h1 class="loading-title">Loading...</h1>
-        <div class="progress-bar" aria-hidden="true">
-            <span class="progress-bar-gauge"></span>
-        </div>
-    </section>
 
 {% if product_name %}
     <!-- OCR 결과가 있을 때 보여지는 부분 -->
@@ -114,7 +108,12 @@
         </div>
     </div>
 {% else %}
-    <p>로딩 중이거나 처리할 이미지가 없습니다.</p>
+    <section class="loading">
+        <h1 class="loading-title">Loading...</h1>
+        <div class="progress-bar" aria-hidden="true">
+            <span class="progress-bar-gauge"></span>
+        </div>
+    </section>
 {% endif %}
 
 
