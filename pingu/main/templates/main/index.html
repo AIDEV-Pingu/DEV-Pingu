@@ -1,17 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>핑구핑구</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Recognition</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
 </head>
-<body class="bg-gradient-to-t from-pink-500 via-purple-500 to-indigo-500">
-    <div class="flex flex-col items-center justify-center min-h-screen">
-        <div class="w-full max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden p-6 space-y-2">
-            <h1 class="text-3xl font-bold">핑구에 오신 것을 환영합니다!</h1>
-            <button onclick="location.href='/img/upload/'" class="w-full px-4 py-2 bg-blue-500 text-white text-lg rounded hover:bg-blue-700">
-                가격표 업로드
-            </button>
-        </div>
+<body>
+    <div id="drop-area">
+        <img src="https://searchenginereports.net/newassets/images/revrse-upload.svg" alt="Choose image" class="mt20 img-responsive">
+        <p>Drag & Drop an image here or click to select one</p>
+        <input type="file" id="file-input" style="display: none;">
     </div>
+
+    <div id="image-container" style="margin-top: 40px;"></div>
+    
+    {% load static %}
+    <script src="{% static 'dragNdrop.js' %}"></script>
+    <img
+  loading="lazy"
+  srcset="https://cdn.builder.io/api/v1/image/assets%2F3222e15fb6674fcda0b771f8ed9040c6%2Fecb1a1d54c2943e7932ecfd6f1383471?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F3222e15fb6674fcda0b771f8ed9040c6%2Fecb1a1d54c2943e7932ecfd6f1383471?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F3222e15fb6674fcda0b771f8ed9040c6%2Fecb1a1d54c2943e7932ecfd6f1383471?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F3222e15fb6674fcda0b771f8ed9040c6%2Fecb1a1d54c2943e7932ecfd6f1383471?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F3222e15fb6674fcda0b771f8ed9040c6%2Fecb1a1d54c2943e7932ecfd6f1383471?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F3222e15fb6674fcda0b771f8ed9040c6%2Fecb1a1d54c2943e7932ecfd6f1383471?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F3222e15fb6674fcda0b771f8ed9040c6%2Fecb1a1d54c2943e7932ecfd6f1383471?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F3222e15fb6674fcda0b771f8ed9040c6%2Fecb1a1d54c2943e7932ecfd6f1383471"
+  class="img"
+/>
+<style>
+  .img {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    margin-top: 20px;
+    min-height: 20px;
+    min-width: 20px;
+    overflow: hidden;
+    height: auto;
+    flex-grow: 1;
+  }
+</style>
+
 </body>
 </html>
