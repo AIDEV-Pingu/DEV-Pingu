@@ -1,4 +1,5 @@
 from libs import *
+from pingu import settings
 
 def CLOVA_api(secret_key, api_url, image : np.array):
     """

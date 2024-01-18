@@ -14,3 +14,10 @@
 #drop-area p {
     margin-top: 20px;
 }
+
+#body {
+    background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAyMTEwMDlfMjQx%2FMDAxNjMzNzgzMTc5NjQ2.0riXSyBsT2xV6eEpxrjrjnSO0Sf59tM5dwNTREy6oLgg.vlAVObTKEZwHzyNm_75wkrILaKQ70gmiPyho-S1eQrYg.PNG%2FexternalFile.png&type=a340'); /* Replace with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    /* Additional background styles if needed */
+}
