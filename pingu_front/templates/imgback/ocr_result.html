@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen</title>
+    <!-- Bootstrap CSS (optional) -->
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            
+        }
+        body{
+            font-family: 'Mulish', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .loading{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 216px;
+        }
+        .loading-title{
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.3333;
+            color: #333;
+            animation-name: flicker;
+            animation-duration: 1600ms;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .progress-bar{
+            position: relative;
+            width: 300px;
+            height: 12px;
+            border-radius: 100px;
+            background-color: rgb(167,167,167);
+            overflow: hidden;
+        }
+        .progress-bar-gauge{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 12px;
+            border-radius: 100px;
+            background-color: rgb(44,228,167);
+            animation-name: loading-bar;
+            animation-duration: 1600ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+        }
+        @keyframes flicker{
+            from{
+                opacity: 1;
+            }
+            to{
+                opacity: 0;
+            }
+        }
+
+        @keyframes loading-bar{
+            0% {
+                width: 0;
+                opacity: 1;
+            }
+            80%{
+                width: 100%;
+                opacity: 1;
+            }
+            100%{
+                width: 100%;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="loading">
+        <h1 class="loading-title">Loading...</h1>
+        <div class="progress-bar" aria-hidden="true">
+            <span class="progress-bar-gauge"></span>
+        </div>
+    </section>
+
+{% if product_name %}
+    <!-- OCR 결과가 있을 때 보여지는 부분 -->
+    <div class="flex flex-col items-center justify-center min-h-screen">
+        <div class="w-full max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden p-6 space-y-2">
+            <h1 class="text-3xl font-bold">OCR Results</h1>
+            <div class="text-center">
+                <img src="{{ image_path }}" alt="Processed Image" class="max-w-md mx-auto mb-4">
+                <div class="flex justify-around">
+                    <div>
+                        <h2 class="text-xl font-semibold">Product Name</h2>
+                        <p>{{ product_name }}</p>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-semibold">Price</h2>
+                        <p>{{ price }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% else %}
+    <p>로딩 중이거나 처리할 이미지가 없습니다.</p>
+{% endif %}
+
+
+</body>
+</html>
