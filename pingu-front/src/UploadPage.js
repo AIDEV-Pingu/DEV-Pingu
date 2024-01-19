@@ -47,7 +47,8 @@ class UploadPage extends React.Component {
     });
 
     try {
-      const response = await fetch('http://your-backend-url/api/ocr', {
+      // Django 서버의 엔드포인트를 사용하세요.
+      const response = await fetch('http://localhost:8000/api/upload', {
         method: 'POST',
         body: formData
       });
@@ -56,6 +57,7 @@ class UploadPage extends React.Component {
         throw new Error('Network response was not ok');
       }
 
+      // Django 서버에서 반환하는 응답의 형식에 따라 코드를 수정하세요.
       const data = await response.json();
 
       if (data.ocrImage) {
