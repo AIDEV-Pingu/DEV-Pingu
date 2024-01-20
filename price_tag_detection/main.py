@@ -1,4 +1,5 @@
 from modules import *
+# from pingu import settings
 
 '''data load'''
 # 데이터가 존재하는 폴더 경로 지정

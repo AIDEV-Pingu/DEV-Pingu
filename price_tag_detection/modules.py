@@ -1,5 +1,4 @@
 from libs import *
-from pingu import settings
 
 def CLOVA_api(secret_key, api_url, image : np.array):
     """
@@ -90,15 +89,17 @@ def textPreprocessing(input_str : str):
     image : 크롭된 이미지 내 OCR 적용 결과
     """
     import re
-    # print(input_str)
+
     pt1 = re.compile(r'[\s@#$%^&*()_+{}\[\]:;<>.?\/|`~-]') # 특수 기호 처리
     pt2 = re.compile(r'(\d+)\s*([gGmMlL당]+)') # 10g당과 같은 무게 단위 처리
     # pt3 = re.compile(r'(\d+)\s*([원]+)') # 780원과 같은 무게별 가격 처리
     pt3 = re.compile(r'(\d+)\s*([개입]+)') # 10개와 같은 개수 단위 처리
+    pt4 = re.compile('[\u4e00-\u9fa5\u3040-\u30ff]+') # 한자, 일본어 글자 처리
     result_str = pt1.sub('', input_str)
     result_str = pt2.sub(' ', result_str)
     result_str = pt3.sub(' ', result_str)
-    # result_str = pt4.sub(' ', result_str)
+    result_str = pt4.sub('', result_str)
+
     # print(result_str)
     return result_str
 

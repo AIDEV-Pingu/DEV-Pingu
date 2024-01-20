@@ -1,10 +1,10 @@
 {
 	"version": "V2",
-	"requestId": "26b263c3-6709-4020-bbbb-96b557682089",
-	"timestamp": 1705559715143,
+	"requestId": "d64395fa-b2b5-4aa4-a81c-7aef3fb95486",
+	"timestamp": 1705716205476,
 	"images": [
 		{
-			"uid": "77548c1d5f7443248bdcb4ef7a4dbb3e",
+			"uid": "430436e22b1140239d41e1be84510efa",
 			"name": "demo",
 			"inferResult": "SUCCESS",
 			"message": "SUCCESS",
@@ -12,8 +12,8 @@
 				"result": "NO_REQUESTED"
 			},
 			"convertedImageInfo": {
-				"width": 100,
-				"height": 44,
+				"width": 104,
+				"height": 48,
 				"pageIndex": 0,
 				"longImage": false
 			},
@@ -23,25 +23,25 @@
 					"boundingPoly": {
 						"vertices": [
 							{
-								"x": 11.0,
-								"y": 0.0
-							},
-							{
-								"x": 32.0,
+								"x": 15.0,
 								"y": 1.0
 							},
 							{
-								"x": 32.0,
-								"y": 6.0
+								"x": 36.0,
+								"y": 3.0
 							},
 							{
-								"x": 10.0,
-								"y": 4.0
+								"x": 36.0,
+								"y": 7.0
+							},
+							{
+								"x": 15.0,
+								"y": 6.0
 							}
 						]
 					},
-					"inferText": "2008",
-					"inferConfidence": 0.5585,
+					"inferText": "38710",
+					"inferConfidence": 0.5453,
 					"type": "NORMAL",
 					"lineBreak": true
 				},
@@ -50,25 +50,25 @@
 					"boundingPoly": {
 						"vertices": [
 							{
-								"x": 4.0,
-								"y": 18.0
+								"x": 8.0,
+								"y": 20.0
 							},
 							{
-								"x": 25.0,
-								"y": 19.0
+								"x": 29.0,
+								"y": 21.0
 							},
 							{
-								"x": 25.0,
-								"y": 29.0
+								"x": 29.0,
+								"y": 31.0
 							},
 							{
-								"x": 4.0,
-								"y": 28.0
+								"x": 8.0,
+								"y": 31.0
 							}
 						]
 					},
 					"inferText": "1+1",
-					"inferConfidence": 0.9891,
+					"inferConfidence": 0.9963,
 					"type": "NORMAL",
 					"lineBreak": true
 				},
@@ -77,25 +77,25 @@
 					"boundingPoly": {
 						"vertices": [
 							{
-								"x": 57.0,
-								"y": 27.0
+								"x": 61.0,
+								"y": 29.0
 							},
 							{
-								"x": 101.0,
-								"y": 27.0
+								"x": 105.0,
+								"y": 29.0
 							},
 							{
-								"x": 101.0,
-								"y": 45.0
+								"x": 105.0,
+								"y": 47.0
 							},
 							{
-								"x": 57.0,
-								"y": 45.0
+								"x": 61.0,
+								"y": 47.0
 							}
 						]
 					},
 					"inferText": "7,500",
-					"inferConfidence": 0.995,
+					"inferConfidence": 0.9879,
 					"type": "NORMAL",
 					"lineBreak": true
 				}
