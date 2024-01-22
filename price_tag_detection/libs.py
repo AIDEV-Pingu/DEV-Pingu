@@ -21,6 +21,8 @@ import os
 #!pip install roboflow
 from roboflow import Roboflow
 
+from pingu import settings
+
 # if in colab
 # from google.colab.patches import cv2.imshow('Image', img)
 # ('Image', img)

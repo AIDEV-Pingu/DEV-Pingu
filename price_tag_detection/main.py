@@ -1,5 +1,5 @@
 from modules import *
-# from pingu import settings
+# 
 
 '''data load'''
 # 데이터가 존재하는 폴더 경로 지정
@@ -7,7 +7,7 @@ IMG_FOLDER = '' # for test
 #files = os.listdir(IMG_FOLDER)
 
 ##### input data 입력 #####
-INPUT_IMG = '/Users/jykim/myWS/Dev_AI_6/proJects/Pingu_Dev_JPG_Data/common-6.jpeg'
+INPUT_IMG = '/Users/jykim/myWS/Dev_AI_6/proJects/DEV-Pingu/M09.JPG'
 
 # r
 """model load"""
