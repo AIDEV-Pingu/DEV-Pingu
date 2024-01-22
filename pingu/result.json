@@ -1,10 +1,10 @@
 {
 	"version": "V2",
-	"requestId": "ee994b7d-ec80-4ca0-987d-745446de2a44",
-	"timestamp": 1705565510059,
+	"requestId": "13091645-adff-45ba-b836-fc46178c9de3",
+	"timestamp": 1705933338799,
 	"images": [
 		{
-			"uid": "d9a2be0a22264e23a803f023ee1b07c3",
+			"uid": "95672cd3e69c45acb0b8504ff164a262",
 			"name": "demo",
 			"inferResult": "SUCCESS",
 			"message": "SUCCESS",
@@ -12,8 +12,8 @@
 				"result": "NO_REQUESTED"
 			},
 			"convertedImageInfo": {
-				"width": 768,
-				"height": 1024,
+				"width": 152,
+				"height": 272,
 				"pageIndex": 0,
 				"longImage": false
 			},
@@ -23,25 +23,25 @@
 					"boundingPoly": {
 						"vertices": [
 							{
-								"x": 0.0,
-								"y": 0.0
+								"x": 6.0,
+								"y": 205.0
 							},
 							{
-								"x": 46.0,
-								"y": 0.0
+								"x": 5.0,
+								"y": 48.0
 							},
 							{
-								"x": 46.0,
-								"y": 8.0
+								"x": 18.0,
+								"y": 48.0
 							},
 							{
-								"x": 0.0,
-								"y": 8.0
+								"x": 19.0,
+								"y": 204.0
 							}
 						]
 					},
-					"inferText": "오브랜드의",
-					"inferConfidence": 0.819,
+					"inferText": "94381123332318",
+					"inferConfidence": 0.72,
 					"type": "NORMAL",
 					"lineBreak": true
 				},
@@ -50,25 +50,25 @@
 					"boundingPoly": {
 						"vertices": [
 							{
-								"x": 26.0,
-								"y": 10.0
+								"x": 50.0,
+								"y": 246.0
 							},
 							{
-								"x": 67.0,
-								"y": 6.0
+								"x": 50.0,
+								"y": 170.0
 							},
 							{
-								"x": 69.0,
-								"y": 22.0
+								"x": 83.0,
+								"y": 170.0
 							},
 							{
-								"x": 28.0,
-								"y": 26.0
+								"x": 83.0,
+								"y": 246.0
 							}
 						]
 					},
-					"inferText": "컨슈머가",
-					"inferConfidence": 0.9999,
+					"inferText": "5000",
+					"inferConfidence": 0.7258,
 					"type": "NORMAL",
 					"lineBreak": false
 				},
@@ -77,349 +77,25 @@
 					"boundingPoly": {
 						"vertices": [
 							{
-								"x": 68.0,
-								"y": 5.0
-							},
-							{
-								"x": 101.0,
-								"y": 3.0
-							},
-							{
-								"x": 102.0,
-								"y": 19.0
-							},
-							{
-								"x": 69.0,
-								"y": 21.0
-							}
-						]
-					},
-					"inferText": "되는 길",
-					"inferConfidence": 0.8766,
-					"type": "NORMAL",
-					"lineBreak": false
-				},
-				{
-					"valueType": "ALL",
-					"boundingPoly": {
-						"vertices": [
-							{
-								"x": 153.0,
-								"y": 6.0
-							},
-							{
-								"x": 202.0,
-								"y": 4.0
-							},
-							{
-								"x": 203.0,
-								"y": 19.0
-							},
-							{
-								"x": 154.0,
-								"y": 21.0
-							}
-						]
-					},
-					"inferText": "#위생롤백",
-					"inferConfidence": 0.9998,
-					"type": "NORMAL",
-					"lineBreak": false
-				},
-				{
-					"valueType": "ALL",
-					"boundingPoly": {
-						"vertices": [
-							{
-								"x": 202.0,
-								"y": 3.0
-							},
-							{
-								"x": 241.0,
-								"y": 0.0
-							},
-							{
-								"x": 242.0,
-								"y": 15.0
-							},
-							{
-								"x": 203.0,
-								"y": 18.0
-							}
-						]
-					},
-					"inferText": "#다목적",
-					"inferConfidence": 0.9975,
-					"type": "NORMAL",
-					"lineBreak": false
-				},
-				{
-					"valueType": "ALL",
-					"boundingPoly": {
-						"vertices": [
-							{
-								"x": 241.0,
-								"y": 0.0
-							},
-							{
-								"x": 281.0,
-								"y": 0.0
-							},
-							{
-								"x": 281.0,
-								"y": 14.0
-							},
-							{
-								"x": 241.0,
-								"y": 14.0
-							}
-						]
-					},
-					"inferText": "#경제적",
-					"inferConfidence": 0.9996,
-					"type": "NORMAL",
-					"lineBreak": false
-				},
-				{
-					"valueType": "ALL",
-					"boundingPoly": {
-						"vertices": [
-							{
-								"x": 281.0,
-								"y": 0.0
-							},
-							{
-								"x": 321.0,
-								"y": 0.0
-							},
-							{
-								"x": 321.0,
-								"y": 10.0
-							},
-							{
-								"x": 281.0,
-								"y": 10.0
-							}
-						]
-					},
-					"inferText": "#위성식",
-					"inferConfidence": 0.7542,
-					"type": "NORMAL",
-					"lineBreak": false
-				},
-				{
-					"valueType": "ALL",
-					"boundingPoly": {
-						"vertices": [
-							{
-								"x": -1.0,
-								"y": 13.0
-							},
-							{
-								"x": 27.0,
-								"y": 11.0
-							},
-							{
-								"x": 28.0,
-								"y": 26.0
-							},
-							{
-								"x": 0.0,
-								"y": 29.0
-							}
-						]
-					},
-					"inferText": "스마트",
-					"inferConfidence": 1.0,
-					"type": "NORMAL",
-					"lineBreak": true
-				},
-				{
-					"valueType": "ALL",
-					"boundingPoly": {
-						"vertices": [
-							{
-								"x": 167.0,
-								"y": 84.0
-							},
-							{
-								"x": 215.0,
-								"y": 80.0
-							},
-							{
-								"x": 217.0,
-								"y": 97.0
-							},
-							{
-								"x": 169.0,
-								"y": 101.0
-							}
-						]
-					},
-					"inferText": "190매",
-					"inferConfidence": 1.0,
-					"type": "NORMAL",
-					"lineBreak": false
-				},
-				{
-					"valueType": "ALL",
-					"boundingPoly": {
-						"vertices": [
-							{
-								"x": 221.0,
-								"y": 82.0
-							},
-							{
-								"x": 240.0,
-								"y": 82.0
-							},
-							{
-								"x": 240.0,
-								"y": 96.0
-							},
-							{
-								"x": 221.0,
-								"y": 96.0
-							}
-						]
-					},
-					"inferText": "35",
-					"inferConfidence": 0.9996,
-					"type": "NORMAL",
-					"lineBreak": false
-				},
-				{
-					"valueType": "ALL",
-					"boundingPoly": {
-						"vertices": [
-							{
-								"x": 238.0,
-								"y": 85.0
-							},
-							{
-								"x": 247.0,
-								"y": 85.0
-							},
-							{
-								"x": 247.0,
-								"y": 93.0
-							},
-							{
-								"x": 238.0,
-								"y": 93.0
-							}
-						]
-					},
-					"inferText": "x",
-					"inferConfidence": 0.7846,
-					"type": "NORMAL",
-					"lineBreak": false
-				},
-				{
-					"valueType": "ALL",
-					"boundingPoly": {
-						"vertices": [
-							{
-								"x": 247.0,
-								"y": 81.0
-							},
-							{
-								"x": 263.0,
-								"y": 81.0
-							},
-							{
-								"x": 263.0,
-								"y": 93.0
-							},
-							{
-								"x": 247.0,
-								"y": 93.0
-							}
-						]
-					},
-					"inferText": "45",
-					"inferConfidence": 0.9994,
-					"type": "NORMAL",
-					"lineBreak": false
-				},
-				{
-					"valueType": "ALL",
-					"boundingPoly": {
-						"vertices": [
-							{
-								"x": 262.0,
-								"y": 80.0
-							},
-							{
-								"x": 364.0,
-								"y": 72.0
-							},
-							{
-								"x": 365.0,
-								"y": 87.0
-							},
-							{
-								"x": 263.0,
-								"y": 94.0
-							}
-						]
-					},
-					"inferText": "cm|냉동·냉장보관용",
-					"inferConfidence": 0.9296,
-					"type": "NORMAL",
-					"lineBreak": true
-				},
-				{
-					"valueType": "ALL",
-					"boundingPoly": {
-						"vertices": [
-							{
-								"x": 153.0,
+								"x": 54.0,
 								"y": 166.0
 							},
 							{
-								"x": 319.0,
-								"y": 166.0
-							},
-							{
-								"x": 319.0,
-								"y": 262.0
-							},
-							{
-								"x": 153.0,
-								"y": 262.0
-							}
-						]
-					},
-					"inferText": "No",
-					"inferConfidence": 0.9925,
-					"type": "NORMAL",
-					"lineBreak": false
-				},
-				{
-					"valueType": "ALL",
-					"boundingPoly": {
-						"vertices": [
-							{
-								"x": 316.0,
-								"y": 150.0
-							},
-							{
-								"x": 658.0,
+								"x": 54.0,
 								"y": 119.0
 							},
 							{
-								"x": 667.0,
-								"y": 224.0
+								"x": 77.0,
+								"y": 119.0
 							},
 							{
-								"x": 325.0,
-								"y": 254.0
+								"x": 77.0,
+								"y": 166.0
 							}
 						]
 					},
-					"inferText": "Brand",
-					"inferConfidence": 0.9999,
+					"inferText": "692",
+					"inferConfidence": 0.8394,
 					"type": "NORMAL",
 					"lineBreak": true
 				},
@@ -428,133 +104,25 @@
 					"boundingPoly": {
 						"vertices": [
 							{
-								"x": 158.0,
-								"y": 511.0
+								"x": 116.0,
+								"y": 221.0
 							},
 							{
-								"x": 197.0,
-								"y": 511.0
+								"x": 113.0,
+								"y": 4.0
 							},
 							{
-								"x": 197.0,
-								"y": 528.0
+								"x": 127.0,
+								"y": 4.0
 							},
 							{
-								"x": 158.0,
-								"y": 528.0
+								"x": 129.0,
+								"y": 221.0
 							}
 						]
 					},
-					"inferText": "1매당",
-					"inferConfidence": 1.0,
-					"type": "NORMAL",
-					"lineBreak": false
-				},
-				{
-					"valueType": "ALL",
-					"boundingPoly": {
-						"vertices": [
-							{
-								"x": 199.0,
-								"y": 508.0
-							},
-							{
-								"x": 235.0,
-								"y": 508.0
-							},
-							{
-								"x": 235.0,
-								"y": 526.0
-							},
-							{
-								"x": 199.0,
-								"y": 526.0
-							}
-						]
-					},
-					"inferText": "16원",
-					"inferConfidence": 0.9991,
-					"type": "NORMAL",
-					"lineBreak": true
-				},
-				{
-					"valueType": "ALL",
-					"boundingPoly": {
-						"vertices": [
-							{
-								"x": 285.0,
-								"y": 531.0
-							},
-							{
-								"x": 451.0,
-								"y": 522.0
-							},
-							{
-								"x": 452.0,
-								"y": 537.0
-							},
-							{
-								"x": 286.0,
-								"y": 546.0
-							}
-						]
-					},
-					"inferText": "8801222002955",
-					"inferConfidence": 0.9991,
-					"type": "NORMAL",
-					"lineBreak": true
-				},
-				{
-					"valueType": "ALL",
-					"boundingPoly": {
-						"vertices": [
-							{
-								"x": 209.0,
-								"y": 539.0
-							},
-							{
-								"x": 534.0,
-								"y": 531.0
-							},
-							{
-								"x": 537.0,
-								"y": 668.0
-							},
-							{
-								"x": 212.0,
-								"y": 676.0
-							}
-						]
-					},
-					"inferText": "2,980",
-					"inferConfidence": 0.9994,
-					"type": "NORMAL",
-					"lineBreak": true
-				},
-				{
-					"valueType": "ALL",
-					"boundingPoly": {
-						"vertices": [
-							{
-								"x": 191.0,
-								"y": 681.0
-							},
-							{
-								"x": 565.0,
-								"y": 658.0
-							},
-							{
-								"x": 567.0,
-								"y": 698.0
-							},
-							{
-								"x": 194.0,
-								"y": 720.0
-							}
-						]
-					},
-					"inferText": "롤백(특대)35*45cm*190매",
-					"inferConfidence": 0.999,
+					"inferText": "15-70-01885980-3-0-40-23",
+					"inferConfidence": 0.4304,
 					"type": "NORMAL",
 					"lineBreak": true
 				}

@@ -36,6 +36,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'main',
     'imgback',
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -54,12 +56,16 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+CORS_ORIGIN_WHITELIST = [
+     'http://localhost:3000',  # React 앱이 실행되는 주소
+]
+
 ROOT_URLCONF = "pingu.urls"
 
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, 'Pingu-front/build')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -114,9 +120,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'pingu-front/build/static'),
     ]
 
 # Default primary key field type
@@ -126,9 +132,13 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 # Roboflow 설정
-ROBOFLOW_API_KEY = "eyKD4VJQ4nRqtosRytMg"
-ROBOFLOW_PROJECT = "price-tag-dxlmv"
-ROBOFLOW_VERSION = 15
+ROBOFLOW_API_KEY = "MUs7pvPAXmkOJGSMZ9dm"
+ROBOFLOW_PROJECT = "wow-2ysdx"
+ROBOFLOW_VERSION = 3
+
+# Crawler API 설정
+NAVER_API_ID = 'sWRweonFDwTIbRP88MsS'
+NAVER_API_SECRET = "yNVbAK8Kya"
 
 # CLOVA OCR API 설정
 CLOVA_API_KEY = "Y0l6ZHF1Um9CSWp3aHpJU3JDeFdpUGp1cG16T3hFQkg="

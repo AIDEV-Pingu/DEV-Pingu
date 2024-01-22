@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7229a35f.chunk.css",
+    "main.js": "/static/js/main.9bb810f1.chunk.js",
+    "main.js.map": "/static/js/main.9bb810f1.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.638c8875.js",
+    "runtime~main.js.map": "/static/js/runtime~main.638c8875.js.map",
+    "static/js/2.b3dd3bfe.chunk.js": "/static/js/2.b3dd3bfe.chunk.js",
+    "static/js/2.b3dd3bfe.chunk.js.map": "/static/js/2.b3dd3bfe.chunk.js.map",
+    "static/js/3.bb0829b5.chunk.js": "/static/js/3.bb0829b5.chunk.js",
+    "static/js/3.bb0829b5.chunk.js.map": "/static/js/3.bb0829b5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.73c6c464e4eb270eb663468506bbe0a6.js": "/precache-manifest.73c6c464e4eb270eb663468506bbe0a6.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.7229a35f.chunk.css.map": "/static/css/main.7229a35f.chunk.css.map",
+    "static/media/mintloading.gif": "/static/media/mintloading.3106544d.gif",
+    "static/media/pinguw.png": "/static/media/pinguw.caef232c.png"
+  }
+}

@@ -4,17 +4,21 @@ from django.conf import settings
 import numpy as np
 from roboflow import Roboflow
 from django.http import HttpResponse
+from django.http import JsonResponse
 import os
-from .module_ocr import CLOVA_api, imageOCR, predict2crop  # OCR 모듈
 from .forms import ImageUploadForm
 from .models import ImageUpload
+from .module_ocr import CLOVA_api, imageOCR, predict2crop  # OCR 모듈
+from .module_crawler import NaverShoppingCrawler, SsgCrawler, MusinsaCrawler  # 크롤링 함수
 
 
-# Create your views here.
-nlp = spacy.load('content/Pingu_model_1_17_1000')
-nlp2 = spacy.load('content/Pingu_model_1_17_500')
-nlp3 = spacy.load('content/Pingu_model_1_15')
+# NLP앙상블 모델 구현중. 이환님 코드 기반으로 수정필요
+nlp = spacy.load('content/Pingu_model_1_17_500')
+nlp2 = spacy.load('content/Pingu_model_1_19_150_sm')
+nlp3 = spacy.load('content/Pingu_model_1_19_150_product')
+nlp3 = spacy.load('content/Pingu_model_1_19_150_price')
 
+# img/upload
 def image_upload_view(request):
     if request.method == 'POST':
         form = ImageUploadForm(request.POST, request.FILES)
@@ -25,6 +29,7 @@ def image_upload_view(request):
         form = ImageUploadForm()
     return render(request, 'imgback/image_upload.html', {'form': form})
 
+# img /upload -> 알아서넘어가기
 def ocr_view(request, image_id):
     image_instance = ImageUpload.objects.get(id=image_id)
     image_path = os.path.join(settings.MEDIA_ROOT, str(image_instance.image))
@@ -42,7 +47,11 @@ def ocr_view(request, image_id):
         return HttpResponse("No valid image to process")
 
     response = CLOVA_api(settings.CLOVA_API_KEY, settings.CLOVA_API_URL, cropped_img)
-    ocr_result, processed_img = imageOCR(response, cropped_img)
+    ocr_result, processed_img = imageOCR(response, cropped_img) # // OCR
+
+
+
+
 
     # Spacy 모델을 사용하여 상품명과 가격 추출
     doc = nlp(ocr_result)
@@ -70,4 +79,30 @@ def ocr_view(request, image_id):
         'image_path': processed_img,
         'product_name': product_name,
         'price': price
+    })
+
+# 크롤링뷰. 아현님코드기반으로 수정필요.
+def crawling_results_view(request):
+    product_name = request.GET.get('product_name', '')
+    site = request.GET.get('site', '')  # 사이트 선택 파라미터 추가
+
+    # 초기화
+    musinsa_results = naver_results = ssg_results = None
+
+    # 선택된 사이트에 따라 해당 크롤러 실행
+    if site == 'musinsa':
+        musinsa_crawler = MusinsaCrawler(product_name)
+        musinsa_results = musinsa_crawler.scrape()
+    elif site == 'naver':
+        naver_crawler = NaverShoppingCrawler(settings.NAVER_API_ID, settings.NAVER_API_SECRET, product_name)
+        naver_results = naver_crawler.run()
+    elif site == 'ssg':
+        ssg_crawler = SsgCrawler()
+        ssg_results = ssg_crawler.get_data(product_name)
+
+    # 결과 반환
+    return JsonResponse({
+        'musinsa': musinsa_results.to_json(orient='records') if musinsa_results is not None else '',
+        'naver': naver_results.to_json(orient='records') if naver_results is not None else '',
+        'ssg': ssg_results if ssg_results is not None else ''
     })

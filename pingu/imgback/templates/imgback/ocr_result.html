@@ -24,6 +24,15 @@
                     <h2 class="text-xl font-semibold">OCR Text</h2>
                     <p>{{ ocr_result }}</p>
                 </div>
+
+                <!-- 크롤링 결과 페이지로의 링크 추가 -->
+                <div class="mt-4">
+                    <a href="{% url 'crawling_results' %}?product_name={{ product_name }}&site=musinsa" class="text-blue-600 hover:underline">무신사 크롤링 결과 보기</a>
+                    <br>
+                    <a href="{% url 'crawling_results' %}?product_name={{ product_name }}&site=naver" class="text-blue-600 hover:underline">네이버쇼핑 크롤링 결과 보기</a>
+                    <br>
+                    <a href="{% url 'crawling_results' %}?product_name={{ product_name }}&site=ssg" class="text-blue-600 hover:underline">SSG 크롤링 결과 보기</a>
+                </div>                
             </div>
         </div>
     </div>

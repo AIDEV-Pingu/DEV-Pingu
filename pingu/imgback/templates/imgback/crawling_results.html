@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crawling Results</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>크롤링 결과</h1>
+
+        <!-- 무신사 크롤링 결과 -->
+        <!-- 예시: 무신사 크롤링 결과 테이블 -->
+        <h2>무신사 크롤링 결과</h2>
+        {% if musinsa_results %}
+        <table>
+            <tr>
+                <th>제품명</th>
+                <th>가격</th>
+                <th>링크</th>
+            </tr>
+            {% for result in musinsa_results %}
+            <tr>
+                <td>{{ result['Product_Name'] }}</td>
+                <td>{{ result['Price'] }}</td>
+                <td><a href="{{ result['Product_Link'] }}">링크</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p>무신사 결과가 없습니다.</p>
+        {% endif %}
+
+        <!-- 여기에 네이버 쇼핑 및 기타 크롤링 결과에 대한 테이블 추가 -->
+        <!-- 네이버 쇼핑 크롤링 결과 -->
+        <h2>네이버 쇼핑 결과</h2>
+        {% if naver_results %}
+        <table>
+            <tr>
+                <th>제품명</th>
+                <th>가격</th>
+                <th>링크</th>
+            </tr>
+            {% for item in naver_results %}
+            <tr>
+                <td>{{ item.Product_Name }}</td>
+                <td>{{ item.Price }}</td>
+                <td><a href="{{ item.Product_Link }}">상품 보기</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p>네이버 쇼핑 결과가 없습니다.</p>
+        {% endif %}
+
+        <!-- SSG 크롤링 결과 -->
+        <h2>SSG 결과</h2>
+        {% if ssg_results %}
+        <table>
+            <tr>
+                <th>제품명</th>
+                <th>가격</th>
+                <th>링크</th>
+            </tr>
+            {% for item in ssg_results %}
+            <tr>
+                <td>{{ item.Product_Name }}</td>
+                <td>{{ item.Price }}</td>
+                <td><a href="{{ item.Product_Link }}">상품 보기</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p>SSG 결과가 없습니다.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
