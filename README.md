@@ -54,7 +54,8 @@ Programmers Dev코스 4조 핑구입니당~~
 
 ### 🛠Tech Stack
 
-이미지
+![image](https://github.com/AIDEV-Pingu/DEV-Pingu/assets/128393917/8c0cf0b1-3e0d-4ab3-94fe-09c607d2808a)
+
 
 
 
