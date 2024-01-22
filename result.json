@@ -1,10 +1,10 @@
 {
 	"version": "V2",
-	"requestId": "d64395fa-b2b5-4aa4-a81c-7aef3fb95486",
-	"timestamp": 1705716205476,
+	"requestId": "1dd954b9-f220-4d4b-a094-66f3cd73e583",
+	"timestamp": 1705829314002,
 	"images": [
 		{
-			"uid": "430436e22b1140239d41e1be84510efa",
+			"uid": "ce30457dca804b10bd2030a5717cfd3b",
 			"name": "demo",
 			"inferResult": "SUCCESS",
 			"message": "SUCCESS",
@@ -12,8 +12,8 @@
 				"result": "NO_REQUESTED"
 			},
 			"convertedImageInfo": {
-				"width": 104,
-				"height": 48,
+				"width": 1324,
+				"height": 646,
 				"pageIndex": 0,
 				"longImage": false
 			},
@@ -23,25 +23,52 @@
 					"boundingPoly": {
 						"vertices": [
 							{
-								"x": 15.0,
-								"y": 1.0
+								"x": 53.0,
+								"y": 91.0
 							},
 							{
-								"x": 36.0,
-								"y": 3.0
+								"x": 300.0,
+								"y": 91.0
 							},
 							{
-								"x": 36.0,
-								"y": 7.0
+								"x": 300.0,
+								"y": 187.0
 							},
 							{
-								"x": 15.0,
-								"y": 6.0
+								"x": 53.0,
+								"y": 187.0
 							}
 						]
 					},
-					"inferText": "38710",
-					"inferConfidence": 0.5453,
+					"inferText": "빙그레",
+					"inferConfidence": 1.0,
+					"type": "NORMAL",
+					"lineBreak": false
+				},
+				{
+					"valueType": "ALL",
+					"boundingPoly": {
+						"vertices": [
+							{
+								"x": 1017.0,
+								"y": 72.0
+							},
+							{
+								"x": 1228.0,
+								"y": 72.0
+							},
+							{
+								"x": 1228.0,
+								"y": 194.0
+							},
+							{
+								"x": 1017.0,
+								"y": 194.0
+							}
+						]
+					},
+					"inferText": "기획",
+					"inferConfidence": 0.9999,
 					"type": "NORMAL",
 					"lineBreak": true
 				},
@@ -50,25 +77,25 @@
 					"boundingPoly": {
 						"vertices": [
 							{
-								"x": 8.0,
-								"y": 20.0
+								"x": 60.0,
+								"y": 187.0
 							},
 							{
-								"x": 29.0,
-								"y": 21.0
+								"x": 744.0,
+								"y": 198.0
 							},
 							{
-								"x": 29.0,
-								"y": 31.0
+								"x": 742.0,
+								"y": 330.0
 							},
 							{
-								"x": 8.0,
-								"y": 31.0
+								"x": 58.0,
+								"y": 319.0
 							}
 						]
 					},
-					"inferText": "1+1",
-					"inferConfidence": 0.9963,
+					"inferText": "닥터캡슐사과",
+					"inferConfidence": 0.9884,
 					"type": "NORMAL",
 					"lineBreak": true
 				},
@@ -77,25 +104,106 @@
 					"boundingPoly": {
 						"vertices": [
 							{
-								"x": 61.0,
-								"y": 29.0
+								"x": 63.0,
+								"y": 333.0
 							},
 							{
-								"x": 105.0,
-								"y": 29.0
+								"x": 294.0,
+								"y": 333.0
 							},
 							{
-								"x": 105.0,
-								"y": 47.0
+								"x": 294.0,
+								"y": 403.0
 							},
 							{
-								"x": 61.0,
-								"y": 47.0
+								"x": 63.0,
+								"y": 403.0
 							}
 						]
 					},
-					"inferText": "7,500",
-					"inferConfidence": 0.9879,
+					"inferText": "520ml",
+					"inferConfidence": 0.9996,
+					"type": "NORMAL",
+					"lineBreak": false
+				},
+				{
+					"valueType": "ALL",
+					"boundingPoly": {
+						"vertices": [
+							{
+								"x": 311.0,
+								"y": 342.0
+							},
+							{
+								"x": 353.0,
+								"y": 342.0
+							},
+							{
+								"x": 353.0,
+								"y": 403.0
+							},
+							{
+								"x": 311.0,
+								"y": 403.0
+							}
+						]
+					},
+					"inferText": "/",
+					"inferConfidence": 0.9997,
+					"type": "NORMAL",
+					"lineBreak": false
+				},
+				{
+					"valueType": "ALL",
+					"boundingPoly": {
+						"vertices": [
+							{
+								"x": 362.0,
+								"y": 335.0
+							},
+							{
+								"x": 790.0,
+								"y": 341.0
+							},
+							{
+								"x": 789.0,
+								"y": 422.0
+							},
+							{
+								"x": 361.0,
+								"y": 416.0
+							}
+						]
+					},
+					"inferText": "10ml당 86원",
+					"inferConfidence": 0.9895,
+					"type": "NORMAL",
+					"lineBreak": true
+				},
+				{
+					"valueType": "ALL",
+					"boundingPoly": {
+						"vertices": [
+							{
+								"x": 731.0,
+								"y": 479.0
+							},
+							{
+								"x": 1250.0,
+								"y": 479.0
+							},
+							{
+								"x": 1250.0,
+								"y": 627.0
+							},
+							{
+								"x": 731.0,
+								"y": 627.0
+							}
+						]
+					},
+					"inferText": "4,500원",
+					"inferConfidence": 0.9757,
 					"type": "NORMAL",
 					"lineBreak": true
 				}

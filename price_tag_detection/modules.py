@@ -1,5 +1,6 @@
 from libs import *
 
+
 def CLOVA_api(secret_key, api_url, image : np.array):
     """
     Usage : CLOVA api 호출
@@ -216,13 +217,13 @@ def connectWord(ocr_json):
 
 
 
-def modelPredict(model, input_Data):
-    try : predictions_data = model.predict(input_Data, confidence=50, overlap=50).json()
+def modelPredict(model, input_Data, confidence=50, overlap=50):
+    try : predictions_data = model.predict(input_Data, confidence=confidence, overlap=overlap).json()
     except :
         print('Predict Error')
         return None
-    
-    # image_path = predictions_data['predictions'][0]['image_path'] 
+
+    # image_path = predictions_data['predictions'][0]['image_path']
     return predictions_data
 
 
