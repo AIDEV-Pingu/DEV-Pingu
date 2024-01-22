@@ -36,7 +36,7 @@ def ocr_view(request, image_id):
 
     # 이미지에 OCR 적용
     cropped_img = predict2crop(model, image_path)
-
+      
     if cropped_img is None:
         print("No valid image to process")
         return HttpResponse("No valid image to process")

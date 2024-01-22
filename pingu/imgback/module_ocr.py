@@ -252,7 +252,7 @@ def predict2crop(model, image_path, resize = 256):
 
     orgBBcoor = predBBcoor(org_img, predictions_data)
     cropped_img = imgCrop(org_img, orgBBcoor) #원본이미지에서 crop
-
+     
     return cropped_img
 
 

@@ -13,7 +13,7 @@ INPUT_IMG = '/Users/jykim/myWS/Dev_AI_6/proJects/DEV-Pingu/M09.JPG'
 """model load"""
 rf = Roboflow(api_key="MUs7pvPAXmkOJGSMZ9dm")
 project = rf.workspace().project("wow-2ysdx")
-model = project.version(1).model
+model = project.version(3).model
 
 # OCR api
 secret_key = "Y0l6ZHF1Um9CSWp3aHpJU3JDeFdpUGp1cG16T3hFQkg="
