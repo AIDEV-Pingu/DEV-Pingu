@@ -3,16 +3,33 @@
 <head>
     <title>Image Upload</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+
 </head>
 <body class="bg-gradient-to-t from-pink-500 via-purple-500 to-indigo-500">
     <div class="flex flex-col items-center justify-center min-h-screen">
         <div class="w-full max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden p-6 space-y-2">
             <h1 class="text-3xl font-bold">Image Upload</h1>
-            <form method="post" enctype="multipart/form-data">
-                {% csrf_token %}
-                {{ form.as_p }}
-                <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">Upload Image</button>
+            <div id="drop-area", style="width: 400px; height: 400px;">
+                <img src="https://searchenginereports.net/newassets/images/revrse-upload.svg" alt="Choose image" class="mt20 img-responsive">
+                {% load static %}
+                <script src="{% static 'dragNdrop.js' %}"></script>
+            </div>
+
+            <div class="flex items-center justify-between">
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <div id="image-container"></div>
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Upload</button>
+                </form>
+            </div>
+            <form action="{% url 'index' %}" method="get">
+                <button type="submit" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-700">Main</button>
             </form>
+            
         </div>
     </div>
 </body>

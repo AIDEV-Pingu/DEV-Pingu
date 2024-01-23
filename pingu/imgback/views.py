@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 import spacy
 from django.conf import settings
 import numpy as np
@@ -26,7 +26,7 @@ def image_upload_view(request):
     return render(request, 'imgback/image_upload.html', {'form': form})
 
 def ocr_view(request, image_id):
-    image_instance = ImageUpload.objects.get(id=image_id)
+    image_instance = get_object_or_404(ImageUpload, id=image_id)#ImageUpload.objects.get(id=image_id)
     image_path = os.path.join(settings.MEDIA_ROOT, str(image_instance.image))
 
     # Roboflow model 로드

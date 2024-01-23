@@ -2,8 +2,8 @@
     border: 5px dashed #ccc;
     padding: 20px;
     text-align: center;
-    width: 600px;
-    height: 400px;
+    width: 200px;
+    height: 300px;
     margin: 0 auto;
     }
 
@@ -21,3 +21,12 @@
     background-position: center;
     /* Additional background styles if needed */
 }
+
+.go-child-button {
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+

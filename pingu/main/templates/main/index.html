@@ -10,35 +10,20 @@
     <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
 </head>
 <body>
-    <div id="drop-area">
-        <img src="https://searchenginereports.net/newassets/images/revrse-upload.svg" alt="Choose image" class="mt20 img-responsive">
-        <p>Drag & Drop an image here or click to select one</p>
-        <input type="file" id="file-input" style="display: none;">
-    </div>
+  <div id="drop-area">
+      <img src="https://searchenginereports.net/newassets/images/revrse-upload.svg" alt="Choose image" class="mt20 img-responsive">
+      <p>Drag & Drop an image here or click to select one</p>
+      <input type="file" id="file-input" style="display: none;">
+  </div>
 
-    <div id="image-container" style="margin-top: 40px;"></div>
-    
-    {% load static %}
-    <script src="{% static 'dragNdrop.js' %}"></script>
-    <img
-  loading="lazy"
-  srcset="https://cdn.builder.io/api/v1/image/assets%2F3222e15fb6674fcda0b771f8ed9040c6%2Fecb1a1d54c2943e7932ecfd6f1383471?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F3222e15fb6674fcda0b771f8ed9040c6%2Fecb1a1d54c2943e7932ecfd6f1383471?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F3222e15fb6674fcda0b771f8ed9040c6%2Fecb1a1d54c2943e7932ecfd6f1383471?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F3222e15fb6674fcda0b771f8ed9040c6%2Fecb1a1d54c2943e7932ecfd6f1383471?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F3222e15fb6674fcda0b771f8ed9040c6%2Fecb1a1d54c2943e7932ecfd6f1383471?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F3222e15fb6674fcda0b771f8ed9040c6%2Fecb1a1d54c2943e7932ecfd6f1383471?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F3222e15fb6674fcda0b771f8ed9040c6%2Fecb1a1d54c2943e7932ecfd6f1383471?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F3222e15fb6674fcda0b771f8ed9040c6%2Fecb1a1d54c2943e7932ecfd6f1383471"
-  class="img"
-/>
-<style>
-  .img {
-    aspect-ratio: 1;
-    object-fit: contain;
-    object-position: center;
-    width: 100%;
-    margin-top: 20px;
-    min-height: 20px;
-    min-width: 20px;
-    overflow: hidden;
-    height: auto;
-    flex-grow: 1;
-  }
-</style>
-
+  <div id="image-container" style="margin-top: 40px;"></div>
+  
+  {% load static %}
+  <script src="{% static 'dragNdrop.js' %}"></script>
+  <div>
+    <form action="{% url 'image_upload' %}" method="get">
+      <button type="submit" class="custom-button">Image Upload</button>
+    </form>
+  </div>
 </body>
 </html>
