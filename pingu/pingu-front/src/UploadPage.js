@@ -37,7 +37,7 @@ class UploadPage extends React.Component {
       selectedImage: file
     });
   };
-
+/*
   handleUploadClick = async () => {
     const file = this.state.selectedImage;
     if (!file) return;
@@ -62,9 +62,9 @@ class UploadPage extends React.Component {
 
       const data = await response.json();
 
-      if (data.ocrImage) {
+      if (data.image_path) {
         this.setState({
-          ocrImage: data.ocrImage
+          ocrImage: data.image_path
         });
       }
       
@@ -81,7 +81,41 @@ class UploadPage extends React.Component {
         ocrChecked: true,  // OCR 결과 확인 완료
       });
     }
+  }; */
+  handleUploadClick = async () => {
+    const { selectedImage } = this.state;
+    if (!selectedImage) return;
+  
+    const formData = new FormData();
+    formData.append('image', selectedImage);
+  
+    this.setState({ loading: true });
+  
+    try {
+      const uploadResponse = await fetch('http://localhost:8000/api/upload/', {
+        method: 'POST',
+        body: formData,
+      });
+  
+      if (!uploadResponse.ok) throw new Error('Upload failed');
+  
+      // 이미지 업로드 후 OCR 처리 결과 받기
+      const ocrResponse = await fetch(`http://localhost:8000/img/ocr/${imageId}/`); // imageId는 업로드한 이미지의 ID
+      if (!ocrResponse.ok) throw new Error('OCR failed');
+  
+      const ocrData = await ocrResponse.json();
+      this.setState({
+        ocrResult: ocrData.ocr_result,
+        productName: ocrData.product_name,
+        price: ocrData.price,
+        loading: false,
+      });
+    } catch (error) {
+      console.error('Error:', error);
+      this.setState({ loading: false });
+    }
   };
+  
 
   render() {
     return (

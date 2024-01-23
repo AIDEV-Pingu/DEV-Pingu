@@ -25,6 +25,7 @@ def image_upload_view(request):
     else:
         form = ImageUploadForm()
     return render(request, 'imgback/image_upload.html', {'form': form})
+    # return render(request, "index.html")
 
 # img /upload -> 알아서넘어가기
 def ocr_view(request, image_id):
@@ -75,13 +76,22 @@ def ocr_view(request, image_id):
     # 가격 선별
     nlp = spacy.load('content/Pingu_model_1_19_150_price')
     is_price = predict_entities(ocr_result, nlp,'가격')
-
-    return JsonResponse({
-        'ocr_result': ocr_result,
-        'image_path': processed_img,  # 이미지 URL로 변경
+    return render(request, 'imgback/ocr_result.html', {
+        'ocr_result' : ocr_result,
+        'image_path': processed_img,
         'product_name': top_words,
         'price': is_price
     })
+
+'''
+    return JsonResponse({
+        'ocr_result': ocr_result,
+        'image_path': processed_img,  # Django에서 처리된 이미지 URL
+        'product_name': top_words,    # OCR로 추출된 상품명
+        'price': is_price             # OCR로 추출된 가격
+    })
+'''
+    
 
 
 # 크롤링 뷰 - 수정
