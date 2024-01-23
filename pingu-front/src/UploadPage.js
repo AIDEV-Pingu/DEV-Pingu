@@ -15,14 +15,18 @@ class UploadPage extends React.Component {
     selectedImage: null,
     image: null,
     ocrImage: null,
+    ocrResult: null,
+    ocrChecked: false,  // OCR 결과를 확인했는지 여부를 나타내는 상태변수 추가
     loading: false,
   };
-
+  
   handleHomeClick = () => {
     this.setState({
       selectedImage: null,
       image: null,
       ocrImage: null,
+      ocrResult: null,
+      ocrChecked: false,  // 홈 버튼을 누르면 OCR 결과 확인 여부도 초기화
       loading: false,
     });
   };
@@ -42,12 +46,11 @@ class UploadPage extends React.Component {
     formData.append('image', file);
 
     this.setState({
-      loading: true, // 로딩 시작
-      image: URL.createObjectURL(file), // 원본 이미지 미리보기 설정
+      loading: true,
+      image: URL.createObjectURL(file),
     });
 
     try {
-      // Django 서버의 엔드포인트를 사용하세요.
       const response = await fetch('http://localhost:8000/api/upload', {
         method: 'POST',
         body: formData
@@ -57,7 +60,6 @@ class UploadPage extends React.Component {
         throw new Error('Network response was not ok');
       }
 
-      // Django 서버에서 반환하는 응답의 형식에 따라 코드를 수정하세요.
       const data = await response.json();
 
       if (data.ocrImage) {
@@ -65,11 +67,18 @@ class UploadPage extends React.Component {
           ocrImage: data.ocrImage
         });
       }
+      
+      if (data.ocrResult) {
+        this.setState({
+          ocrResult: data.ocrResult
+        });
+      }
     } catch (error) {
       console.error('There has been a problem with your fetch operation:', error);
     } finally {
       this.setState({
-        loading: false, // 로딩 종료
+        loading: false,  // 로딩 종료
+        ocrChecked: true,  // OCR 결과 확인 완료
       });
     }
   };
@@ -77,16 +86,6 @@ class UploadPage extends React.Component {
   render() {
     return (
       <div>
-        {/*<header style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'flex-start', backgroundImage: 'linear-gradient(to right, #E91E63, #9C27B0, #667eea)', marginBottom: '20px' }}>
-          <Link to="/" onClick={this.handleHomeClick}>
-            <button type="button" style={{ border: 'none', background: 'none' }}>
-              <img src={pinguw} className="button-img" style={{ width: '100px', height: '100px' }} alt="Home" />
-              <h2 style={{ color: '#FFFFFF' }}>Pingu OCR</h2>
-            </button>
-          </Link>
-        </header>
-    */}
-
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
           <input type="file" id="upload" onChange={this.handleImageChange} />
           <button id="upload-button" onClick={this.handleUploadClick}>Upload</button>
@@ -104,8 +103,9 @@ class UploadPage extends React.Component {
           )}
         </div>
 
-
-        <div id="ocr-result"></div>
+        <div id="ocr-result">
+          {this.state.ocrChecked && !this.state.ocrResult ? 'OCR 결과가 없습니다.' : this.state.ocrResult}
+        </div>
 
         <div className="button-container" style={{ marginTop: '20px' }}>
           <Link to="/naver_P">
