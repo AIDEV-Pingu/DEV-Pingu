@@ -1,6 +1,7 @@
-# DEV-Pingu
+# Pingu's Price Analysis Portal (PPAP)
 Programmers Dev코스 4조 핑구입니당~~
 
+### 진열대 상품 가격표 인식을 통한 최저가 사이트 제공
 
 - 프로젝트 기간 : 2023.12.20.(금)  ~ 2024.01.26.(목)
 
