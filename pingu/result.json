@@ -1,10 +1,10 @@
 {
 	"version": "V2",
-	"requestId": "cb4ea084-1871-44d4-87da-7dd4da62371d",
-	"timestamp": 1705916430433,
+	"requestId": "af9c559a-ecba-4a0f-ba72-7be5b491b25c",
+	"timestamp": 1705998591933,
 	"images": [
 		{
-			"uid": "50177d95f5314e1b9f49cc4af15ee632",
+			"uid": "c40f27cac31c4e39b5e252a9fb7b5972",
 			"name": "demo",
 			"inferResult": "SUCCESS",
 			"message": "SUCCESS",
@@ -12,8 +12,8 @@
 				"result": "NO_REQUESTED"
 			},
 			"convertedImageInfo": {
-				"width": 1004,
-				"height": 1858,
+				"width": 1324,
+				"height": 662,
 				"pageIndex": 0,
 				"longImage": false
 			},
@@ -23,24 +23,132 @@
 					"boundingPoly": {
 						"vertices": [
 							{
-								"x": 106.0,
-								"y": 1340.0
+								"x": 52.0,
+								"y": 82.0
 							},
 							{
-								"x": 106.0,
-								"y": 1116.0
+								"x": 300.0,
+								"y": 82.0
 							},
 							{
-								"x": 186.0,
-								"y": 1116.0
+								"x": 300.0,
+								"y": 180.0
 							},
 							{
-								"x": 186.0,
-								"y": 1340.0
+								"x": 52.0,
+								"y": 180.0
 							}
 						]
 					},
-					"inferText": "Scarf",
+					"inferText": "빙그레",
+					"inferConfidence": 1.0,
+					"type": "NORMAL",
+					"lineBreak": false
+				},
+				{
+					"valueType": "ALL",
+					"boundingPoly": {
+						"vertices": [
+							{
+								"x": 1017.0,
+								"y": 64.0
+							},
+							{
+								"x": 1228.0,
+								"y": 64.0
+							},
+							{
+								"x": 1228.0,
+								"y": 187.0
+							},
+							{
+								"x": 1017.0,
+								"y": 187.0
+							}
+						]
+					},
+					"inferText": "기획",
+					"inferConfidence": 0.9999,
+					"type": "NORMAL",
+					"lineBreak": true
+				},
+				{
+					"valueType": "ALL",
+					"boundingPoly": {
+						"vertices": [
+							{
+								"x": 60.0,
+								"y": 180.0
+							},
+							{
+								"x": 744.0,
+								"y": 189.0
+							},
+							{
+								"x": 742.0,
+								"y": 321.0
+							},
+							{
+								"x": 58.0,
+								"y": 312.0
+							}
+						]
+					},
+					"inferText": "닥터캡슐사과",
+					"inferConfidence": 0.9913,
+					"type": "NORMAL",
+					"lineBreak": true
+				},
+				{
+					"valueType": "ALL",
+					"boundingPoly": {
+						"vertices": [
+							{
+								"x": 63.0,
+								"y": 325.0
+							},
+							{
+								"x": 294.0,
+								"y": 325.0
+							},
+							{
+								"x": 294.0,
+								"y": 396.0
+							},
+							{
+								"x": 63.0,
+								"y": 396.0
+							}
+						]
+					},
+					"inferText": "520ml",
+					"inferConfidence": 0.9995,
+					"type": "NORMAL",
+					"lineBreak": false
+				},
+				{
+					"valueType": "ALL",
+					"boundingPoly": {
+						"vertices": [
+							{
+								"x": 311.0,
+								"y": 335.0
+							},
+							{
+								"x": 352.0,
+								"y": 335.0
+							},
+							{
+								"x": 352.0,
+								"y": 395.0
+							},
+							{
+								"x": 311.0,
+								"y": 395.0
+							}
+						]
+					},
+					"inferText": "/",
 					"inferConfidence": 0.9997,
 					"type": "NORMAL",
 					"lineBreak": false
@@ -50,25 +158,52 @@
 					"boundingPoly": {
 						"vertices": [
 							{
-								"x": 862.0,
-								"y": 515.0
+								"x": 362.0,
+								"y": 330.0
 							},
 							{
-								"x": 953.0,
-								"y": 513.0
+								"x": 614.0,
+								"y": 330.0
 							},
 							{
-								"x": 963.0,
-								"y": 1322.0
+								"x": 614.0,
+								"y": 407.0
 							},
 							{
-								"x": 871.0,
-								"y": 1323.0
+								"x": 362.0,
+								"y": 407.0
 							}
 						]
 					},
-					"inferText": "7418761574000",
-					"inferConfidence": 0.9418,
+					"inferText": "10ml당",
+					"inferConfidence": 0.9998,
+					"type": "NORMAL",
+					"lineBreak": false
+				},
+				{
+					"valueType": "ALL",
+					"boundingPoly": {
+						"vertices": [
+							{
+								"x": 618.0,
+								"y": 332.0
+							},
+							{
+								"x": 790.0,
+								"y": 332.0
+							},
+							{
+								"x": 790.0,
+								"y": 413.0
+							},
+							{
+								"x": 618.0,
+								"y": 413.0
+							}
+						]
+					},
+					"inferText": "86원",
+					"inferConfidence": 0.9993,
 					"type": "NORMAL",
 					"lineBreak": true
 				},
@@ -77,52 +212,25 @@
 					"boundingPoly": {
 						"vertices": [
 							{
-								"x": 280.0,
-								"y": 1112.0
+								"x": 731.0,
+								"y": 470.0
 							},
 							{
-								"x": 364.0,
-								"y": 1119.0
+								"x": 1250.0,
+								"y": 470.0
 							},
 							{
-								"x": 346.0,
-								"y": 1339.0
+								"x": 1250.0,
+								"y": 619.0
 							},
 							{
-								"x": 263.0,
-								"y": 1332.0
+								"x": 731.0,
+								"y": 619.0
 							}
 						]
 					},
-					"inferText": "Grey",
-					"inferConfidence": 0.9961,
-					"type": "NORMAL",
-					"lineBreak": true
-				},
-				{
-					"valueType": "ALL",
-					"boundingPoly": {
-						"vertices": [
-							{
-								"x": 420.0,
-								"y": 1339.0
-							},
-							{
-								"x": 420.0,
-								"y": 1201.0
-							},
-							{
-								"x": 504.0,
-								"y": 1201.0
-							},
-							{
-								"x": 504.0,
-								"y": 1339.0
-							}
-						]
-					},
-					"inferText": "OS",
-					"inferConfidence": 0.9911,
+					"inferText": "4,500원",
+					"inferConfidence": 0.9698,
 					"type": "NORMAL",
 					"lineBreak": true
 				}
