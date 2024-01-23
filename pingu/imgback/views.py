@@ -5,18 +5,15 @@ import numpy as np
 from roboflow import Roboflow
 from django.http import HttpResponse
 from django.http import JsonResponse
-import os
 from .forms import ImageUploadForm
 from .models import ImageUpload
 from .module_ocr import CLOVA_api, imageOCR, predict2crop  # OCR 모듈
 from .module_crawler import NaverShoppingCrawler, SsgCrawler, MusinsaCrawler  # 크롤링 함수
+from .module_spacy import predict_entities, delete_product, tokenize
+import pandas as pd
+import os
+from collections import Counter
 
-
-# NLP앙상블 모델 구현중. 이환님 코드 기반으로 수정필요
-nlp = spacy.load('content/Pingu_model_1_17_500')
-nlp2 = spacy.load('content/Pingu_model_1_19_150_sm')
-nlp3 = spacy.load('content/Pingu_model_1_19_150_product')
-nlp3 = spacy.load('content/Pingu_model_1_19_150_price')
 
 # img/upload
 def image_upload_view(request):
@@ -49,39 +46,45 @@ def ocr_view(request, image_id):
     response = CLOVA_api(settings.CLOVA_API_KEY, settings.CLOVA_API_URL, cropped_img)
     ocr_result, processed_img = imageOCR(response, cropped_img) # // OCR
 
+    # spacy 앙상블
+    folder_lst = [f for f in os.listdir(settings.CONTENT_ROOT) if os.path.isdir(os.path.join(settings.CONTENT_ROOT, f))]
+    model_lst = []
+    for l in folder_lst:
+        if not l.endswith('.config') and l != 'sample_data':
+            model_lst.append(l)
+
+    for model in model_lst:
+        globals()[model] = spacy.load('content/' + model)
 
 
+    all_words = []  # 모든 단어를 저장할 리스트 초기화
 
+    for _, model in enumerate(model_lst):
+        words = tokenize(predict_entities(ocr_result, globals()[model], '상품명'))
+        all_words.extend(words)  # all_words 리스트에 단어 추가
 
-    # Spacy 모델을 사용하여 상품명과 가격 추출
-    doc = nlp(ocr_result)
-    product_name, price = None, None
-    for ent in doc.ents:
-        if ent.label_ == "상품명":
-            product_name = ent.text
-        elif ent.label_ == "가격":
-            price = ent.text
+    # 단어의 등장 횟수를 세기
+    word_counts = Counter(all_words)
 
-    '''
-    case = 0
-    while product_name is None or price is None or case < 5:
-        case += 1
-        doc = nlp(ocr_result)
-        for ent in doc.ents:
-            if ent.label_ == "상품명" and product_name is None:
-                product_name = ent.text
-            elif ent.label_ == "가격" and price is None:
-                price = ent.text
-    '''
+    # 가장 많이 등장한 단어들 추출 (예: 상위 5개)
+    top_words = ' '.join([word[0] for word in word_counts.most_common(5)])
 
-    return render(request, 'imgback/ocr_result.html', {
-        'ocr_result' : ocr_result,
-        'image_path': processed_img,
-        'product_name': product_name,
-        'price': price
+    # 제품명 선별
+    top_words = delete_product(top_words)
+    
+    # 가격 선별
+    nlp = spacy.load('content/Pingu_model_1_19_150_price')
+    is_price = predict_entities(ocr_result, nlp,'가격')
+
+    return JsonResponse({
+        'ocr_result': ocr_result,
+        'image_path': processed_img,  # 이미지 URL로 변경
+        'product_name': top_words,
+        'price': is_price
     })
 
-# 크롤링뷰. 아현님코드기반으로 수정필요.
+
+# 크롤링 뷰 - 수정
 def crawling_results_view(request):
     product_name = request.GET.get('product_name', '')
     site = request.GET.get('site', '')  # 사이트 선택 파라미터 추가
@@ -93,16 +96,45 @@ def crawling_results_view(request):
     if site == 'musinsa':
         musinsa_crawler = MusinsaCrawler(product_name)
         musinsa_results = musinsa_crawler.scrape()
+        # musinsa csv / json - file path
+        musinsa_path = os.path.join(settings.MEDIA_ROOT, 'dataframes/musinsa_products.csv')
+        musinsa_json_path = os.path.join(settings.MEDIA_ROOT, 'dataframes/musinsa_products.json')
+        # 크롤링 결과 csv로 저장
+        musinsa_results.to_csv(musinsa_path, index=False)
+        # csv to json
+        musinsa_csv = pd.read_csv(musinsa_path)
+        musinsa_csv = musinsa_csv.sort_values(by=['Price'])
+        musinsa_to_json = musinsa_csv[['Product_Name', 'Price']].to_json(musinsa_json_path, orient='records', force_ascii=False)
+
     elif site == 'naver':
         naver_crawler = NaverShoppingCrawler(settings.NAVER_API_ID, settings.NAVER_API_SECRET, product_name)
         naver_results = naver_crawler.run()
+        # naver csv / json - file path
+        naver_path = os.path.join(settings.MEDIA_ROOT, 'dataframes/naver_products.csv')
+        naver_json_path = os.path.join(settings.MEDIA_ROOT, 'dataframes/naver_products.json')
+        # 크롤링 결과 csv로 저장
+        naver_results.to_csv(naver_path, index=False)
+        # csv to json
+        naver_csv = pd.read_csv(naver_path)
+        naver_csv = naver_csv.sort_values(by=['lprice'])
+        naver_to_json = naver_csv[['title', 'lprice']].to_json(naver_json_path, orient='records', force_ascii=False)
+
     elif site == 'ssg':
         ssg_crawler = SsgCrawler()
         ssg_results = ssg_crawler.get_data(product_name)
+        # ssg csv / json - file path
+        ssg_path = os.path.join(settings.MEDIA_ROOT, 'dataframes/ssg_products.csv')
+        ssg_json_path = os.path.join(settings.MEDIA_ROOT, 'dataframes/ssg_products.json')
+        # 크롤링 결과 csv로 저장
+        ssg_results.to_csv(ssg_path, index=False)
+        # csv to json
+        ssg_csv = pd.read_csv(ssg_path)
+        ssg_csv = ssg_csv.sort_values(by=['prices'])
+        ssg_to_json = ssg_csv[['product_names', 'prices']].to_json(ssg_json_path, orient='records', force_ascii=False)
 
     # 결과 반환
     return JsonResponse({
-        'musinsa': musinsa_results.to_json(orient='records') if musinsa_results is not None else '',
-        'naver': naver_results.to_json(orient='records') if naver_results is not None else '',
-        'ssg': ssg_results if ssg_results is not None else ''
+        'musinsa': musinsa_to_json if musinsa_results is not None else '',
+        'naver': naver_to_json if naver_results is not None else '',
+        'ssg': ssg_to_json if ssg_results is not None else ''
     })

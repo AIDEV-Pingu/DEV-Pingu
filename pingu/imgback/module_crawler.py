@@ -7,6 +7,7 @@ import requests
 from django.conf import settings
 import csv
 import ssl
+import os
 
 
 class NaverShoppingCrawler:
@@ -49,7 +50,7 @@ class NaverShoppingCrawler:
             'mall': mall_name,
         }, columns=['title','lprice','mall','link'])
         return result
-
+    '''
     def run(self):
         result_datas = []
         for n in range(1, 1000, 100):
@@ -61,6 +62,20 @@ class NaverShoppingCrawler:
         result_datas_concat.reset_index(drop=True, inplace=True)
         #result_datas_concat['lprice'] = result_datas_concat['lprice'].str.replace(' ', '').astype(int)
         processed_dataframe = 'dataframes/data_processed.csv'
+        processed_data_path = os.path.join(settings.MEDIA_ROOT, processed_dataframe)
+        result_datas_concat.to_csv(processed_data_path, sep=',', encoding="utf-8")
+    '''
+    def run(self):
+        result_datas = []
+        for n in range(1, 1000, 100):
+            url = self.gen_search_url('shop', n, 100)
+            json_result = self.get_result_onpage(url)
+            result = self.get_fields(json_result)
+            result_datas.append(result)
+        result_datas_concat = pd.concat(result_datas)
+        result_datas_concat.reset_index(drop=True, inplace=True)
+        #result_datas_concat['lprice'] = result_datas_concat['lprice'].str.replace(' ', '').astype(int)
+        processed_dataframe = 'dataframes/naver_products.csv' # 크롤링 수정 (파일명 변경)
         processed_data_path = os.path.join(settings.MEDIA_ROOT, processed_dataframe)
         result_datas_concat.to_csv(processed_data_path, sep=',', encoding="utf-8")
 
@@ -113,7 +128,7 @@ class SsgCrawler:
         df = pd.DataFrame(data)
         df = df.sort_values(by='prices')  # 가격순으로 정렬
 
-        return df.to_json(orient='records')  # JSON 형식으로 데이터 반환
+        return df  # 크롤링 수정 (데이터 프레임 리턴으로 변경)
 
 
 class MusinsaCrawler:
@@ -147,128 +162,3 @@ class MusinsaCrawler:
         df = pd.DataFrame(result, columns=['Product_Name', 'Price', 'Product_Link'])
         df['Price'] = df['Price'].str.replace(',', '').astype(int)
         return df
-
-    '''
-
-
-ssl._create_default_https_context = ssl._create_unverified_context
-
-
-
-class NaverShoppingCrawler:
-    def __init__(self, client_id, client_secret, keyWord):
-        self.client_id = client_id
-        self.client_secret = client_secret
-        self.keyWord = keyWord
-
-    def gen_search_url(self, api_node, start_num, disp_num):
-        base = 'https://openapi.naver.com/v1/search'
-        node = '/' + api_node + '.json'
-        param_query = '?query=' + urllib.parse.quote(self.keyWord)
-        param_start = '&start=' + str(start_num)
-        param_disp = '&display=' + str(disp_num)
-        return base + node + param_query + param_disp + param_start
-
-    def get_result_onpage(self, url):
-        request = urllib.request.Request(url)
-        request.add_header('X-Naver-Client-Id', self.client_id)
-        request.add_header('X-Naver-Client-Secret', self.client_secret)
-        response = urllib.request.urlopen(request)
-        print(f'{datetime.datetime.now()} Url Request Success')
-        return json.loads(response.read().decode('utf-8'))
-
-    def delete_tag(self, input_str):
-        input_str = input_str.replace('<b>', '')
-        input_str = input_str.replace('</b>', '')
-        input_str = input_str.replace('\xa0', '')
-        return input_str
-
-    def get_fields(self, json_data):
-        title = [self.delete_tag(each['title']) for each in json_data['items']]
-        link = [each['link'] for each in json_data['items']]
-        lprice = [each['lprice'] for each in json_data['items']]
-        mall_name = [each['mallName'] for each in json_data['items']]
-        result = pd.DataFrame({
-            'title': title,
-            'link': link,
-            'lprice': lprice,
-            'mall': mall_name,
-        }, columns=['title','lprice','mall','link'])
-        return result
-
-    def run(self):
-        result_datas = []
-        for n in range(1, 1000, 100):
-            url = self.gen_search_url('shop', n, 100)
-            json_result = self.get_result_onpage(url)
-            result = self.get_fields(json_result)
-            result_datas.append(result)
-        result_datas_concat = pd.concat(result_datas)
-        result_datas_concat.reset_index(drop=True, inplace=True)
-        #result_datas_concat['lprice'] = result_datas_concat['lprice'].str.replace(' ', '').astype(int)
-        result_datas_concat.to_csv('/Users/kangahhyun/django-pingu/pingu/parsed_data/content/Naver_shopping.csv', sep=',', encoding="utf-8")
-
-# 네이버 크롤링
-def naver_pricedata():
-    keyWord = '맥심 모카골드믹스 MAXIM MOCHAGOLD MILDCOFFEE MIX'
-    crawler = NaverShoppingCrawler(settings.NAVER_API_ID, settings.NAVER_API_SECRET, keyWord)
-    result = crawler.run()
-
-    with open("/Users/kangahhyun/django-pingu/pingu/parsed_data/content/Naver_shopping.csv","r") as f:
-        dr = csv.DictReader(f)
-        s = pd.DataFrame(dr)
-        s = s.sort_values(by='lprice')
-        df_to_json = s[['title', 'lprice']]
-
-        # DataFrame을 JSON 파일로 변환
-        df_to_json.to_json('/Users/kangahhyun/django-pingu/pingu/parsed_data/content/Naver_shopping.json', orient='records', force_ascii=False)
-
-
-
-class MusinsaScraper:
-    def __init__(self, query):
-        self.query = query
-        self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
-        }
-        self.url = "https://www.musinsa.com/search/musinsa/integration?q=" + self.query
-
-    def scrape(self):
-        response = requests.get(self.url, headers=self.headers)
-        soup = BeautifulSoup(response.text, 'lxml')
-
-        result = []
-        goods_links = soup.find_all('a', attrs={'name': 'goods_link'})
-        prices = soup.find_all('p', attrs={'class': 'price'})
-
-        for link, price in zip(goods_links, prices):
-            title = link.get('title')
-            price_text = price.find('del')
-
-            if price_text is not None:
-                price_text.extract()
-
-            price_text = price.text.strip().replace('원', '').replace(',', '')
-            link = link.get('href')
-
-            result.append((title, price_text, link))
-
-        df = pd.DataFrame(result, columns=['Product_Name', 'Price', 'Product_Link'])
-        df['Price'] = df['Price'].str.replace(',', '').astype(int)
-        return df
-    
-def musinsa_pricedata():
-    query = '코듀로이 팬츠'
-    scraper = MusinsaScraper(query)
-    df = scraper.scrape()
-    df.to_csv('/Users/kangahhyun/django-pingu/pingu/parsed_data/content/musinsa_products.csv', index=False)
-
-    with open("/Users/kangahhyun/django-pingu/pingu/parsed_data/content/musinsa_products.csv","r") as f:
-        dr = csv.DictReader(f)
-        s = pd.DataFrame(dr)
-        ss = s.sort_values(by=['Price'])
-        df_to_json = ss[['Product_Name', 'Price']]
-
-        # DataFrame을 JSON 파일로 변환
-        df_to_json.to_json('/Users/kangahhyun/django-pingu/pingu/parsed_data/content/musinsa_products.json', orient='records', force_ascii=False)
-    '''

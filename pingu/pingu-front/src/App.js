@@ -31,7 +31,6 @@ class App extends React.Component {
             </button>
           </Link>
         </header>
-        <MainPage />
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/upload" element={<UploadPage />} />
