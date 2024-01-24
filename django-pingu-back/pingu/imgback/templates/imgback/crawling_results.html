@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crawling Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            color:#4299e1;
+        }
+        .crawling_title {
+        display: flex;
+        align-items: center;
+        font-size: 2em;
+        margin: 10px 30px 0;
+        font-family: 'Arial', sans-serif; /* 폰트 변경 (예시: Arial) */
+        color: #dde8f3; /* 글씨 색상 변경 (예시: 파란색) */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 그림자 추가 */
+        letter-spacing: 1px; /* 글자 간격 조절 */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color:#ffffff;
+
+        }
+
+        th, td {
+            border: 1px solid #e2e8f0;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4299e1;
+            color: #ffffff;
+        }
+        td {
+            color:black;
+        }
+
+        td a {
+            color: #4299e1;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-pink-200 via-purple-200 to-indigo-300">
+    <div class="crawling_title">Pingu's Price</div>
+    <div class="container">
+
+        <!-- 무신사 크롤링 결과 -->
+        {% if musinsa %}
+        <h2 class="text-2xl font-semibold mb-2">무신사 크롤링 결과</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>제품명</th>
+                    <th>가격</th>
+                    <th>링크</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in musinsa %}
+                <tr>
+                    <td>{{ result.Product_Name }}</td>
+                    <td>{{ result.Price }}</td>
+                    <td><a href="{{ result.Product_Link }}">링크</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- 여기에 네이버 쇼핑 및 기타 크롤링 결과에 대한 테이블 추가 -->
+        <!-- 네이버 쇼핑 크롤링 결과 -->
+        {% elif context.naver %}
+        <h2 class="text-2xl font-semibold mb-2">네이버 쇼핑 결과</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>제품명</th>
+                    <th>가격</th>
+                    <th>링크</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in context.naver %}
+                <tr>
+                    <td>{{ item.title }}</td>
+                    <td>{{ item.lprice }}</td>
+                    <td><a href="{{ item.link }}">상품 보기</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- SSG 크롤링 결과 -->
+        {% elif context.ssg %}
+        <h2 class="text-2xl font-semibold mb-2">SSG 결과</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>제품명</th>
+                    <th>가격</th>
+                    <th>링크</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in context.ssg %}
+                <tr>
+                    <td>{{ item.product_names }}</td>
+                    <td>{{ item.prices }}</td>
+                    <td><a href="{{ item.product_urls }}">상품 보기</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- 크롤링된 결과가 없는 모든 경우 -->
+        {% else %}
+        <p class="text-lg">{{ site }} 검색 결과가 없습니다.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
