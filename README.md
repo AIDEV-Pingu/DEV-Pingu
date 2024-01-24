@@ -14,7 +14,7 @@ Programmers Dev코스 4조 핑구입니당~~
 | 최갑주 | | |
 | 성현규 | | |
 | 서이환 | 전처리, 모델링 | https://github.com/kawaipato |
-| 김정연 | | |
+| 김정연 | 전처리, YOLOv8 및 OCR 모델링, 웹 프론트 | |
 | 강아현 | | |
 
 
