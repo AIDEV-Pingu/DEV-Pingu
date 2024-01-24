@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pingu's Price Analysis Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .fileInput {
+            display: flex;
+            align-items: center;
+            font-size: 3em;
+            margin: 20px 50px 0;
+            font-family: 'Arial', sans-serif;
+            color: #e6e9ec;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            letter-spacing: 1px;
+        }
+
+        /* 로딩 화면 */
+        .loading-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loading-spinner {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+    </style>
+    
+</head>
+<body class="bg-gradient-to-t from-pink-200 via-purple-200 to-indigo-300">
+    
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+    <div class="fileInput">P. P. A. P
+        <!-- 메인 화면으로 이동하는 버튼(새로고침 역할) -->
+        <button onClick="window.location.reload()">
+            <img src="{% static 'home_pingu.png' %}" alt="Home" style="margin: 20px; max-width: 40px; max-height: 40px;">
+            <span class="sr-only">Home</span>
+        </button>
+    </div>
+    <div class="flex flex-col items-center justify-center min-h-screen mb-2">
+        <div class="w-full max-w-2xl mx-auto bg-white rounded-xl shadow-md overflow-hidden p-6 space-y-2">
+            <h1 class="text-3xl font-bold">Image Upload</h1>
+            <div class="flex items-center justify-center bg-static-image">
+                <div class="aspect-w-4 aspect-h-3 max-w-full h-auto">
+                    <img src="{% static 'pingu_imgupload.jpeg'%}" alt="main_page_pingu" class="max-w-full h-auto rounded-md" style="max-height:300px;">
+                </div>
+            </div>
+            <form method="post" enctype="multipart/form-data" onsubmit="showLoadingOverlay()">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">Upload Image</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        // 이미지 업로드 시 로딩 화면 표시
+        function showLoadingOverlay() {
+            document.getElementById('loadingOverlay').style.display = 'flex';
+        }
+
+    </script>
+</body>
+</html>
