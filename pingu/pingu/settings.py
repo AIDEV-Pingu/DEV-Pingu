@@ -30,7 +30,9 @@ SECRET_KEY = "django-insecure-_5nsql8b6v2a*$up$ezxu0e!6!_rd-v#zpau9b!&=&519x*ite
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+        ".ap-northeast-2.compute.amazonaws.com"
+        ]
 
 DEFAULT_CHARSET = 'utf-8'
 
