@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,12 +47,37 @@
             color: #4299e1;
             text-decoration: underline;
         }
+
+        .home-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .home-link img {
+            max-width: 80px; /* 이미지 크기 가로세로 2배 조정 */
+            max-height: 80px;
+        }
+
+        .home-link span {
+            display: block;
+            font-size: smaller; /* 작은 글씨 크기 */
+            color: #4299e1;
+        }
+
     </style>
 </head>
 <body class="bg-gradient-to-r from-pink-200 via-purple-200 to-indigo-300">
-    <div class="crawling_title">Pingu's Price</div>
-    <div class="container">
-
+    <div class="container mt-4">
+        <div class="flex justify-between items-center">
+            <div class="home-link">
+                <button onclick="location.href='/'" style="background: none; border: none; cursor: pointer;">
+                    <img src="{% static 'returnpingu.jpeg' %}" alt="Home" />
+                    <span>첫 화면으로</span>
+                </button>
+            </div>
+            <div class="crawling_title">Pingu's Price</div>
+        </div>
         <!-- 무신사 크롤링 결과 -->
         {% if musinsa %}
         <h2 class="text-2xl font-semibold mb-2">무신사 크롤링 결과</h2>
