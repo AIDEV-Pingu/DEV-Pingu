@@ -16,7 +16,9 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 MEDIA_URL = '/media/'
+CONTENT_URL = '/content/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+CONTENT_ROOT = os.path.join(BASE_DIR, 'content/')
 
 
 # Quick-start development settings - unsuitable for production
@@ -30,12 +32,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+DEFAULT_CHARSET = 'utf-8'
 
 # Application definition
 
 INSTALLED_APPS = [
     'main',
-    'imgback',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -45,6 +47,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -53,6 +56,8 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
+
 
 ROOT_URLCONF = "pingu.urls"
 
@@ -110,14 +115,15 @@ USE_I18N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = 'static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-    ]
+    os.path.join(BASE_DIR,'static')
+]
+
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -129,6 +135,10 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 ROBOFLOW_API_KEY = "MUs7pvPAXmkOJGSMZ9dm"
 ROBOFLOW_PROJECT = "wow-2ysdx"
 ROBOFLOW_VERSION = 1
+
+# Crawler API 설정
+NAVER_API_ID = 'sWRweonFDwTIbRP88MsS'
+NAVER_API_SECRET = "yNVbAK8Kya"
 
 # CLOVA OCR API 설정
 CLOVA_API_KEY = "Y0l6ZHF1Um9CSWp3aHpJU3JDeFdpUGp1cG16T3hFQkg="
