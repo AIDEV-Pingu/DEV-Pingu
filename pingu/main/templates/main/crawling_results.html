@@ -12,14 +12,14 @@
             color:#4299e1;
         }
         .crawling_title {
-        display: flex;
-        align-items: center;
-        font-size: 2em;
-        margin: 10px 30px 0;
-        font-family: 'Arial', sans-serif; /* 폰트 변경 (예시: Arial) */
-        color: #dde8f3; /* 글씨 색상 변경 (예시: 파란색) */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 그림자 추가 */
-        letter-spacing: 1px; /* 글자 간격 조절 */
+            display: flex;
+            align-items: center;
+            font-size: 2em;
+            margin: 10px 30px 0;
+            font-family: 'Arial', sans-serif; /* 폰트 변경 (예시: Arial) */
+            color: #dde8f3; /* 글씨 색상 변경 (예시: 파란색) */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 그림자 추가 */
+            letter-spacing: 1px; /* 글자 간격 조절 */
         }
         table {
             width: 100%;
@@ -27,6 +27,24 @@
             margin-top: 20px;
             background-color:#ffffff;
 
+        }
+        .price_info {
+            position: fixed;
+            top: 10px;
+            right: 10px; /* 수정: left 대신 right 사용하여 우측으로 정렬 */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            color: #060606;
+            font-size: 1em;
+            padding: 15px;
+            background-color: rgba(239, 235, 187, 0.8);
+            border-radius: 10px;
+            margin: 10px;
+            max-width: 300px;
+            width: auto; /* 수정: 너비를 자동으로 설정하여 유연하게 조절 */
+            box-sizing: border-box;
+            pointer-events: none;
         }
 
         th, td {
@@ -49,9 +67,14 @@
         }
 
         .home-link {
+            position: flex;
+            top: 10px;
+            left: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin: 10px;
+            z-index: 1000; /* 다른 요소 위에 나타나도록 설정 */
         }
 
         .home-link img {
@@ -62,22 +85,33 @@
         .home-link span {
             display: block;
             font-size: smaller; /* 작은 글씨 크기 */
-            color: #4299e1;
+            color: #e4eef6;
         }
 
     </style>
 </head>
+
 <body class="bg-gradient-to-r from-pink-200 via-purple-200 to-indigo-300">
-    <div class="container mt-4">
-        <div class="flex justify-between items-center">
-            <div class="home-link">
-                <button onclick="location.href='/'" style="background: none; border: none; cursor: pointer;">
-                    <img src="{% static 'reloadpingu.jpeg' %}" alt="Home" />
-                    <span>첫 화면으로</span>
-                </button>
+    <div class="flex justify-between items-center">
+        <div class="home-link">
+            <button onclick="location.href='/'" style="background: none; border: none; cursor: pointer;">
+                <img src="{% static 'reloadpingu.jpeg' %}" alt="Home" class="rounded-md" />
+                <span>처음 화면으로</span>
+            </button>
+            <div class="crawling_title">
+                Pingu's Price
             </div>
-            <div class="crawling_title">Pingu's Price</div>
         </div>
+    </div>
+    <div class="price_info">
+        <strong>최저가 비교 상품 정보</strong>
+        <br>
+        <strong>상품명:</strong> {{ product_name }}
+        <br>
+        <br>
+        <strong>가격:</strong> {{ price }}
+    </div>
+    <div class="container">
         <!-- 무신사 크롤링 결과 -->
         {% if musinsa %}
         <h2 class="text-2xl font-semibold mb-2">무신사 크롤링 결과</h2>
