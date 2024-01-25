@@ -111,21 +111,21 @@
             document.getElementById('loadingOverlay').style.display = 'flex';
             
             // 여기서 원래의 링크로 이동하거나 필요한 작업 수행
-            window.location.href = "{% url 'crawling_results' %}?product_name={{ product_name }}&site=musinsa";
+            window.location.href = "{% url 'crawling_results' %}?product_name={{ product_name }}&site=musinsa&price={{ price }}";
         }
         function naver_showLoading() {
             // 로딩 화면 보이기
             document.getElementById('loadingOverlay').style.display = 'flex';
             
             // 여기서 원래의 링크로 이동하거나 필요한 작업 수행
-            window.location.href = "{% url 'crawling_results' %}?product_name={{ product_name }}&site=naver";
+            window.location.href = "{% url 'crawling_results' %}?product_name={{ product_name }}&site=naver&price={{ price }}";
         }
         function ssg_showLoading() {
             // 로딩 화면 보이기
             document.getElementById('loadingOverlay').style.display = 'flex';
             
             // 여기서 원래의 링크로 이동하거나 필요한 작업 수행
-            window.location.href = "{% url 'crawling_results' %}?product_name={{ product_name }}&site=ssg";
+            window.location.href = "{% url 'crawling_results' %}?product_name={{ product_name }}&site=ssg&price={{ price }}";
         }
     </script>
 </body>
