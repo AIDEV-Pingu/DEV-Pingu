@@ -4,6 +4,16 @@
     <title>OCR Results</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
+        .fileInput {
+            display: flex;
+            align-items: center;
+            font-size: 3em;
+            margin: 20px 50px 0;
+            font-family: 'Arial', sans-serif;
+            color: #e6e9ec;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            letter-spacing: 1px;
+        }
         /* 추가된 스타일 */
         .loading-overlay {
             display: none;
@@ -16,6 +26,8 @@
             z-index: 1000;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
+            text-align: center;
         }
 
         .loading-spinner {
@@ -26,10 +38,19 @@
             height: 50px;
             animation: spin 1s linear infinite;
         }
-
+        .loading-text {
+            margin-top: 10px; /* 추가: 텍스트와 스피너 간격 조절 */
+            font-size: 1.2em; /* 추가: 텍스트 크기 조절 */
+            color:#3498db;
+            animation: fadeInOut 2s ease-in-out infinite; /* 추가: 나타나는 효과 애니메이션 */
+        }
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
         }
     </style>
 </head>
@@ -37,6 +58,14 @@
     <!-- 로딩 화면 -->
     <div class="loading-overlay" id="loadingOverlay">
         <div class="loading-spinner"></div>
+        <div class="loading-text"> 핑구가 해당 상품의 최저가 정보를 불러오고 있습니다. </div>
+    </div>
+    <div class="fileInput">P. P. A. P
+        <!-- 메인 화면으로 이동하는 버튼(새로고침 역할) -->
+        <button onclick="location.href='upload/'">
+            <img src="{% static 'home_pingu.png' %}" alt="Home" style="margin: 20px; max-width: 40px; max-height: 40px;">
+            <span class="sr-only">Home</span>
+        </button>
     </div>
 
     <div class="flex flex-col items-center justify-center min-h-screen">
