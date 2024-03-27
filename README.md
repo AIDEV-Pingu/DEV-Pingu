@@ -73,6 +73,13 @@ Programmers Dev코스 4조 핑구입니당~~
 
 
 
+### 🎥실행영상
+https://github.com/AIDEV-Pingu/DEV-Pingu/assets/62132388/b4cf50ba-39fd-4f24-af12-9eb1f94a4aa1
+
+If you want to see 4K -> https://youtu.be/tAA9eYNHcX4
+
+
+
 ### 📅개발일지
 
 | No.  | Date     | Category   | Function                                                         | Done                                                         |
