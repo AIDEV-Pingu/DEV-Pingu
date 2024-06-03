@@ -11,7 +11,7 @@ Programmers Dev코스 4조 핑구입니당~~
 
 | 이름   | 담당 영역                                                    | Github                        |
 | ------ | ------------------------------------------------------------ | ----------------------------- |
-| 최갑주 | 모델링, 웹 크롤링, 프론트엔드| https://github.com/Choigapju |
+| 최갑주 | PM, 모델링, 웹 크롤링, 프론트엔드| https://github.com/Choigapju |
 | 성현규 | 모델링, 백엔드, AWS 배포| https://github.com/QhyunQ |
 | 서이환 | 전처리, 모델링 | https://github.com/kawaipato |
 | 김정연 | 전처리, YOLOv8 및 OCR 모델링, 프론트엔드 | https://github.com/JY-maru |
